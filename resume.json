@@ -118,30 +118,36 @@
   ],
   "education": [
     {
-      "institution": "University of Oklahoma",
-      "area": "Information Technology",
-      "studyType": "Bachelor",
-      "startDate": "2011-06-01",
-      "endDate": "2014-01-01",
-      "gpa": "4.0",
-      "courses": [
-        "DB1101 - Basic SQL",
-        "CS2011 - Java Introduction"
-      ]
-    }
-  ],
-  "interests": [
-    {
-      "name": "Music",
-      "keywords": [
-        "Guitar"
-      ]
+      "institution": "The University of Exeter",
+      "studyType": "University",
+      "startDate": "2010-10-01",
+      "endDate": "2012-10-01",
+      "gradeDescription": "Phd Physics: The electrical properties of cell membranes",
+      "gradeResult": "Degree Not Attained"
     },
     {
-      "name": "Music",
-      "keywords": [
-        "Guitar"
-      ]
+      "institution": "The University of Exeter",
+      "studyType": "University",
+      "startDate": "2007-09-01",
+      "endDate": "2010-09-01",
+      "gradeDescription": "BSc. (Hons.) Mathematics and Physics",
+      "gradeResult": "2:1"
+    },
+    {
+      "institution": "Queen Mary's College",
+      "studyType": "College",
+      "startDate": "2005-09-01",
+      "endDate": "2007-09-01",
+      "gradeDescription": "A Levels",
+      "gradeResult": "Mathematics (A), Physics (B), Electronics (B), BTEC Music Practice (Distinction). AS Level: Further Mathematics AS (C)"
+    },
+    {
+      "institution": "Harroway Community School",
+      "studyType": "Secondary",
+      "startDate": "2000-09-01",
+      "endDate": "2005-09-01",
+      "gradeDescription": "9 GCSEs including mathematics and english",
+      "gradeResult": "2 As, 3 Bs, 4 Cs"
     }
   ]
 }
