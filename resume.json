@@ -25,13 +25,13 @@
       "startDate": "2015-03-01",
       "summary": "",
       "highlights": [
-        "Setup Continuous integration infrastructure using AWS and Teamcity and various integrations",
-        "Setup Automated deployment using octopus deployment, devised solution for having multiple config files on multiple deployment targets.",
-        "Devised contiuous deployment pipelines for AWS resources such as AWS Lambda functions",
-        "Wrote libraries to help promote and implement best practices in build and deployment automation",
-        "Implemented configuration of logging aggregation solution to production systems. Extensive use of remote powershell used.",
-        "Wrote scripts for file archival and other windows server administration tasks",
-        "Wrote "
+        "Produced or maintained code to efficiently enrich and validate transaction data using primarily C# and SQL, but also python",
+        "Devised and setup Continuous Integration and Deployment infrastructure and conventions for AWS resources including EC2 and Lambda. This consisted primarily of Teamcity and Octopus deploy.",
+        "Created nuget packages to help promote and implement best practices in build and deployment automation",
+        "Implemented configuration of logging aggregation solution to remote production systems. This involved extensive automation with powershell.",
+        "Wrote scripts and programs for file archival and other windows server administration tasks",
+        "Spread best practices in methods and technologies through organising department wide, weekly workshops.",
+        "Extensive use of automation technologies like powershell, AWS Cloudformation and Chef."
       ]
     },
     {
