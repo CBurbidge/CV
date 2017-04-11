@@ -3,17 +3,7 @@
     "name": "Chester Burbidge",
     "label": "Software Engineer",
     "picture": "",
-    "email": "a@b.com",
-    "phone": "",
-    "website": "",
     "summary": "An ambitious Software Engineer with a passion for self-development who is constantly trying to learn, practice and improve in all aspects of software development. New technologies and paradigms discovered through reading books and articles, listening to podcasts, attending talks and personal projects.",
-    "location": {
-      "address": "",
-      "postalCode": "",
-      "city": "",
-      "countryCode": "UK",
-      "region": "Bristol"
-    },
     "profiles": [
       {
         "network": "Twitter",
@@ -119,7 +109,6 @@
   "education": [
     {
       "institution": "The University of Exeter",
-      "studyType": "University",
       "startDate": "2010-10-01",
       "endDate": "2012-10-01",
       "gradeDescription": "Phd Physics: The electrical properties of cell membranes",
@@ -127,7 +116,6 @@
     },
     {
       "institution": "The University of Exeter",
-      "studyType": "University",
       "startDate": "2007-09-01",
       "endDate": "2010-09-01",
       "gradeDescription": "BSc. (Hons.) Mathematics and Physics",
@@ -135,7 +123,6 @@
     },
     {
       "institution": "Queen Mary's College",
-      "studyType": "College",
       "startDate": "2005-09-01",
       "endDate": "2007-09-01",
       "gradeDescription": "A Levels",
@@ -143,7 +130,6 @@
     },
     {
       "institution": "Harroway Community School",
-      "studyType": "Secondary",
       "startDate": "2000-09-01",
       "endDate": "2005-09-01",
       "gradeDescription": "9 GCSEs including mathematics and english",
