@@ -40,14 +40,7 @@
       "website": "https://www.fundslibrary.co.uk",
       "startDate": "2013-12-01",
       "endDate": "2014-12-01",
-      "summary": "Maintaining and extending the Funds Library website and it's clients' customisations in a work environment based on Agile methodologies. Modern software development practices used including Test Driven Development, Automated Testing, Refactoring, Continuous Integration, SOLID craftmanship practices and development patterns.\nRole used C#, ASP.NET MVC and SQL Server to develop web sites, web services and internal tools. Client side development consisted of using typescript, LESS and javascript libraries such as KnockoutJs, jQuery, d3.js using grunt and jasmine for testing.",
-      "highlights": [
-        "Fix cross side scripting vulnerability in internal apps in accordance to external.",
-        "Implemented exponentially increasing locking out login page to stop repeated incorrect attempts.",
-        "Created client side javascript error handler with corresponding server side error reporting.",
-        "Discovered and fixed bugs at all levels of web development stack, from DB to js.",
-        "Devised clean method of using LESS to assign colours to charts."
-      ]
+      "summary": "Maintaining and extending the Funds Library website and it's clients' customisations in a work environment based on Agile methodologies. Modern software development practices used including Test Driven Development, Automated Testing, Refactoring, Continuous Integration, SOLID craftmanship practices and development patterns.\nRole used C#, ASP.NET MVC and SQL Server to develop web sites, web services and internal tools. Client side development consisted of using typescript, LESS and javascript libraries such as KnockoutJs, jQuery, d3.js using grunt and jasmine for testing."    
     },
     {
       "company": "Toplevel Computing Ltd",
@@ -55,14 +48,7 @@
       "website": "https://www.toplev.com/",
       "startDate": "2013-03-01",
       "endDate": "2014-03-01",
-      "summary": "Extending or performing maintenance on customer or internal systems, using in-house developed software analogous to Web Forms, combined with the .Net Framework and other technologies. Role involved understanding client's requests, writing code specications, designs and performing the implementation of code changes, in a workplace that practices agile methodologies.",
-      "highlights": [
-        "Learnt about in-house developed bespoke software and various custom client implementations.",
-        "Debugged and diagnosed problems in clients systems and liased with clients to provide solutions.",
-        "Developed changes to clients system to allow batch creation and downloading of reports.",
-        "Created prototype for presentation pitch for new client business. This included 'smoke and mirrors' features and generation of random data for presentation.",
-        "Implemented client payment system by extending existing payment code infrastucture."
-      ]
+      "summary": "Extending or performing maintenance on customer or internal systems, using in-house developed software analogous to Web Forms, combined with the .Net Framework and other technologies. Role involved understanding client's requests, writing code specications, designs and performing the implementation of code changes, in a workplace that practices agile methodologies."
     },
     {
       "company": "University of Exeter",
