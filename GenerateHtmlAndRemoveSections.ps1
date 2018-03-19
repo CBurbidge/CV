@@ -9,8 +9,8 @@ $temp = [IO.File]::ReadAllText($tempFilePath)
 $temp = $temp.Replace("<!doctype html>`n", "")
 [IO.File]::WriteAllText($tempFilePath, $temp)
 
-python RemoveNodes.py
+C:\Python36\python.exe .\RemoveNodes.py
 
-python .\SeperateStyleAndContent.py
+C:\Python36\python.exe .\SeperateStyleAndContent.py
 
 Write-Host "Finished"

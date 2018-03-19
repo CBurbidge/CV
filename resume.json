@@ -4,6 +4,13 @@
     "label": "Software Engineer",
     "picture": "",
     "summary": "An ambitious Software Engineer with a passion for self-development who is constantly trying to learn, practice and improve in all aspects of software development. New technologies and paradigms discovered through reading books and articles, listening to podcasts, attending talks and personal projects.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "",
+      "countryCode": "",
+      "region": ""
+    },
     "profiles": [
       {
         "network": "Twitter",
@@ -19,10 +26,21 @@
   },
   "work": [
     {
+      "company": "Scott Logic",
+      "position": "Software Engineer",
+      "website": "https://www.scottlogic.com/",
+      "startDate": "2017-10-16",
+      "summary": "",
+      "highlights": [
+        "Designed and implemented ETL pipeline on Azure using Data Factory V2 and Azure Resource Manager. Helped design and implement datawarehouse reporting solution for client using Azure SQL DataWarehouse."
+      ]
+    },
+    {
       "company": "Abide Financial",
       "position": "Software Engineer",
       "website": "http://www.abide-financial.com/",
       "startDate": "2015-03-01",
+      "endDate": "2017-10-15",
       "summary": "",
       "highlights": [
         "Produced or maintained code to efficiently enrich and validate transaction data using primarily C# and SQL, but also python",
@@ -97,29 +115,29 @@
       "institution": "The University of Exeter",
       "startDate": "2010-10-01",
       "endDate": "2012-10-01",
-      "gradeDescription": "Phd Physics: The electrical properties of cell membranes",
-      "gradeResult": "Degree Not Attained"
+      "studyType": "Phd Physics: The electrical properties of cell membranes",
+      "gpa": "Degree Not Attained"
     },
     {
       "institution": "The University of Exeter",
       "startDate": "2007-09-01",
       "endDate": "2010-09-01",
-      "gradeDescription": "BSc. (Hons.) Mathematics and Physics",
-      "gradeResult": "2:1"
+      "studyType": "BSc. (Hons.) Mathematics and Physics",
+      "gpa": "2:1"
     },
     {
       "institution": "Queen Mary's College",
       "startDate": "2005-09-01",
       "endDate": "2007-09-01",
-      "gradeDescription": "A Levels",
-      "gradeResult": "Mathematics (A), Physics (B), Electronics (B), BTEC Music Practice (Distinction). AS Level: Further Mathematics AS (C)"
+      "studyType": "A Levels",
+      "gpa": "Mathematics (A), Physics (B), Electronics (B), BTEC Music Practice (Distinction). AS Level: Further Mathematics AS (C)"
     },
     {
       "institution": "Harroway Community School",
       "startDate": "2000-09-01",
       "endDate": "2005-09-01",
-      "gradeDescription": "9 GCSEs including mathematics and english",
-      "gradeResult": "2 As, 3 Bs, 4 Cs"
+      "studyType": "9 GCSEs including mathematics and english",
+      "gpa": "2 As, 3 Bs, 4 Cs"
     }
   ]
 }
