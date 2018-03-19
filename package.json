@@ -1,17 +1,16 @@
 {
-  "name": "jsonresume-theme-flat",
-  "version": "0.3.7",
-  "description": "A theme for JSON Resume",
-  "author": "Mattias Erming",
-  "repository": {
-    "type": "git",
-    "url": "http://github.com/erming/jsonresume-theme-flat"
+  "name": "cv",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.1"
   },
   "scripts": {
-    "start": "resume serve"
-  },
-  "dependencies": {
-    "handlebars": "^2.0.0-alpha.4"
-  },
-  "license": "MIT"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
 }
