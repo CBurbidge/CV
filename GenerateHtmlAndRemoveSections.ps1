@@ -1,6 +1,6 @@
 $executingDir = Split-Path -parent $PSCommandPath
 
-$tempFilePath = "$executingDir\cv-temp.html"
+$tempFilePath = "$executingDir\temp\cv-temp.html"
 resume export $tempFilePath
 Write-Host "Generated cv temp"
 
@@ -10,5 +10,7 @@ $temp = $temp.Replace("<!doctype html>`n", "")
 [IO.File]::WriteAllText($tempFilePath, $temp)
 
 python RemoveNodes.py
+
+python .\SeperateStyleAndContent.py
 
 Write-Host "Finished"

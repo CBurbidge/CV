@@ -1,4 +1,6 @@
-*.html
+temp
+public
+.vscode
 .idea/*
 
 # Logs

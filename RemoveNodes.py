@@ -5,7 +5,7 @@ try:
 except ImportError:
     from bs4 import BeautifulSoup
 
-f = open("cv-temp.html", encoding="utf-8-sig")
+f = open("temp/cv-temp.html", encoding="utf-8-sig")
 soup = BeautifulSoup(f)
 f.close()
 
@@ -16,5 +16,5 @@ contact = soup.find_all("section", {'id': "contact"})[0]
 contact.extract()
 
 html = soup.prettify("utf-8")
-with open("cv.html", "wb") as file:
+with open("out/cv.html", "wb") as file:
     file.write(html)
