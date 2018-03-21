@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import CV from './components/cv/CV'
+import CV from './components/cv/CV';
+import cv from "./resume";
 
 class App extends Component {
   render() {
@@ -10,10 +10,11 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">CV react</h1>
         </header>
-        <CV />
+        <CV jsonResume={cv}/>
       </div>
     );
   }
 }
 
 export default App;
+
