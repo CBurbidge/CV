@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from "prop-types"
-import {resumeType } from "../../resumeType"
-import Basics from "./partials/Basics"
-import Work from "./partials/Work"
-import Volunteer from "./partials/Volunteer"
-import Education from "./partials/Education"
-import Awards from "./partials/Awards"
+import {resumeType } from "../../../resumeType"
+import Basics from "./Basics"
+import Work from "./Work"
+import Volunteer from "./Volunteer"
+import Education from "./Education"
+import Awards from "./Awards"
 
-class CV extends Component {
+class Default extends Component {
   render() {
     return (
       <div>
@@ -25,8 +25,9 @@ class CV extends Component {
   }
 }
 
-CV.propTypes = {
-  jsonResume: resumeType.isRequired
+Default.propTypes = {
+  jsonResume: resumeType.isRequired,
+  skills: PropTypes.object
 }
 
-export default CV;
+export default Default;
