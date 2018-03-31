@@ -15,14 +15,14 @@ String.prototype.toSkillType = function (name, description, levelArg) {
 
 module.exports = {
 	async: "async".toSkillType(
-		"Asynchronous",
+		"Asynchronous Programming",
 		"The practice of writing asynchronous code."
 	),
 	backend: "backend".toSkillType(
-		"'Back end'",
+		"Back End",
 		"'Back end' development concerns server side technologies like C#."),
 	cloud: "cloud".toSkillType(
-		"Cloud",
+		"Cloud Computing",
 		"cloud development skills, mostly AWS"
 	),
 	devops: "devops".toSkillType(
@@ -31,20 +31,20 @@ module.exports = {
 
 	),
 	frontend: "frontend".toSkillType(
-		"'Front end'",
-		"'Front end' development concerns client side technologies like javascript.",
+		"Front End",
+		"Front End development concerns client side technologies like javascript.",
 		"Competent"
 	),
 	functional: "functional".toSkillType(
-		"Functional",
-		"A style of programming."
+		"Functional Programming",
+		""
 	),
 	oop: "oop".toSkillType(
-		"Object Oriented",
-		"A style of programming that uses objects"
+		"Object Oriented Programming",
+		""
 	),
 	tdd: "tdd".toSkillType(
-		"TDD",
+		"Test Driven Development",
 		"The practice of writing automated tests before writing code."
 	),
 }

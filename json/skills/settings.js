@@ -22,7 +22,7 @@ String.prototype.toSetting = function (name, description, dateRange) {
 // propName needs to match id!
 module.exports = {
 	toplevel: "toplevel".toSetting(
-		"Toplevel computing",
+		"Toplevel Computing Ltd",
 		"Toplevel computing - Graduate Developer",
 		new DateRange(new Date(2013, 3), new Date(2014, 3))),
 
