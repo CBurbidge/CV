@@ -22,7 +22,7 @@ var jsonResumeSettings = settingsList.map(x => {
 		.filter(s => s.settingsIds.includes(x.id))
 		.map(s => s.id);
 	return {
-		institution: x.name,
+		company: x.name,
 		keywords: releventSettingsIds
 	}
 });
