@@ -24,7 +24,7 @@ module.exports = {
 			skillTypes.frontend
 		],
 		[
-
+			settings.abide
 		]
 	),
 
@@ -36,7 +36,7 @@ module.exports = {
 			skillTypes.async,
 		],
 		[
-
+			settings.abide
 		]
 	),
 
@@ -47,7 +47,8 @@ module.exports = {
 			skillTypes.backend,
 		],
 		[
-
+			settings.fundslibrary,
+			settings.abide
 		]
 	),
 
@@ -58,7 +59,7 @@ module.exports = {
 			skillTypes.backend,
 		],
 		[
-
+			settings.fundslibrary
 		]
 	),
 
@@ -69,7 +70,7 @@ module.exports = {
 			skillTypes.cloud,
 		],
 		[
-
+			settings.abide,
 		]
 	),
 
@@ -81,7 +82,7 @@ module.exports = {
 			skillTypes.backend,
 		],
 		[
-
+			settings.abide
 		]
 	),
 
@@ -92,7 +93,7 @@ module.exports = {
 			skillTypes.cloud,
 		],
 		[
-
+			settings.abide
 		]
 	),
 
@@ -104,7 +105,7 @@ module.exports = {
 			skillTypes.devops,
 		],
 		[
-
+			settings.abide
 		]
 	),
 
@@ -116,7 +117,7 @@ module.exports = {
 			skillTypes.backend,
 		],
 		[
-
+			settings.abide
 		]
 	),
 
@@ -128,7 +129,7 @@ module.exports = {
 			skillTypes.devops,
 		],
 		[
-
+			settings.abide
 		]
 	),
 
@@ -140,7 +141,7 @@ module.exports = {
 			skillTypes.cloud,
 		],
 		[
-
+			settings.abide
 		]
 	),
 
@@ -152,7 +153,7 @@ module.exports = {
 			skillTypes.cloud,
 		],
 		[
-
+			settings.abide
 		]
 	),
 
@@ -164,7 +165,7 @@ module.exports = {
 			skillTypes.cloud,
 		],
 		[
-
+			settings.abide
 		]
 	),
 
@@ -175,7 +176,8 @@ module.exports = {
 			skillTypes.devops,
 		],
 		[
-
+			settings.abide,
+			settings.scottlogic
 		]
 	),
 
@@ -186,7 +188,9 @@ module.exports = {
 			skillTypes.frontend,
 		],
 		[
-
+			settings.abide,
+			settings.fundslibrary,
+			settings.scottlogic
 		]
 	),
 
@@ -197,7 +201,7 @@ module.exports = {
 			skillTypes.devops,
 		],
 		[
-
+			settings.abide
 		]
 	),
 
@@ -208,7 +212,7 @@ module.exports = {
 			skillTypes.devops,
 		],
 		[
-
+			settings.abide
 		]
 	),
 
@@ -219,7 +223,9 @@ module.exports = {
 			skillTypes.devops,
 		],
 		[
-
+			settings.abide,
+			settings.fundslibrary,
+			settings.scottlogic
 		]
 	),
 
@@ -227,7 +233,7 @@ module.exports = {
 		"Apache Cordova (Phone Gap)",
 		"An open source way of making cross platform mobile phone apps",
 		[
-
+			skillTypes.frontend
 		],
 		[
 
@@ -242,7 +248,7 @@ module.exports = {
 			skillTypes.backend
 		],
 		[
-
+			settings.toplevel
 		]
 	),
 
@@ -256,7 +262,10 @@ module.exports = {
 			skillTypes.tdd,
 		],
 		[
-
+			settings.toplevel,
+			settings.fundslibrary,
+			settings.abide,
+			settings.scottlogic
 		]
 	),
 
@@ -267,7 +276,10 @@ module.exports = {
 			skillTypes.frontend,
 		],
 		[
-
+			settings.toplevel,
+			settings.fundslibrary,
+			settings.abide,
+			settings.scottlogic
 		]
 	),
 
@@ -289,7 +301,10 @@ module.exports = {
 			skillTypes.backend,
 		],
 		[
-
+			settings.toplevel,
+			settings.fundslibrary,
+			settings.abide,
+			settings.scottlogic,
 		]
 	),
 
@@ -301,7 +316,9 @@ module.exports = {
 			skillTypes.frontend,
 		],
 		[
-
+			settings.fundslibrary,
+			settings.abide,
+			settings.scottlogic,
 		]
 	),
 
@@ -312,7 +329,8 @@ module.exports = {
 			skillTypes.functional,
 		],
 		[
-
+			settings.abide,
+			settings.scottlogic,
 		]
 	),
 
@@ -323,7 +341,9 @@ module.exports = {
 			skillTypes.devops,
 		],
 		[
-
+			settings.fundslibrary,
+			settings.abide,
+			settings.scottlogic,
 		]
 	),
 
@@ -335,7 +355,7 @@ module.exports = {
 			skillTypes.frontend,
 		],
 		[
-
+			settings.fundslibrary,
 		]
 	),
 
@@ -346,7 +366,10 @@ module.exports = {
 			skillTypes.frontend,
 		],
 		[
-
+			settings.toplevel,
+			settings.fundslibrary,
+			settings.abide,
+			settings.scottlogic,
 		]
 	),
 
@@ -369,7 +392,7 @@ module.exports = {
 			skillTypes.tdd
 		],
 		[
-
+			settings.fundslibrary,
 		]
 	),
 
@@ -384,7 +407,9 @@ module.exports = {
 			skillTypes.tdd
 		],
 		[
-
+			settings.fundslibrary,
+			settings.abide,
+			settings.scottlogic,
 		]
 	),
 
@@ -395,7 +420,9 @@ module.exports = {
 
 		],
 		[
-
+			settings.fundslibrary,
+			settings.abide,
+			settings.scottlogic,
 		]
 	),
 
@@ -406,7 +433,7 @@ module.exports = {
 			skillTypes.frontend,
 		],
 		[
-
+			settings.fundslibrary,
 		]
 	),
 
@@ -417,7 +444,7 @@ module.exports = {
 			skillTypes.tdd
 		],
 		[
-
+			settings.fundslibrary,
 		]
 	),
 
@@ -428,7 +455,7 @@ module.exports = {
 			skillTypes.frontend,
 		],
 		[
-
+			settings.fundslibrary,
 		]
 	),
 
@@ -450,7 +477,7 @@ module.exports = {
 			skillTypes.frontend,
 		],
 		[
-
+			settings.fundslibrary,
 		]
 	),
 
@@ -462,7 +489,10 @@ module.exports = {
 			skillTypes.functional,
 		],
 		[
-
+			settings.toplevel,
+			settings.fundslibrary,
+			settings.abide,
+			settings.scottlogic,
 		]
 	),
 
@@ -473,7 +503,8 @@ module.exports = {
 			skillTypes.tdd
 		],
 		[
-
+			settings.toplevel,
+			settings.abide,
 		]
 	),
 
@@ -485,7 +516,9 @@ module.exports = {
 			skillTypes.tdd
 		],
 		[
-
+			settings.toplevel,
+			settings.abide,
+			settings.scottlogic,
 		]
 	),
 
@@ -497,7 +530,7 @@ module.exports = {
 			skillTypes.devops,
 		],
 		[
-
+			settings.abide,
 		]
 	),
 
@@ -508,7 +541,7 @@ module.exports = {
 			skillTypes.devops,
 		],
 		[
-
+			settings.abide,
 		]
 	),
 
@@ -520,7 +553,7 @@ module.exports = {
 			skillTypes.devops,
 		],
 		[
-
+			settings.abide,
 		]
 	),
 
@@ -532,7 +565,7 @@ module.exports = {
 			skillTypes.tdd
 		],
 		[
-
+			settings.abide,
 		]
 	),
 
@@ -545,7 +578,8 @@ module.exports = {
 			skillTypes.tdd
 		],
 		[
-
+			settings.toplevel,
+			settings.abide,
 		]
 	),
 
@@ -556,7 +590,9 @@ module.exports = {
 			skillTypes.backend,
 		],
 		[
-
+			settings.fundslibrary,
+			settings.abide,
+			settings.scottlogic,
 		]
 	),
 
@@ -578,7 +614,7 @@ module.exports = {
 
 		],
 		[
-
+			settings.toplevel,
 		]
 	),
 
@@ -589,7 +625,10 @@ module.exports = {
 			skillTypes.backend,
 		],
 		[
-
+			settings.toplevel,
+			settings.fundslibrary,
+			settings.abide,
+			settings.scottlogic,
 		]
 	),
 
@@ -600,7 +639,7 @@ module.exports = {
 
 		],
 		[
-
+			settings.toplevel,
 		]
 	),
 
@@ -611,7 +650,7 @@ module.exports = {
 			skillTypes.devops,
 		],
 		[
-
+			settings.abide,
 		]
 	),
 
@@ -622,7 +661,10 @@ module.exports = {
 			skillTypes.backend,
 		],
 		[
-
+			settings.toplevel,
+			settings.fundslibrary,
+			settings.abide,
+			settings.scottlogic,
 		]
 	),
 
@@ -637,7 +679,7 @@ module.exports = {
 			skillTypes.tdd
 		],
 		[
-
+			settings.fundslibrary,
 		]
 	),
 
@@ -649,7 +691,10 @@ module.exports = {
 			skillTypes.backend,
 		],
 		[
-
+			settings.toplevel,
+			settings.fundslibrary,
+			settings.abide,
+			settings.scottlogic,
 		]
 	),
 
@@ -661,7 +706,7 @@ module.exports = {
 			skillTypes.oop,
 		],
 		[
-
+			settings.toplevel,
 		]
 	),
 
@@ -672,7 +717,7 @@ module.exports = {
 			skillTypes.backend,
 		],
 		[
-
+			settings.fundslibrary,
 		]
 	),
 
@@ -683,8 +728,10 @@ module.exports = {
 			skillTypes.backend,
 		],
 		[
+			settings.toplevel,
+			settings.fundslibrary,
+			settings.abide,
 		]
 	),
-
 }
 
