@@ -40,6 +40,18 @@ module.exports = {
 		]
 	),
 
+	apacheSpark: "apacheSpark".toSkill(
+		"Apache Spark",
+		"Parallel processing engine",
+		[
+			skillTypes.backend,
+			skillTypes.async,
+		],
+		[
+			settings.scottlogic
+		]
+	),
+
 	aspDotNetMvc: "aspDotNetMvc".toSkill(
 		"ASP.NET MVC",
 		"A varied web development framework that ephasises the Model View Controller pattern.",
@@ -60,6 +72,64 @@ module.exports = {
 		],
 		[
 			settings.fundslibrary
+		]
+	),
+
+	azureDataFactory: "azureDataFactory".toSkill(
+		"Azure Data Factory",
+		"Azure managed data flow service",
+		[
+			skillTypes.cloud,
+		],
+		[
+			settings.scottlogic
+		]
+	),
+	
+	azureSql: "azureSql".toSkill(
+		"Azure SQL",
+		"Azure SQL managed database",
+		[
+			skillTypes.backend,
+			skillTypes.cloud,
+		],
+		[
+			settings.scottlogic
+		]
+	),
+	
+	azureSqlDw: "azureSqlDw".toSkill(
+		"Azure SQL Data Warehouse",
+		"Azure SQL managed datawarehouse",
+		[
+			skillTypes.backend,
+			skillTypes.cloud,
+		],
+		[
+			settings.scottlogic
+		]
+	),
+
+	azureResourceManager: "azureResourceManager".toSkill(
+		"Azure Resource Manager",
+		"Azure Resource Manager",
+		[
+			skillTypes.devops,
+			skillTypes.cloud,
+		],
+		[
+			settings.scottlogic
+		]
+	),
+
+	azureHdInsights: "azureHdInsights".toSkill(
+		"Azure HdInsights",
+		"Azure managed hadoop cluster",
+		[
+			skillTypes.cloud,
+		],
+		[
+			settings.scottlogic
 		]
 	),
 
