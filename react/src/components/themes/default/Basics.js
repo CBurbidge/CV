@@ -1,5 +1,5 @@
 import React from 'react';
-import { rightSideDivStyle, leftSideDivStyle, mixWithBorder, mixWithBorderAndPadding } from './commonStyle'
+import { rightSideDivStyle, leftSideDivStyle, mixWithBorder, mixWithBorderAndPadding, mixWithBorder2, mixWithBorder2AndPadding, mixWithBorder3, mixWithBorder3AndPadding } from './commonStyle'
 
 export default function (props) {
   return (
@@ -58,16 +58,13 @@ var Name = function (props) {
 var Profiles = function (props) {
   var sTable = {
     textAlign: "right",
-    width: "100%"
+    float: "right"
   }
 
   var profile = function (prof) {
-    var sTd = mixWithBorder({
-      padding: 5
-    })
     return (
       <tr key={prof.network} >
-        <td style={sTd}>{prof.network}</td><td style={sTd}>{prof.username}</td>
+        <td style={mixWithBorder({padding: 5})}>{prof.network}</td><td style={mixWithBorder({padding: 5})}>{prof.username}</td>
       </tr>
     )
   }
