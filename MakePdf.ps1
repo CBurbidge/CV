@@ -12,9 +12,8 @@ cd $cvDir
 
 $serving = Start-Process -FilePath "serve" -WorkingDirectory $buildDir
 
-#mkhtmltopdf  --javascript-delay 40000
 
-node "$cvDir/createPdf.js"
+node "$cvDir/pdf/createPdf.js"
 
 $serving | Stop-Process
 
