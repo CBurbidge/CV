@@ -11,10 +11,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">CV react</h1>
-        </header>
-        <CV jsonResume={resume} skills={skills} theme={theme} />
+        <CV jsonResume={resume} skills={skills} theme={theme} print={true} />
       </div>
     );
   }

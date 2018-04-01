@@ -8,7 +8,7 @@ class CV extends Component {
     
     return (
       <div>
-        <Default jsonResume={this.props.jsonResume} skills={this.props.skills} />
+        <Default jsonResume={this.props.jsonResume} skills={this.props.skills} print={this.props.print} />
       </div>
     );
   }
@@ -17,7 +17,8 @@ class CV extends Component {
 CV.propTypes = {
   jsonResume: resumeType.isRequired,
   theme: PropTypes.string,
-  skills: PropTypes.object
+  skills: PropTypes.object,
+  print: PropTypes.bool
 }
 
 export default CV;
