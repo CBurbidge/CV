@@ -1,7 +1,8 @@
 module.exports.leftSideDivStyle = {
   width: "10%",
   minWidth: 75,
-  display: "inline-block"
+  display: "inline-block",
+  textAlign: "center",
 }
 
 module.exports.rightSideDivStyle = {

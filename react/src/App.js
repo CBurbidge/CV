@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+//import './App.css';
 import CV from './components/CV';
 import resume from "./resume.json";
 import skills from "./skills.json";

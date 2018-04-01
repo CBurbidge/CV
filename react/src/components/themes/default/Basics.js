@@ -16,9 +16,7 @@ var Summary = function (props) {
   return (
     <div>
       <div style={leftSideDivStyle}>
-        <h4 style={{
-          textAlign: "left"
-        }}>Profile</h4>
+        <h4>Profile</h4>
       </div>
       <div style={rightSideDivStyle}>
         <p style={mixWithBorderAndPadding({

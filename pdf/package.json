@@ -1,0 +1,17 @@
+{
+  "name": "pdf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "createPdf.js",
+  "scripts": {
+    "start": "node createPdf.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "html-pdf": "^2.2.0",
+    "puppeteer": "^1.2.0",
+    "wkhtmltopdf": "^0.3.4"
+  }
+}
