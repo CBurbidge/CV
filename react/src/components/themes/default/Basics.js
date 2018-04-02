@@ -3,11 +3,11 @@ import { rightSideDivStyle, leftSideDivStyle, mixWithBorder, mixWithBorderAndPad
 
 export default function (props) {
   return (
-    <section className="about">
+    <div>
       {props.print && <Name basics={props.basics} />}
       <Summary basics={props.basics} />
-      <hr />
-    </section>
+      <hr/>
+    </div>
   );
 }
 
@@ -64,7 +64,7 @@ var Profiles = function (props) {
   var profile = function (prof) {
     return (
       <tr key={prof.network} >
-        <td style={mixWithBorder({padding: 5})}>{prof.network}</td><td style={mixWithBorder({padding: 5})}>{prof.username}</td>
+        <td style={mixWithBorder({ padding: 5 })}>{prof.network}</td><td style={mixWithBorder({ padding: 5 })}>{prof.username}</td>
       </tr>
     )
   }
