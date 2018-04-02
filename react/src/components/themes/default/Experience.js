@@ -102,14 +102,14 @@ class WorkPlaceTitle extends React.Component {
     return (
       <div>
         <div style={{
-          minWidth: 400,
+          minWidth: 300,
           width: "45%",
           display: "inline-block"
         }}>
           <span><b>{this.props.work.company}</b></span> - <span><i>{this.props.work.position}</i></span>
         </div>
         <div style={{
-          minWidth: 300,
+          minWidth: 150,
           width: "45%",
           display: "inline-block",
           textAlign: "right"

@@ -40,6 +40,6 @@ module.exports = {
 	scottlogic: "scottlogic".toSetting(
 		"Scott Logic",
 		"Software Consultency",
-		new DateRange(new Date(2017, 10), new Date())
+		new DateRange(new Date(2017, 10), undefined)
 	)
 }

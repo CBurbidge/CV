@@ -1,8 +1,13 @@
 # serve and "https://www.npmjs.com/package/html-pdf" need to be installed
 
 $cvDir = "$PSScriptRoot"
+$jsonDir = "$cvDir/json"
 $reactDir = "$cvDir/react"
 $buildDir = "$reactDir/build"
+
+cd $jsonDir
+
+npm start
 
 cd $reactDir
 
