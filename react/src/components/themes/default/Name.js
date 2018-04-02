@@ -5,26 +5,8 @@ export default function (props) {
   return (
     <div>
       {props.print && <Name basics={props.basics} />}
-      <Summary basics={props.basics} />
-      <hr/>
     </div>
   );
-}
-
-var Summary = function (props) {
-
-  return (
-    <div>
-      <div style={leftSideDivStyle}>
-        <h4>Profile</h4>
-      </div>
-      <div style={rightSideDivStyle}>
-        <p style={mixWithBorderAndPadding({
-          textAlign: "justify",
-        })} >{props.basics.summary}</p>
-      </div>
-    </div>
-  )
 }
 
 var Name = function (props) {

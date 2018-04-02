@@ -30,18 +30,18 @@ class WorkPlace extends React.Component {
   constructor(props) {
     super(props);
     this.clickSelect = this.props.clickSelect.bind(this);
-    this.selected = this.props.isSelected("Work", this.props.work.company)
   }
 
   render() {
-
+    var selected = this.props.isSelected("Work", this.props.work.company)
 
     return (
       <div>
         <div onClick={() => this.props.clickSelect("Work", this.props.work.company)}
           style={{
             padding: 10,
-            
+            borderLeft: "3px solid black",
+            margin: 10
           }}
         >
           <WorkPlaceTitle work={this.props.work} />
@@ -150,8 +150,10 @@ class WorkPlaceHighlights extends React.Component {
   }
 
   render() {
-    var toHighlight = function (h) {
-      return <li style={{}} >{h}</li>
+    var toHighlight = function (h, i) {
+      return <li key={i} ><div style={{
+        padding: 3
+      }} >{h}</div></li>
     }
     return (
       <div>
@@ -161,9 +163,12 @@ class WorkPlaceHighlights extends React.Component {
           // width: "45%",
           // display: "inline-block"
         }}>
-        {/* <p>Highlights:</p> */}
-          <ul>
-            {this.props.work.highlights.map(x => toHighlight(x))}
+          {/* <p>Highlights:</p> */}
+          <ul type="square" style={{
+            marginTop: 0,
+            marginBottom: 0
+          }} >
+            {this.props.work.highlights.map((x, i) => toHighlight(x, i))}
           </ul>
         </div>}
 
