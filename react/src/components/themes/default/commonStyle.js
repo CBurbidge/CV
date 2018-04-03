@@ -1,3 +1,5 @@
+module.exports.iconSize = 40;
+
 module.exports.leftSideDivStyle = {
   width: "10%",
   minWidth: 120,

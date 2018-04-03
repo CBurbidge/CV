@@ -1,7 +1,8 @@
 import React from 'react';
-import { rightSideDivStyle, leftSideDivStyle, mixWithBorderAndPadding, mixWithBorder2AndPadding } from './commonStyle'
+import { iconSize, rightSideDivStyle, leftSideDivStyle, mixWithBorderAndPadding, mixWithBorder2AndPadding } from './commonStyle'
 import { isSelectedFunc } from './selected'
 import Experience from "./Experience"
+import Icons from './icons'
 
 export default class WorkAndSkills extends React.Component {
   constructor(props) {
@@ -50,7 +51,8 @@ class SkillTypes extends React.Component {
     return (
       <div>
         <div style={leftSideDivStyle}>
-          <h4>Skills</h4>
+          <Icons.Tools size={iconSize} />
+          {/* <h4>Skills</h4> */}
         </div>
         <div style={rightSideDivStyle}>
           <div style={mixWithBorderAndPadding({})} >

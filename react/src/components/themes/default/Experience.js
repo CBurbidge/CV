@@ -1,5 +1,6 @@
 import React from 'react';
-import { rightSideDivStyle, leftSideDivStyle, mixWithBorderAndPadding, mixWithBorder2AndPadding } from './commonStyle'
+import { rightSideDivStyle, leftSideDivStyle, mixWithBorderAndPadding, mixWithBorder2AndPadding, iconSize } from './commonStyle'
+import Icons from './icons'
 
 export default class Experience extends React.Component {
   constructor(props) {
@@ -12,7 +13,8 @@ export default class Experience extends React.Component {
     return (
       <div>
         <div style={leftSideDivStyle}>
-          <h4>Experience</h4>
+          <Icons.BriefCase size={iconSize} />
+          {/* <h4>Experience</h4> */}
         </div>
         <div style={rightSideDivStyle}>
           <div style={mixWithBorder2AndPadding({})} >{

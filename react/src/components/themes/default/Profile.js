@@ -1,5 +1,6 @@
 import React from 'react';
-import { rightSideDivStyle, leftSideDivStyle, mixWithBorderAndPadding } from './commonStyle'
+import { iconSize, rightSideDivStyle, leftSideDivStyle, mixWithBorderAndPadding } from './commonStyle'
+import Icons from './icons'
 
 export default function (props) {
   return (
@@ -14,7 +15,8 @@ var Summary = function (props) {
       <div style={Object.assign(leftSideDivStyle, {
         maxHeight: 20
       })}>
-        <h4>Profile</h4>
+        <Icons.ExperienceIcon size={iconSize} />
+        {/* <h4>Profile</h4> */}
       </div>
       <div style={Object.assign(rightSideDivStyle, {
         
