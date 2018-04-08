@@ -1,4 +1,4 @@
-var selected = {
+const selected = {
   HighlightedAndSelected: "HighlightedAndSelected",
   Highlighted: "Highlighted",
   Visible: "Visible",
@@ -7,15 +7,16 @@ var selected = {
 
 module.exports.selected = selected;
 
-var types = {
+const types = {
   Skill: "Skill",
   SkillType: "SkillType",
-  Work: "Work"
+  Setting: "Setting"
 }
 
 module.exports.selectedTypes = types;
 
 module.exports.isSelectedFunc = function (stateType, stateValue, currentType, currentValue, skillsObj) {
+  
   if(stateType === undefined || stateType === null 
     || stateValue === undefined || stateValue === null
     || !currentType || !currentValue){
@@ -50,7 +51,7 @@ module.exports.isSelectedFunc = function (stateType, stateValue, currentType, cu
     if (currentType === types.SkillType) {
       return selected.Hidden;
     }
-    if (currentType === types.Work) {
+    if (currentType === types.Setting) {
       if (currentValue === stateValue) {
         return selected.HighlightedAndSelected
       } else {
@@ -67,7 +68,7 @@ module.exports.isSelectedFunc = function (stateType, stateValue, currentType, cu
     //return selected.Visible;
   }
   var selectedIsSkillType = function () {
-    if (currentType === types.Work) {
+    if (currentType === types.Setting) {
       return selected.Hidden;
     }
     if (currentType === types.SkillType) {
@@ -89,7 +90,7 @@ module.exports.isSelectedFunc = function (stateType, stateValue, currentType, cu
   if (stateType === "" && stateValue === "") return selectedIsBlank();
   if (stateType === types.Skill) return selectedIsSkill();
   if (stateType === types.SkillType) return selectedIsSkillType();
-  if (stateType === types.Work) return selectedIsWork();
+  if (stateType === types.Setting) return selectedIsWork();
 
   return selected.Visible
 }

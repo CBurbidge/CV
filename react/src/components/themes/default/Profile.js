@@ -1,5 +1,5 @@
 import React from 'react';
-import { iconSize, rightSideDivStyle, leftSideDivStyle, mixWithBorderAndPadding } from './commonStyle'
+import { iconSize, rightSideDivStyle, leftSideDivStyle, mixWithBorderAndPadding } from './styles/common'
 import Icons from './icons'
 
 export default function (props) {

@@ -1,8 +1,8 @@
 import React from 'react';
-import { iconSize, rightSideDivStyle, leftSideDivStyle, mixWithBorderAndPadding, mixWithBorder2AndPadding } from './commonStyle'
-import { isSelectedFunc } from './selected'
+import { iconSize, rightSideDivStyle, leftSideDivStyle, mixWithBorderAndPadding, mixWithBorder2AndPadding } from '../styles/common'
+import { isSelectedFunc, selectedTypes } from './selected'
 import Experience from "./Experience"
-import Icons from './icons'
+import Icons from '../icons'
 
 export default class WorkAndSkills extends React.Component {
   constructor(props) {
@@ -82,8 +82,8 @@ class SkillType extends React.Component {
   }
 
   render() {
-    var selected = this.isSelected("SkillType", this.props.skill.name);
-
+    var selected = this.isSelected(selectedTypes.SkillType, this.props.skill.name);
+    
     return (
       <div style={{
         padding: 5,
@@ -91,7 +91,7 @@ class SkillType extends React.Component {
         display: "inline-block",
         border: "1px solid black"
       }}>
-        <span onClick={() => this.clickSelect("SkillType", this.props.skill.name)}
+        <span onClick={() => this.clickSelect(selectedTypes.SkillType, this.props.skill.name)}
           style={{
             //padding: 20
           }}
@@ -112,10 +112,10 @@ class Skill extends React.Component {
   }
 
   render() {
-    var selected = this.isSelected("Skill", this.props.skillId)
+    var selected = this.isSelected(selectedTypes.Skill, this.props.skillId)
     var skillName = this.props.skillsObj.skills[this.props.skillId].name
     return (
-      <div onClick={() => this.clickSelect("Skill", this.props.skillId)}
+      <div onClick={() => this.clickSelect(selectedTypes.Skill, this.props.skillId)}
         style={{
           padding: selected ? 10 : 5,
           margin: 5,

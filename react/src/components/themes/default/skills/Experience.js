@@ -1,6 +1,7 @@
 import React from 'react';
-import { rightSideDivStyle, leftSideDivStyle, mixWithBorderAndPadding, mixWithBorder2AndPadding, iconSize } from './commonStyle'
-import Icons from './icons'
+import { rightSideDivStyle, leftSideDivStyle, mixWithBorderAndPadding, mixWithBorder2AndPadding, iconSize } from '../styles/common'
+import selectedTypes from './selected'
+import Icons from '../icons'
 
 export default class Experience extends React.Component {
   constructor(props) {
@@ -35,11 +36,11 @@ class WorkPlace extends React.Component {
   }
 
   render() {
-    var selected = this.props.isSelected("Work", this.props.work.company)
+    var selected = this.props.isSelected(selectedTypes.Setting, this.props.work.company)
 
     return (
       <div>
-        <div onClick={() => this.props.clickSelect("Work", this.props.work.company)}
+        <div onClick={() => this.props.clickSelect(selectedTypes.Setting, this.props.work.company)}
           style={{
             padding: 10,
             borderLeft: "3px solid black",
