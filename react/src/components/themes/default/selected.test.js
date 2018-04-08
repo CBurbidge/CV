@@ -1,4 +1,5 @@
-import { selected, selectedTypes as types, isSelectedFunc } from './selected';
+import { selected, selectedTypes, isSelectedFunc } from './selected';
+
 var setting1 = {
   id: "setting1"
 }
@@ -32,18 +33,68 @@ var skillsObj = {
   }
 }
 
-it('handles skill1 selected correctly', () => {
-  
-  var forSkill1 = isSelectedFunc(types.Skill, skill1.id, types.Skill, skill1.id, skillsObj)
+
+it('skill1 selected correctly - skill1', () => {
+  var forSkill1 = isSelectedFunc(selectedTypes.Skill, skill1.id, selectedTypes.Skill, skill1.id, skillsObj)
   expect(forSkill1).toBe(selected.HighlightedAndSelected)
-  
-  var forSkill2 = isSelectedFunc(types.Skill, skill1.id, types.Skill, skill2.id, skillsObj)
+})
+
+it('skill1 selected correctly - skill2', () => {
+  var forSkill2 = isSelectedFunc(selectedTypes.Skill, skill1.id, selectedTypes.Skill, skill2.id, skillsObj)
   expect(forSkill2).toBe(selected.Hidden);
+});
 
-  var forSkillType1 = isSelectedFunc(types.Skill, skill1.id, types.SkillType, skillType1.id, skillsObj)
+it('skill1 selected correctly - skillType1', () => {
+  var forSkillType1 = isSelectedFunc(selectedTypes.Skill, skill1.id, selectedTypes.SkillType, skillType1.id, skillsObj)
   expect(forSkillType1).toBe(selected.Highlighted);
+});
 
-  var forSetting1 = isSelectedFunc(types.Skill, skill1.id, types.Setting, setting1.id, skillsObj)
+it('skill1 selected correctly - setting1', () => {
+  var forSetting1 = isSelectedFunc(selectedTypes.Skill, skill1.id, selectedTypes.Setting, setting1.id, skillsObj)
   expect(forSetting1).toBe(selected.Visible);
+});
 
+
+
+it('setting1 selected correctly - skill1', () => {
+  var forSkill1 = isSelectedFunc(selectedTypes.Setting, setting1.id, selectedTypes.Skill, skill1.id, skillsObj)
+  expect(forSkill1).toBe(selected.Hidden)
+});
+
+it('setting1 selected correctly - skill2', () => {
+  var forSkill2 = isSelectedFunc(selectedTypes.Setting, setting1.id, selectedTypes.Skill, skill2.id, skillsObj)
+  expect(forSkill2).toBe(selected.Highlighted);
+  expect(forSkill2).toBe(selected.HighlightedAndSelected);
+});
+
+it('setting1 selected correctly - skillType1', () => {
+  var forSkillType1 = isSelectedFunc(selectedTypes.Setting, setting1.id, selectedTypes.SkillType, skillType1.id, skillsObj)
+  expect(forSkillType1).toBe(selected.Hidden);
+});
+
+it('setting1 selected correctly - setting1', () => {
+  var forSetting1 = isSelectedFunc(selectedTypes.Setting, setting1.id, selectedTypes.Setting, setting1.id, skillsObj)
+  expect(forSetting1).toBe(selected.HighlightedAndSelected);
+});
+
+
+
+it('skillType1 selected correctly - skill1', () => {
+  var forSkill1 = isSelectedFunc(selectedTypes.SkillType, skillType1.id, selectedTypes.Skill, skill1.id, skillsObj)
+  expect(forSkill1).toBe(selected.Highlighted)
+});
+
+it('skillType1 selected correctly - skill2', () => {
+  var forSkill2 = isSelectedFunc(selectedTypes.SkillType, skillType1.id, selectedTypes.Skill, skill2.id, skillsObj)
+  expect(forSkill2).toBe(selected.Hidden);
+});
+
+it('skillType1 selected correctly - skillType1', () => {
+  var forSkillType1 = isSelectedFunc(selectedTypes.SkillType, skillType1.id, selectedTypes.SkillType, skillType1.id, skillsObj)
+  expect(forSkillType1).toBe(selected.HighlightedAndSelected);
+});
+
+it('skillType1 selected correctly - setting1', () => {
+  var forSetting1 = isSelectedFunc(selectedTypes.SkillType, skillType1.id, selectedTypes.Setting, setting1.id, skillsObj)
+  expect(forSetting1).toBe(selected.Hidden);
 });

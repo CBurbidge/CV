@@ -16,10 +16,16 @@ var types = {
 module.exports.selectedTypes = types;
 
 module.exports.isSelectedFunc = function (stateType, stateValue, currentType, currentValue, skillsObj) {
+  if(stateType === undefined || stateType === null 
+    || stateValue === undefined || stateValue === null
+    || !currentType || !currentValue){
+    throw new Error("Bad input - '" + stateType + "' '" + stateValue + "' '" + currentType + "' '" + currentValue + "'")
+  }
 
   var selectedIsBlank = function () {
     return selected.Visible
   }
+
   var selectedIsSkill = function () {
     if (currentType === types.Skill) {
       return currentValue === stateValue
@@ -37,24 +43,53 @@ module.exports.isSelectedFunc = function (stateType, stateValue, currentType, cu
         ? selected.Highlighted
         : selected.Visible
     }
-    return selected.Hidden;
+    throw new Error("is bad type - " + currentType)
   }
+
   var selectedIsWork = function () {
-    var workObj = skillsObj.settings[stateValue];
-    if (!workObj) return false;
-    if (currentType === types.Skill) return workObj.skills.includes(currentValue);
-    return false;
+    if (currentType === types.SkillType) {
+      return selected.Hidden;
+    }
+    if (currentType === types.Work) {
+      if (currentValue === stateValue) {
+        return selected.HighlightedAndSelected
+      } else {
+        return selected.Hidden;
+      }
+    }
+    if (currentType === types.Skill) {
+      var skill = skillsObj.skills[currentValue];
+      return skill.settingsIds.includes(stateValue)
+        ? selected.Highlighted
+        : selected.Hidden;
+    }
+    throw new Error("is bad type - " + currentType)
+    //return selected.Visible;
   }
   var selectedIsSkillType = function () {
-    var skillTypeObj = skillsObj.skillTypes[stateValue];
-    if (!skillTypeObj) return false;
-    if (currentType === types.Skill) return skillTypeObj.keywords.includes(currentValue);
-    return false;
+    if (currentType === types.Work) {
+      return selected.Hidden;
+    }
+    if (currentType === types.SkillType) {
+      if (currentValue === stateValue) {
+        return selected.HighlightedAndSelected
+      } else {
+        return selected.Hidden;
+      }
+    }
+    if (currentType === types.Skill) {
+      var skill = skillsObj.skills[currentValue];
+      return skill.skillTypesIds.includes(stateValue)
+        ? selected.Highlighted
+        : selected.Hidden;
+    }
+    throw new Error("is bad type - " + currentType)
+    //return selected.Visible;
   }
   if (stateType === "" && stateValue === "") return selectedIsBlank();
   if (stateType === types.Skill) return selectedIsSkill();
   if (stateType === types.SkillType) return selectedIsSkillType();
   if (stateType === types.Work) return selectedIsWork();
 
-  return selected.Hidden
+  return selected.Visible
 }
