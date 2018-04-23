@@ -94,3 +94,99 @@ module.exports.isSelectedFunc = function (stateType, stateValue, currentType, cu
 
   return selected.Visible
 }
+
+
+module.exports.getSkillTypeStyle = function (s) {
+  switch (s) {
+      case selected.HighlightedAndSelected:
+          return {
+              padding: 5,
+              margin: 5,
+              border: "1px solid black"
+          }
+      case selected.Highlighted:
+          return {
+              //padding: 5,
+              margin: 5,
+              border: "1px solid black"
+          }
+      case selected.Visible:
+          return {
+              // padding: 5,
+              // margin: 5,
+              border: "1px solid black"
+          }
+      case selected.Hidden:
+          return {
+              // padding: 5,
+              // margin: 5,
+              // border: "1px solid black"
+          }
+      default:
+          return {}
+  }
+}
+
+module.exports.getSkillStyle = function (s) {
+  switch (s) {
+      case selected.HighlightedAndSelected:
+          return {
+              padding: 5,
+              margin: 5,
+              border: "1px solid black"
+          }
+      case selected.Highlighted:
+          return {
+              //padding: 5,
+              margin: 5,
+              border: "1px solid black"
+          }
+      case selected.Visible:
+          return {
+              // padding: 5,
+              // margin: 5,
+              border: "1px solid black"
+          }
+      case selected.Hidden:
+          return {
+              // padding: 5,
+              // margin: 5,
+              // border: "1px solid black"
+          }
+      default:
+          return {}
+  }
+}
+
+module.exports.getSettingStyle = function (s) {
+  switch (s) {
+      case selected.HighlightedAndSelected:
+          return {
+            backgroundColor: "green",  
+            // padding: 5,
+            //   margin: 5,
+            //   border: "1px solid black"
+          }
+      case selected.Highlighted:
+          return {
+            backgroundColor: "yellow",  
+            //padding: 5,
+              // margin: 5,
+              // border: "1px solid black"
+          }
+      case selected.Visible:
+          return {
+              // padding: 5,
+              // margin: 5,
+              border: "1px solid black"
+          }
+      case selected.Hidden:
+          return {
+              // padding: 5,
+              // margin: 5,
+              // border: "1px solid black"
+          }
+      default:
+          return {}
+  }
+}

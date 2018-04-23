@@ -1,6 +1,6 @@
 import React from 'react';
 import { getRightSideDivStyle, getLeftSideDivStyle, mixWithBorderAndPadding, mixWithBorder2AndPadding, iconSize } from '../styles/common'
-import { isSelectedFunc, selectedTypes } from './selected'
+import { isSelectedFunc, selectedTypes, getSettingStyle } from './selected'
 import Icons from '../icons'
 
 export default class Experience extends React.Component {
@@ -38,9 +38,10 @@ class WorkPlace extends React.Component {
 
   render() {
     var selected = this.props.isSelected(selectedTypes.Setting, this.props.work.company)
-
+    var selectedStyle = getSettingStyle(selected);
+    var s = Object.assign({  }, selectedStyle)
     return (
-      <div>
+      <div style={{s}}>
         <div onClick={() => this.props.clickSelect(selectedTypes.Setting, this.props.work.company)}
           style={{
             padding: 10,
