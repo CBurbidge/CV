@@ -1,5 +1,5 @@
 import React from 'react';
-import { iconSize, rightSideDivStyle, leftSideDivStyle, mixWithBorderAndPadding, mixWithBorder2AndPadding } from '../styles/common'
+import { iconSize, getRightSideDivStyle, getLeftSideDivStyle, mixWithBorderAndPadding, mixWithBorder2AndPadding } from '../styles/common'
 import { isSelectedFunc, selectedTypes } from './selected'
 import Experience from "./Experience"
 import Icons from '../icons'
@@ -31,8 +31,8 @@ export default class WorkAndSkills extends React.Component {
   render() {
     return (
       <div>
-        <Experience work={this.props.work} clickSelect={this.clickSelect} isSelected={this.isSelected} />
-        <SkillTypes skills={this.props.skills} skillsObj={this.props.skillsObj} clickSelect={this.clickSelect} isSelected={this.isSelected} />
+        <Experience work={this.props.work} clickSelect={this.clickSelect} isSelected={this.isSelected} cvWidth={this.props.cvWidth}  />
+        <SkillTypes skills={this.props.skills} skillsObj={this.props.skillsObj} clickSelect={this.clickSelect} isSelected={this.isSelected} cvWidth={this.props.cvWidth} />
         <hr />
       </div>
     );
@@ -50,11 +50,11 @@ class SkillTypes extends React.Component {
     var allSkills = Object.keys(this.props.skillsObj.skills)
     return (
       <div>
-        <div style={leftSideDivStyle}>
+        <div style={getLeftSideDivStyle(this.props.cvWidth)}>
           <Icons.Tools size={iconSize} />
           {/* <h4>Skills</h4> */}
         </div>
-        <div style={rightSideDivStyle}>
+        <div style={getRightSideDivStyle(this.props.cvWidth)}>
           <div style={mixWithBorderAndPadding({})} >
             <div>
               {this.props.skills.map(x => <SkillType key={x.name} skill={x} skillsObj={this.props.skillsObj}

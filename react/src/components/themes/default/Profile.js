@@ -1,26 +1,23 @@
 import React from 'react';
-import { iconSize, rightSideDivStyle, leftSideDivStyle, mixWithBorderAndPadding } from './styles/common'
+import { iconSize, getRightSideDivStyle, getLeftSideDivStyle, mixWithBorderAndPadding } from './styles/common'
 import Icons from './icons'
 
 export default function (props) {
   return (
-    <Summary basics={props.basics} />
+    <Summary basics={props.basics} cvWidth={props.cvWidth}/>
   );
 }
 
 var Summary = function (props) {
 
   return (
-    <div >
-      <div style={Object.assign(leftSideDivStyle, {
-        maxHeight: 20
-      })}>
+    <div  >
+      <div style={
+        Object.assign(getLeftSideDivStyle(props.cvWidth), {})}>
         <Icons.ExperienceIcon size={iconSize} />
         {/* <h4>Profile</h4> */}
       </div>
-      <div style={Object.assign(rightSideDivStyle, {
-        
-      })}>
+      <div style={Object.assign(getRightSideDivStyle(props.cvWidth), {})}>
         <p style={mixWithBorderAndPadding({
           marginBottom: 0,
           textAlign: "justify",

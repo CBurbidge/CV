@@ -6,7 +6,7 @@ export default class WorkAndSkillsPrint extends React.Component {
   render() {
     return (
       <div>
-        <Experience work={this.props.work} clickSelect={(t, v) => null} isSelected={(t, v) => null} selected={""} />
+        <Experience work={this.props.work} clickSelect={(t, v) => null} isSelected={(t, v) => null} selected={""} cvWidth={this.props.cvWidth} />
         <Skills skills={this.props.skills} skillsObj={this.props.skillsObj} />
         <hr/>
       </div>

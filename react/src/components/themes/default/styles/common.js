@@ -1,16 +1,23 @@
-module.exports.iconSize = 40;
+var iconSize = 50
 
-module.exports.leftSideDivStyle = {
-  width: "10%",
-  minWidth: 120,
-  display: "inline-block",
-  textAlign: "center",
+module.exports.iconSize = iconSize;
+
+module.exports.getLeftSideDivStyle = cvWidth => {
+  return {
+    //width: "10%",
+    //minWidth: iconSize + 30,
+    width: iconSize + 30,
+    display: "inline-block",
+    textAlign: "center",
+  }
 }
 
-module.exports.rightSideDivStyle = {
-  width: "83%",
-  display: "inline-block",
-  marginRight: 5
+module.exports.getRightSideDivStyle = cvWidth => {
+  return {
+    width: cvWidth - 120,
+    display: "inline-block",
+    marginRight: 5
+  }
 }
 
 var mixWithBorder = style => {

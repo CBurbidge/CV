@@ -10,8 +10,8 @@ class App extends Component {
     var theme = "default";
 
     return (
-      <div className="App">
-        <CV jsonResume={resume} skills={skills} theme={theme} print={true} />
+      <div id="cvElement" className="App">
+        <CV jsonResume={resume} skills={skills} theme={theme} print={true} divId={"cvElement"} />
       </div>
     );
   }

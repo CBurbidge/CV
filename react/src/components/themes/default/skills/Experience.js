@@ -1,6 +1,6 @@
 import React from 'react';
-import { rightSideDivStyle, leftSideDivStyle, mixWithBorderAndPadding, mixWithBorder2AndPadding, iconSize } from '../styles/common'
-import selectedTypes from './selected'
+import { getRightSideDivStyle, getLeftSideDivStyle, mixWithBorderAndPadding, mixWithBorder2AndPadding, iconSize } from '../styles/common'
+import { isSelectedFunc, selectedTypes } from './selected'
 import Icons from '../icons'
 
 export default class Experience extends React.Component {
@@ -11,18 +11,19 @@ export default class Experience extends React.Component {
   }
 
   render() {
+    var rightStyle = getRightSideDivStyle(this.props.cvWidth)
     return (
       <div>
-        <div style={leftSideDivStyle}>
+        <div style={getLeftSideDivStyle(this.props.cvWidth)}>
           <Icons.BriefCase size={iconSize} />
           {/* <h4>Experience</h4> */}
         </div>
-        <div style={rightSideDivStyle}>
-          <div style={mixWithBorder2AndPadding({})} >{
-            this.props.work.map(x => <WorkPlace key={x.company} work={x}
-              clickSelect={this.props.clickSelect}
-              isSelected={this.isSelected} />)}
-          </div>
+
+        <div style={mixWithBorder2AndPadding(rightStyle)} >{
+          this.props.work.map(x => <WorkPlace key={x.company} work={x}
+            clickSelect={this.props.clickSelect}
+            isSelected={this.isSelected} />)}
+
         </div>
       </div>
     );
