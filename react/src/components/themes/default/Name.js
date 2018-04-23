@@ -3,7 +3,7 @@ import { rightSideDivStyle, leftSideDivStyle, mixWithBorder, mixWithBorderAndPad
 
 export default function (props) {
   return (
-    <div style={{maxWidth: props.cvWidth}}>
+    <div style={{ maxWidth: props.cvWidth }}>
       {props.print && <Name basics={props.basics} />}
     </div>
   );
@@ -12,7 +12,10 @@ export default function (props) {
 var Name = function (props) {
 
   return (
-    <header style={{ borderBottom: "1px solid black" }}>
+    <header style={{
+      borderBottom: "1px solid black",
+      marginBottom: 20
+    }}>
       <div style={{
         width: "45%",
         minWidth: 150,

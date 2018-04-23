@@ -1,4 +1,6 @@
 var iconSize = 50
+var iconSizePad = 30
+var leftRightDiff = 25
 
 module.exports.iconSize = iconSize;
 
@@ -6,7 +8,7 @@ module.exports.getLeftSideDivStyle = cvWidth => {
   return {
     //width: "10%",
     //minWidth: iconSize + 30,
-    width: iconSize + 30,
+    width: iconSize + iconSizePad,
     display: "inline-block",
     textAlign: "center",
   }
@@ -14,9 +16,9 @@ module.exports.getLeftSideDivStyle = cvWidth => {
 
 module.exports.getRightSideDivStyle = cvWidth => {
   return {
-    width: cvWidth - 120,
+    width: cvWidth - iconSize - iconSizePad - leftRightDiff,
     display: "inline-block",
-    marginRight: 5
+    //marginRight: 5
   }
 }
 

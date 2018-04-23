@@ -16,7 +16,7 @@ class CV extends Component {
   getCVWidth() {
     var maxWidth = 1200;
     var width = document.getElementById(this.props.divId).offsetWidth;
-    return width > maxWidth ? maxWidth : width ;
+    return width > maxWidth ? maxWidth : width;
   }
 
   componentDidMount() {
@@ -35,8 +35,8 @@ class CV extends Component {
   render() {
 
     return (
-      <div>
-        <Default jsonResume={this.props.jsonResume} skills={this.props.skills} print={this.props.print}  cvWidth={this.state.cvWidth} />
+      <div style={{ padding: 2 }}>
+        <Default jsonResume={this.props.jsonResume} skills={this.props.skills} print={this.props.print} cvWidth={this.state.cvWidth} />
       </div>
     );
   }

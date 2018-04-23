@@ -17,11 +17,11 @@ var Summary = function (props) {
         <Icons.ExperienceIcon size={iconSize} />
         {/* <h4>Profile</h4> */}
       </div>
-      <div style={Object.assign(getRightSideDivStyle(props.cvWidth), {})}>
-        <p style={mixWithBorderAndPadding({
-          marginBottom: 0,
+      <div style={Object.assign(getRightSideDivStyle(props.cvWidth), mixWithBorderAndPadding({}))}>
+        <p style={{
+          //marginBottom: 0,
           textAlign: "justify",
-        })} >{props.basics.summary}</p>
+        }} >{props.basics.summary}</p>
       </div>
     </div>
   )

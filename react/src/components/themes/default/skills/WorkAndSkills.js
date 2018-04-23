@@ -33,7 +33,6 @@ export default class WorkAndSkills extends React.Component {
       <div>
         <Experience work={this.props.work} clickSelect={this.clickSelect} isSelected={this.isSelected} cvWidth={this.props.cvWidth}  />
         <SkillTypes skills={this.props.skills} skillsObj={this.props.skillsObj} clickSelect={this.clickSelect} isSelected={this.isSelected} cvWidth={this.props.cvWidth} />
-        <hr />
       </div>
     );
   }
@@ -54,8 +53,7 @@ class SkillTypes extends React.Component {
           <Icons.Tools size={iconSize} />
           {/* <h4>Skills</h4> */}
         </div>
-        <div style={getRightSideDivStyle(this.props.cvWidth)}>
-          <div style={mixWithBorderAndPadding({})} >
+        <div style={mixWithBorderAndPadding(getRightSideDivStyle(this.props.cvWidth))}>
             <div>
               {this.props.skills.map(x => <SkillType key={x.name} skill={x} skillsObj={this.props.skillsObj}
                 clickSelect={this.props.clickSelect}
@@ -65,8 +63,6 @@ class SkillTypes extends React.Component {
               {allSkills.map(x => <Skill key={x} skillId={x} skillsObj={this.props.skillsObj}
                 clickSelect={this.props.clickSelect}
                 isSelected={this.props.isSelected} />)}
-            </div>
-
           </div>
         </div>
       </div>
