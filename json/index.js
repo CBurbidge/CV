@@ -24,5 +24,5 @@ writeToFile("./jsonResume/reduced.json", reducedJson);
 var combined = combineSkillsAndJson(skillz, reducedJson);
 writeToFile("./jsonResume/combined.json", combined);
 
-writeToFile("../react/src/resume.json", combined);
-writeToFile("../react/src/skills.json", skillz);
+writeToFile("../react/src/components/CV/resume.json", combined);
+writeToFile("../react/src/components/CV/skills.json", skillz);
