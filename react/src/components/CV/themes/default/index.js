@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from "prop-types"
-import {resumeType } from "../../../resumeType"
+import {resumeType } from "../../resumeType"
 import Name from "./Name"
 import Profile from "./Profile"
 import WorkAndSkills from "./skills/WorkAndSkills"

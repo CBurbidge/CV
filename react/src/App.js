@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 //import './App.css';
-import CV from './components/CV';
-import resume from "./resume.json";
-import skills from "./skills.json";
+import CV from './components/CV/CV';
+import resume from "./components/CV/resume.json";
+import skills from "./components/CV/skills.json";
 
 class App extends Component {
   

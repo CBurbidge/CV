@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from "prop-types"
-import { resumeType } from "../resumeType"
+import { resumeType } from "./resumeType"
 import Default from './themes/default'
 
 class CV extends Component {
