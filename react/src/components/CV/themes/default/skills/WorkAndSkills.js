@@ -1,8 +1,9 @@
 import React from 'react';
-import { iconSize, isMobile, getRightSideDivStyle, getLeftSideDivStyle, mixWithBorderAndPadding, mixWithBorder2AndPadding } from '../styles/common'
-import { isSelectedFunc, selectedTypes, getSkillTypeStyle, getSkillStyle, getSettingStyle } from './selected'
+import { iconSize, isMobile, getRightSideDivStyle, getLeftSideDivStyle, mixWithBorderAndPadding } from '../styles/common'
+import { isSelectedFunc, selectedTypes, selected as selectedValues, getSkillStyle } from './selected'
 import Experience from "./Experience"
 import Icons from '../icons'
+import "./transitions.css"
 
 export default class WorkAndSkills extends React.Component {
   constructor(props) {
@@ -88,16 +89,32 @@ class SkillType extends React.Component {
 
   render() {
     var selected = this.isSelected(selectedTypes.SkillType, this.props.skill.name);
-    var selectedStyle = getSkillTypeStyle(selected);
+    var selectedStyle = {}// getSkillTypeStyle(selected);
     var basicStyle = {
       display: "inline-block",
       margin: 2
     }
+    var getClass = s => {
+      switch (s) {
+        case selectedValues.HighlightedAndSelected:
+          return "skill-to-s"
+        case selectedValues.Highlighted:
+          return "skill-to-h"
+        case selectedValues.Visible:
+          return "skill-to-v"
+        case selectedValues.Hidden:
+          return "skill-to-i"
+        default:
+          return "null3"
+      }
+    }
+    var clas = getClass(selected)
+
     var s = Object.assign(basicStyle, selectedStyle)
     return (
       <div style={s}>
-        <span onClick={() => this.clickSelect(selectedTypes.SkillType, this.props.skill.name)}>
-          <b>{this.props.skill.name}</b>
+        <span className={clas} onClick={() => this.clickSelect(selectedTypes.SkillType, this.props.skill.name)}>
+          <b >{this.props.skill.name}</b>
         </span>
       </div>
     );
@@ -121,6 +138,23 @@ class Skill extends React.Component {
       margin: 2
     }
     var s = Object.assign(basicStyle, selectedStyle)
+
+    var getClass = s => {
+      switch (s) {
+        case selectedValues.HighlightedAndSelected:
+          return "skill-to-s"
+        case selectedValues.Highlighted:
+          return "skill-to-h"
+        case selectedValues.Visible:
+          return "skill-to-v"
+        case selectedValues.Hidden:
+          return "skill-to-i"
+        default:
+          return "null3"
+      }
+    }
+    var clas = getClass(selected)
+
 
     return (
       <div onClick={() => this.clickSelect(selectedTypes.Skill, this.props.skillId)}

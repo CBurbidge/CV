@@ -1,0 +1,63 @@
+
+.skill-to-s {
+    animation-duration: 1s, 1s;
+    animation-name: textBlackToRed, textSmallToBig;
+    animation-fill-mode: forwards, forwards;    
+}
+
+.skill-to-h {
+    animation-duration: 1s;
+    animation-name: textSmallToBig;
+    animation-fill-mode: forwards;    
+}
+
+.skill-to-v {
+    animation-duration: 1s;
+    animation-name: toVisible;
+    animation-fill-mode: forwards;    
+}
+
+.skill-to-i {
+    animation-duration: 1s;
+    animation-name: toInVisible;
+    animation-fill-mode: forwards;    
+}
+
+@keyframes toInVisible {
+    to {
+        color: grey;
+        font-size: 0.8em;
+    }
+}
+
+@keyframes toVisible {
+    to {
+        color: black;
+        font-size: 1.0em;
+    }
+}
+
+@keyframes textBlackToRed {
+    to {
+        color: red;
+    }
+}
+
+@keyframes textRedToBlack {
+    to {
+        color: black;
+    }
+}
+
+@keyframes textSmallToBig {
+    to {
+        font-size: 1.2em;
+    }
+}
+
+@keyframes textBigToSmall {
+    to {
+        font-size: 1em;
+    }
+}
+

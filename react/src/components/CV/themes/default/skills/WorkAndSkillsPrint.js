@@ -1,5 +1,5 @@
 import React from 'react';
-import { iconSize, isMobile, getRightSideDivStyle, getLeftSideDivStyle, mixWithBorderAndPadding, mixWithBorder2AndPadding } from '../styles/common'
+import { iconSize, isMobile, getRightSideDivStyle, getLeftSideDivStyle, mixWithBorderAndPadding } from '../styles/common'
 import Experience from './Experience'
 import Icons from '../icons'
 
@@ -18,7 +18,7 @@ export default class WorkAndSkillsPrint extends React.Component {
 class Skills extends React.Component {
   render() {
     var isMob = isMobile(this.props.cvWidth)
-    var initialLeftStyle = isMob ? { borderLeft: "3px solid black" } : {}
+    //var initialLeftStyle = isMob ? { borderLeft: "3px solid black" } : {}
     var leftSide = isMob ? <h4>Skills</h4> : <Icons.Tools size={iconSize} />
     return (
       <div>
@@ -52,7 +52,7 @@ class Skill extends React.Component {
 
 class Keyword extends React.Component {
   render() {
-    var selectId = "keyword:" + this.props.keywordId
+    //var selectId = "keyword:" + this.props.keywordId
     var keyWordName = this.props.skillsObj.skills[this.props.keywordId].name
     var commaOrBlank = this.props.isFinal ? "" : ","
     return (
