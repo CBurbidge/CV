@@ -13,7 +13,6 @@ var Name = function (props) {
   return (
     <header style={{
       borderBottom: "1px solid black",
-      //marginBottom: 20,
       display: "flex",
       justifyContent: "space-between"
     }}>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { isMobile, getRightSideDivStyle, getLeftSideDivStyle, mixWithBorder2AndPadding, iconSize } from '../styles/common'
-import { selectedTypes, getSettingStyle } from './selected'
+import { selectedTypes, getSettingStyle, getSettingClass } from './selected'
 import Icons from '../icons'
 
 export default class Experience extends React.Component {
@@ -43,7 +43,7 @@ class WorkPlace extends React.Component {
 
   render() {
     var selected = this.props.isSelected(selectedTypes.Setting, this.props.work.company)
-    var selectedStyle = getSettingStyle(selected);
+    var selectedStyle = getSettingClass(selected);
     var s = Object.assign({}, selectedStyle)
     return (
       <div style={{ s }}>

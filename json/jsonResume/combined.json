@@ -168,7 +168,25 @@
       "website": "https://www.toplev.com/",
       "startDate": "2013-03-01",
       "endDate": "2014-03-01",
-      "summary": "Extending or performing maintenance on customer or internal systems, using in-house developed software analogous to Web Forms, combined with the .Net Framework and other technologies. Role involved understanding client's requests, writing code specications, designs and performing the implementation of code changes, in a workplace that practices agile methodologies."
+      "summary": "Extending or performing maintenance on customer or internal systems, using in-house developed software analogous to Web Forms, combined with the .Net Framework and other technologies. Role involved understanding client's requests, writing code specications, designs and performing the implementation of code changes, in a workplace that practices agile methodologies.",
+      "skills": [
+        "cPlusPlus",
+        "cSharp",
+        "css",
+        "dotNetFramework",
+        "html",
+        "linq",
+        "moq",
+        "nunit",
+        "resharper",
+        "sourceSafe",
+        "sqlServerManagementStudio",
+        "tfs",
+        "tSql",
+        "visualStudio",
+        "vbDotNet",
+        "xml"
+      ]
     }
   ],
   "volunteer": [
