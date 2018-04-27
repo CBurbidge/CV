@@ -150,7 +150,7 @@ module.exports.getSkillClass = function (s) {
         case selected.Hidden:
             return "skill-to-i"
         default:
-            throw new DOMException("Bad value - " + s)
+            throw new Error("Bad value get class - " + s)
     }
 }
 
@@ -165,7 +165,7 @@ module.exports.getSettingClass = function (s) {
         case selected.Hidden:
             return "setting-to-i"
         default:
-            throw new DOMException("Bad value - " + s)
+            throw new Error("Bad value get class - " + s)
     }
 }
 
