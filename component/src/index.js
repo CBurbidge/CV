@@ -1,10 +1,18 @@
 import React, {Component} from 'react'
+import CV from "./components/CV"
+import resume from "./resume.json"
+import skills from "./skills.json"
 
 export default class extends Component {
   render() {
-    return <div>
-      <h2>Welcome to React components</h2>
-      <p>{this.props.children}</p>
-    </div>
+    var theme = "default";
+    var divId = "cvElement"
+    var print = false;
+
+    return (
+      <div id={divId} >
+        <CV jsonResume={resume} skills={skills} theme={theme} print={print} divId={divId} />
+      </div>
+    );
   }
 }
