@@ -1,15 +1,7 @@
-import React, {Component} from 'react'
-import CV from "./components/CV"
-import resume from "./resume.json"
-import skills from "./skills.json"
+import React from 'react';
+import ReactDOM from 'react-dom';
+import CV from './index.nwb';
+import registerServiceWorker from './registerServiceWorker';
 
-export default class extends Component {
-  render() {
-    var theme = "default";
-    var print = !!this.props.print;
-
-    return (
-      <CV jsonResume={resume} skills={skills} theme={theme} print={print} divId={this.props.divId} />
-    );
-  }
-}
+ReactDOM.render(<div id={"cvDiv"}><CV divId={"cvDiv"} /></div>, document.getElementById('root'));
+registerServiceWorker();

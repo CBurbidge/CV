@@ -59,7 +59,7 @@ class SkillTypes extends React.Component {
       margin: 10
     }
 
-    var titlePadding = { 
+    var titlePadding = {
       margin: 10
     }
 
@@ -108,8 +108,15 @@ class SkillType extends React.Component {
     super(props);
     this.clickSelect = this.props.clickSelect.bind(this);
     this.isSelected = this.props.isSelected.bind(this);
+    this.state = { hover: false }
+  }
+  handleMouseIn() {
+    this.setState({ hover: true })
   }
 
+  handleMouseOut() {
+    this.setState({ hover: false })
+  }
   render() {
     var selected = this.isSelected(selectedTypes.SkillType, this.props.skill.name);
     var skillClass = getSkillClass(selected)
@@ -118,10 +125,12 @@ class SkillType extends React.Component {
       padding: 3
     }
     return (
-      <div className={skillClass} style={basicStyle} >
+      <div className={skillClass} style={basicStyle}
+        onMouseOver={this.handleMouseIn.bind(this)} onMouseOut={this.handleMouseOut.bind(this)} >
         <span onClick={() => this.clickSelect(selectedTypes.SkillType, this.props.skill.name)}>
           {this.props.skill.name}
         </span>
+        <SkillLogos skillIds={this.props.skill.keywords} show={this.state.hover} />
       </div>
     );
   }
@@ -158,6 +167,14 @@ class Setting extends React.Component {
     super(props);
     this.clickSelect = this.props.clickSelect.bind(this);
     this.isSelected = this.props.isSelected.bind(this);
+    this.state = { hover: false }
+  }
+  handleMouseIn() {
+    this.setState({ hover: true })
+  }
+
+  handleMouseOut() {
+    this.setState({ hover: false })
   }
 
   render() {
@@ -167,15 +184,55 @@ class Setting extends React.Component {
       display: "inline-block",
       padding: 3
     }
-    var skillClass = getSkillClass(selected)
+    var skillClass = getSettingClass(selected)
+    var slug = company.replace(" ", "")
+    var png = "/logos/settings/" + slug + ".png"
+    var imgStyle = {
+      width: 160
+    }
+
     return (
       <div className={skillClass}
+        onMouseOver={this.handleMouseIn.bind(this)} onMouseOut={this.handleMouseOut.bind(this)}
         style={basicStyle}
         onClick={() => this.clickSelect(selectedTypes.Setting, company)} >
-        <span>{company}</span>
+        <img src={png} style={imgStyle} />
+        <SkillLogos skillIds={this.props.work.skills} show={this.state.hover} />
       </div>
     );
   }
 }
 
+
+class SkillLogos extends React.Component {
+
+  render() {
+    var len = 40
+    var toLogo = function (skillId) {
+      return (<div style={{
+        padding: 2
+      }}>
+        <img height={len} width={len} src={"/logos/skills/" + skillId + ".png"} alt={skillId} />
+      </div>
+      )
+    }
+
+    const tooltipStyle = {
+      display: this.props.show ? 'flex' : 'none',
+      flexWrap: "wrap",
+      position: "absolute",
+      padding: 10,
+      backgroundColor: "white",
+      border: "1px solid black",
+      borderRadius: 10,
+      maxWidth: 500,
+      opacity: 1.0
+    }
+    return (
+      <div style={tooltipStyle}>
+        {this.props.skillIds.map(s => toLogo(s))}
+      </div>
+    );
+  }
+}
 

@@ -179,6 +179,18 @@ module.exports = {
 		]
 	),
 
+	awsECS: "awsECS".toSkill(
+		"AWS ECS",
+		"AWS Elastic Container Service",
+		[
+			skillTypes.cloud,
+			skillTypes.devops,
+		],
+		[
+			settings.scottlogic
+		]
+	),
+
 	awsLambda: "awsLambda".toSkill(
 		"AWS Lambda",
 		"AWS Lambda for data processing and other automation tasks",

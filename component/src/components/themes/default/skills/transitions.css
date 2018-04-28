@@ -1,29 +1,29 @@
 
 .skill-to-s {
     animation-duration: 500ms;
-    animation-name: toSelected;
+    animation-name: toSelectedSkill;
     animation-fill-mode: forwards;    
 }
 
 .skill-to-h {
     animation-duration: 500ms;
-    animation-name: toHighlighted;
+    animation-name: toHighlightedSkill;
     animation-fill-mode: forwards;    
 }
 
 .skill-to-v {
     animation-duration: 500ms;
-    animation-name: toVisible;
+    animation-name: toVisibleSkill;
     animation-fill-mode: forwards;    
 }
 
 .skill-to-i {
     animation-duration: 500ms;
-    animation-name: toInVisible;
+    animation-name: toInvisibleSkill;
     animation-fill-mode: forwards;    
 }
 
-@keyframes toHighlighted {
+@keyframes toHighlightedSkill {
     to {
         color: black;
         font-size: 1.2em;
@@ -35,7 +35,7 @@
 }
 
 
-@keyframes toSelected {
+@keyframes toSelectedSkill {
     to {
         color: red;
         font-size: 1.4em;
@@ -46,7 +46,7 @@
     }
 }
 
-@keyframes toInVisible {
+@keyframes toInvisibleSkill {
     to {
         color: grey;
         font-size: 0.8em;
@@ -55,7 +55,7 @@
     }
 }
 
-@keyframes toVisible {
+@keyframes toVisibleSkill {
     to {
         color: black;
         font-size: 1.0em;
@@ -63,6 +63,75 @@
         border: 1px solid black;
         border-radius: 5px;
         margin: 2px;
+    }
+}
+
+.setting-to-s {
+    animation-duration: 500ms;
+    animation-name: toSelectedSetting;
+    animation-fill-mode: forwards;    
+}
+
+.setting-to-s:hover {
+    opacity: 1.0;    
+}
+
+.setting-to-h {
+    animation-duration: 500ms;
+    animation-name: toHighlightedSetting;
+    animation-fill-mode: forwards;    
+}
+
+.setting-to-h:hover {
+    opacity: 1.0;    
+}
+
+.setting-to-v {
+    animation-duration: 500ms;
+    animation-name: toVisibleSetting;
+    animation-fill-mode: forwards;    
+}
+
+.setting-to-v:hover {
+    opacity: 1.0;    
+}
+
+.setting-to-i {
+    animation-duration: 500ms;
+    animation-name: toInvisibleSetting;
+    animation-fill-mode: forwards;    
+}
+
+.setting-to-i:hover {
+    opacity: 1.0;    
+}
+
+@keyframes toHighlightedSetting {
+    to {
+        padding: 10;
+        opacity: 1.0
+    }
+}
+
+
+@keyframes toSelectedSetting {
+    to {
+        padding: 10;
+        opacity: 1.0
+    }
+}
+
+@keyframes toInvisibleSetting {
+    to {
+        padding: 10;
+        opacity: 0.2
+    }
+}
+
+@keyframes toVisibleSetting {
+    to {
+        padding: 10;
+        opacity: 1.0
     }
 }
 
