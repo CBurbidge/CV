@@ -30,10 +30,11 @@ export default class WorkAndSkills extends React.Component {
   }
 
   render() {
+    var showInstructions = this.state.selectedValue === ""
     return (
       <div>
         <Experience work={this.props.work} cvWidth={this.props.cvWidth} />
-        <SkillTypes work={this.props.work} skills={this.props.skills} skillsObj={this.props.skillsObj} clickSelect={this.clickSelect} isSelected={this.isSelected} cvWidth={this.props.cvWidth} />
+        <SkillTypes showInstructions={showInstructions} work={this.props.work} skills={this.props.skills} skillsObj={this.props.skillsObj} clickSelect={this.clickSelect} isSelected={this.isSelected} cvWidth={this.props.cvWidth} />
       </div>
     );
   }
@@ -63,6 +64,16 @@ class SkillTypes extends React.Component {
       margin: 10
     }
 
+    var instructions = this.props.showInstructions === false ? <div /> : (
+      <div style={{ padding: 20 }}>
+        <i>
+          <b>
+            <p>This is my skills chart, click on a workplace, skill type or skill to start.</p>
+          </b>
+        </i>
+      </div>
+    )
+
     return (
       <div>
         <div style={
@@ -75,7 +86,7 @@ class SkillTypes extends React.Component {
         }>
 
           <div>
-
+            {instructions}
           </div>
           <h4 style={titlePadding} >Work place:</h4>
           <div style={skillsPadding}>
