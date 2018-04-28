@@ -167,6 +167,18 @@ module.exports = {
 		]
 	),
 
+	awsECR: "awsECR".toSkill(
+		"AWS ECR",
+		"AWS Elastic Container Registry",
+		[
+			skillTypes.cloud,
+			skillTypes.devops,
+		],
+		[
+			settings.scottlogic
+		]
+	),
+
 	awsLambda: "awsLambda".toSkill(
 		"AWS Lambda",
 		"AWS Lambda for data processing and other automation tasks",
@@ -361,6 +373,19 @@ module.exports = {
 		],
 		[
 
+		]
+	),
+
+	docker: "docker".toSkill(
+		"Docker",
+		"Container automation software",
+		[
+			skillTypes.backend,
+			skillTypes.cloud,
+			skillTypes.devops,
+		],
+		[
+			settings.scottlogic,
 		]
 	),
 
@@ -639,6 +664,17 @@ module.exports = {
 		]
 	),
 
+	reactJs: "reactJs".toSkill(
+		"react.js",
+		"Front end UI framework",
+		[
+			skillTypes.frontend,
+		],
+		[
+			settings.scottlogic,
+		]
+	),
+
 	resharper: "resharper".toSkill(
 		"Resharper",
 		"A code productivity tool.",
@@ -710,6 +746,18 @@ module.exports = {
 		],
 		[
 			settings.toplevel,
+		]
+	),
+
+	terraform: "terraform".toSkill(
+		"Terraform",
+		"Infrastructure privisioning software",
+		[
+			skillTypes.cloud,
+			skillTypes.devops
+		],
+		[
+			settings.scottlogic,
 		]
 	),
 

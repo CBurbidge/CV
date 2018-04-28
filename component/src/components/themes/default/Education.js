@@ -12,6 +12,11 @@ export default function (props) {
     var fStart = formatDate(edu.startDate);
     var fEnd = formatDate(edu.endDate);
 
+    var eduBottomStyle = { 
+      maxWidth: "50%",
+      padding: 10, 
+    }
+
     return (<div key={key}>
       <div style={{
         padding: 10,
@@ -34,8 +39,8 @@ export default function (props) {
           display: "flex",
           justifyContent: "space-evenly"
         }}>
-          <span style={{ maxWidth: "50%" }}>{edu.studyType}</span>
-          <span style={{ maxWidth: "50%" }}><b>{edu.gpa}</b></span>
+          <span style={eduBottomStyle}>{edu.studyType}</span>
+          <span style={eduBottomStyle}><b>{edu.gpa}</b></span>
         </div>
       </div>
     </div>);

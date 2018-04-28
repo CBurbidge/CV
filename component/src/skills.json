@@ -28,6 +28,7 @@
         "awsS3",
         "cPlusPlus",
         "cSharp",
+        "docker",
         "dotNetFramework",
         "linq",
         "nunit",
@@ -54,13 +55,16 @@
         "awsCloudformation",
         "awsDynamoDB",
         "awsEC2",
+        "awsECR",
         "awsLambda",
         "awsKinesis",
         "awsOpsworks",
         "awsRedshift",
         "awsSqs",
         "awsS3",
-        "powershell"
+        "docker",
+        "powershell",
+        "terraform"
       ]
     },
     {
@@ -68,17 +72,20 @@
       "level": "Advanced",
       "keywords": [
         "azureResourceManager",
+        "awsECR",
         "awsLambda",
         "awsOpsworks",
         "bashScripting",
         "cake",
         "chef",
         "continuousIntegration",
+        "docker",
         "git",
         "grunt",
         "octopusDeploy",
         "packer",
         "powershell",
+        "terraform",
         "teamcity"
       ]
     },
@@ -100,6 +107,7 @@
         "jquery",
         "knockoutJs",
         "less",
+        "reactJs",
         "resharper",
         "typescript",
         "visualStudio"
@@ -251,11 +259,13 @@
         "azureSqlDw",
         "azureResourceManager",
         "azureHdInsights",
+        "awsECR",
         "bashScripting",
         "bootstrap",
         "continuousIntegration",
         "cSharp",
         "css",
+        "docker",
         "dotNetFramework",
         "esSixPromises",
         "fSharp",
@@ -265,8 +275,10 @@
         "jira",
         "linq",
         "nunit",
+        "reactJs",
         "restfulWebservices",
         "sqlServerManagementStudio",
+        "terraform",
         "tSql",
         "visualStudio"
       ]
@@ -421,6 +433,18 @@
       ],
       "settingsIds": [
         "abide"
+      ]
+    },
+    "awsECR": {
+      "id": "awsECR",
+      "name": "AWS ECR",
+      "description": "AWS Elastic Container Registry",
+      "skillTypesIds": [
+        "cloud",
+        "devops"
+      ],
+      "settingsIds": [
+        "scottlogic"
       ]
     },
     "awsLambda": {
@@ -615,6 +639,19 @@
         "frontend"
       ],
       "settingsIds": []
+    },
+    "docker": {
+      "id": "docker",
+      "name": "Docker",
+      "description": "Container automation software",
+      "skillTypesIds": [
+        "backend",
+        "cloud",
+        "devops"
+      ],
+      "settingsIds": [
+        "scottlogic"
+      ]
     },
     "dotNetFramework": {
       "id": "dotNetFramework",
@@ -883,6 +920,17 @@
         "abide"
       ]
     },
+    "reactJs": {
+      "id": "reactJs",
+      "name": "react.js",
+      "description": "Front end UI framework",
+      "skillTypesIds": [
+        "frontend"
+      ],
+      "settingsIds": [
+        "scottlogic"
+      ]
+    },
     "resharper": {
       "id": "resharper",
       "name": "Resharper",
@@ -947,6 +995,18 @@
       "skillTypesIds": [],
       "settingsIds": [
         "toplevel"
+      ]
+    },
+    "terraform": {
+      "id": "terraform",
+      "name": "Terraform",
+      "description": "Infrastructure privisioning software",
+      "skillTypesIds": [
+        "cloud",
+        "devops"
+      ],
+      "settingsIds": [
+        "scottlogic"
       ]
     },
     "teamcity": {

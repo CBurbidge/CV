@@ -32,8 +32,8 @@ export default class WorkAndSkills extends React.Component {
   render() {
     return (
       <div>
-        <Experience work={this.props.work} clickSelect={this.clickSelect} isSelected={this.isSelected} cvWidth={this.props.cvWidth} />
-        <SkillTypes skills={this.props.skills} skillsObj={this.props.skillsObj} clickSelect={this.clickSelect} isSelected={this.isSelected} cvWidth={this.props.cvWidth} />
+        <Experience work={this.props.work} cvWidth={this.props.cvWidth} />
+        <SkillTypes work={this.props.work} skills={this.props.skills} skillsObj={this.props.skillsObj} clickSelect={this.clickSelect} isSelected={this.isSelected} cvWidth={this.props.cvWidth} />
       </div>
     );
   }
@@ -52,7 +52,16 @@ class SkillTypes extends React.Component {
     var initialLeftStyle = isMob ? { borderLeft: "3px solid black" } : {}
     var leftSide = isMob ? <h4>Skills</h4> : <Icons.Tools size={iconSize} />
 
-    var skillsPadding = { margin: 10 }
+    var skillsPadding = {
+      display: "flex",
+      flexWrap: "wrap",
+      justifyContent: "space-between",
+      margin: 10
+    }
+
+    var titlePadding = { 
+      margin: 10
+    }
 
     return (
       <div>
@@ -64,11 +73,25 @@ class SkillTypes extends React.Component {
         <div style={
           Object.assign({}, mixWithBorderAndPadding(getRightSideDivStyle(this.props.cvWidth)))
         }>
+
+          <div>
+
+          </div>
+          <h4 style={titlePadding} >Work place:</h4>
+          <div style={skillsPadding}>
+            {this.props.work.map(x => <Setting key={x.name} work={x} skillsObj={this.props.skillsObj}
+              clickSelect={this.props.clickSelect}
+              isSelected={this.props.isSelected} />)}
+          </div>
+
+          <h4 style={titlePadding} >Skill types:</h4>
           <div style={skillsPadding}>
             {this.props.skills.map(x => <SkillType key={x.name} skill={x} skillsObj={this.props.skillsObj}
               clickSelect={this.props.clickSelect}
               isSelected={this.props.isSelected} />)}
           </div>
+
+          <h4 style={titlePadding} >Skills:</h4>
           <div style={skillsPadding}>
             {allSkills.map(x => <Skill key={x} skillId={x} skillsObj={this.props.skillsObj}
               clickSelect={this.props.clickSelect}
@@ -97,7 +120,7 @@ class SkillType extends React.Component {
     return (
       <div className={skillClass} style={basicStyle} >
         <span onClick={() => this.clickSelect(selectedTypes.SkillType, this.props.skill.name)}>
-          <b >{this.props.skill.name}</b>
+          {this.props.skill.name}
         </span>
       </div>
     );
@@ -125,6 +148,31 @@ class Skill extends React.Component {
         style={basicStyle}
         onClick={() => this.clickSelect(selectedTypes.Skill, this.props.skillId)} >
         <span>{skillName}</span>
+      </div>
+    );
+  }
+}
+
+class Setting extends React.Component {
+  constructor(props) {
+    super(props);
+    this.clickSelect = this.props.clickSelect.bind(this);
+    this.isSelected = this.props.isSelected.bind(this);
+  }
+
+  render() {
+    var company = this.props.work.company;
+    var selected = this.isSelected(selectedTypes.Setting, company)
+    var basicStyle = {
+      display: "inline-block",
+      padding: 3
+    }
+    var skillClass = getSkillClass(selected)
+    return (
+      <div className={skillClass}
+        style={basicStyle}
+        onClick={() => this.clickSelect(selectedTypes.Setting, company)} >
+        <span>{company}</span>
       </div>
     );
   }

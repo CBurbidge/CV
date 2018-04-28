@@ -4,11 +4,6 @@ import { selectedTypes, getSettingStyle, getSettingClass } from './selected'
 import Icons from '../icons'
 
 export default class Experience extends React.Component {
-  constructor(props) {
-    super(props);
-    this.clickSelect = this.props.clickSelect.bind(this);
-    this.isSelected = this.props.isSelected.bind(this);
-  }
 
   render() {
     var rightStyle = getRightSideDivStyle(this.props.cvWidth)
@@ -25,9 +20,7 @@ export default class Experience extends React.Component {
         </div>
 
         <div style={mixWithBorder2AndPadding(rightStyle)} >{
-          this.props.work.map(x => <WorkPlace key={x.company} work={x}
-            clickSelect={this.props.clickSelect}
-            isSelected={this.isSelected} />)}
+          this.props.work.map(x => <WorkPlace key={x.company} work={x} />)}
 
         </div>
       </div>
@@ -38,16 +31,12 @@ export default class Experience extends React.Component {
 class WorkPlace extends React.Component {
   constructor(props) {
     super(props);
-    this.clickSelect = this.props.clickSelect.bind(this);
   }
 
   render() {
-    var selected = this.props.isSelected(selectedTypes.Setting, this.props.work.company)
-    var selectedStyle = getSettingClass(selected);
-    var s = Object.assign({}, selectedStyle)
     return (
-      <div style={{ s }}>
-        <div onClick={() => this.props.clickSelect(selectedTypes.Setting, this.props.work.company)}
+      <div >
+        <div 
           style={{
             padding: 10,
             borderLeft: "3px solid black",

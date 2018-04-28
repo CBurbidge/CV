@@ -79,7 +79,7 @@ module.exports.isSelectedFunc = function (stateType, stateValue, currentType, cu
                 return selected.Highlighted
             }
             else {
-                return selected.Visible
+                return selected.Hidden
             }
         }
         throw new Error("is bad type - " + currentType)
