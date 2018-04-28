@@ -127,14 +127,17 @@ class SkillType extends React.Component {
     // if(this.state.hover){
     //   skillClass = getSkillClass(selectedValues.Visible)
     // }
-    
+
     return (
       <div className={skillClass} style={basicStyle}
         onMouseOver={this.handleMouseIn.bind(this)} onMouseOut={this.handleMouseOut.bind(this)} >
         <span onClick={() => this.clickSelect(selectedTypes.SkillType, this.props.skill.name)}>
           {this.props.skill.name}
         </span>
-        <SkillLogos skillIds={this.props.skill.keywords} show={this.state.hover} />
+        <SkillLogos
+          skillIds={this.props.skill.keywords} show={this.state.hover}
+          clickSelect={this.clickSelect}
+        />
       </div>
     );
   }
@@ -189,7 +192,7 @@ class Setting extends React.Component {
       padding: 3
     }
     var settingClass = getSettingClass(selected)
-    if(this.state.hover){
+    if (this.state.hover) {
       settingClass = getSettingClass(selectedValues.HighlightedAndSelected)
     }
     var slug = company.replace(" ", "")
@@ -201,10 +204,13 @@ class Setting extends React.Component {
     return (
       <div className={settingClass}
         onMouseOver={this.handleMouseIn.bind(this)} onMouseOut={this.handleMouseOut.bind(this)}
-        style={basicStyle}
-        onClick={() => this.clickSelect(selectedTypes.Setting, company)} >
-        <img src={png} style={imgStyle} />
-        <SkillLogos skillIds={this.props.work.skills} show={this.state.hover} />
+        style={basicStyle} >
+        <img src={png}
+          style={imgStyle}
+          onClick={() => this.clickSelect(selectedTypes.Setting, company)} />
+        <SkillLogos
+          skillIds={this.props.work.skills} show={this.state.hover}
+          clickSelect={this.clickSelect} />
       </div>
     );
   }
@@ -212,14 +218,22 @@ class Setting extends React.Component {
 
 
 class SkillLogos extends React.Component {
+  constructor(props) {
+    super(props);
+    this.clickSelect = this.props.clickSelect.bind(this);
+  }
 
   render() {
     var len = 40
-    var toLogo = function (skillId) {
+    var toLogo = function (skillId, clickSelect) {
       return (<div style={{
         padding: 2
       }}>
-        <img height={len} width={len} src={"/logos/skills/" + skillId + ".png"} alt={skillId} />
+        <img
+          height={len} width={len}
+          src={"/logos/skills/" + skillId + ".png"} alt={skillId}
+          onClick={() => clickSelect(selectedTypes.Skill, skillId)}
+        />
       </div>
       )
     }
@@ -237,7 +251,7 @@ class SkillLogos extends React.Component {
     }
     return (
       <div style={tooltipStyle}>
-        {this.props.skillIds.map(s => toLogo(s))}
+        {this.props.skillIds.map(s => toLogo(s, this.clickSelect))}
       </div>
     );
   }
