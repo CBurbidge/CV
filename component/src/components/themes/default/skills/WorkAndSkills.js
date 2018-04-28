@@ -1,6 +1,6 @@
 import React from 'react';
 import { iconSize, isMobile, getRightSideDivStyle, getLeftSideDivStyle, mixWithBorderAndPadding } from '../styles/common'
-import { isSelectedFunc, selectedTypes, getSkillClass, getSettingClass, getSkillStyle } from './selected'
+import { isSelectedFunc, selected as selectedValues, selectedTypes, getSkillClass, getSettingClass, getSkillStyle } from './selected'
 import Experience from "./Experience"
 import Icons from '../icons'
 import "./transitions.css"
@@ -124,6 +124,10 @@ class SkillType extends React.Component {
       display: "inline-block",
       padding: 3
     }
+    // if(this.state.hover){
+    //   skillClass = getSkillClass(selectedValues.Visible)
+    // }
+    
     return (
       <div className={skillClass} style={basicStyle}
         onMouseOver={this.handleMouseIn.bind(this)} onMouseOut={this.handleMouseOut.bind(this)} >
@@ -184,7 +188,10 @@ class Setting extends React.Component {
       display: "inline-block",
       padding: 3
     }
-    var skillClass = getSettingClass(selected)
+    var settingClass = getSettingClass(selected)
+    if(this.state.hover){
+      settingClass = getSettingClass(selectedValues.HighlightedAndSelected)
+    }
     var slug = company.replace(" ", "")
     var png = "/logos/settings/" + slug + ".png"
     var imgStyle = {
@@ -192,7 +199,7 @@ class Setting extends React.Component {
     }
 
     return (
-      <div className={skillClass}
+      <div className={settingClass}
         onMouseOver={this.handleMouseIn.bind(this)} onMouseOut={this.handleMouseOut.bind(this)}
         style={basicStyle}
         onClick={() => this.clickSelect(selectedTypes.Setting, company)} >

@@ -72,18 +72,10 @@
     animation-fill-mode: forwards;    
 }
 
-.setting-to-s:hover {
-    opacity: 1.0;    
-}
-
 .setting-to-h {
     animation-duration: 500ms;
     animation-name: toHighlightedSetting;
     animation-fill-mode: forwards;    
-}
-
-.setting-to-h:hover {
-    opacity: 1.0;    
 }
 
 .setting-to-v {
@@ -92,18 +84,10 @@
     animation-fill-mode: forwards;    
 }
 
-.setting-to-v:hover {
-    opacity: 1.0;    
-}
-
 .setting-to-i {
     animation-duration: 500ms;
     animation-name: toInvisibleSetting;
     animation-fill-mode: forwards;    
-}
-
-.setting-to-i:hover {
-    opacity: 1.0;    
 }
 
 @keyframes toHighlightedSetting {
