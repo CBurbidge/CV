@@ -48,6 +48,7 @@
         "azureResourceManager",
         "azureHdInsights",
         "awsECR",
+        "awsECS",
         "bashScripting",
         "bootstrap",
         "continuousIntegration",
@@ -293,6 +294,7 @@
         "awsDynamoDB",
         "awsEC2",
         "awsECR",
+        "awsECS",
         "awsLambda",
         "awsKinesis",
         "awsOpsworks",
@@ -310,6 +312,7 @@
       "keywords": [
         "azureResourceManager",
         "awsECR",
+        "awsECS",
         "awsLambda",
         "awsOpsworks",
         "bashScripting",

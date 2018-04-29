@@ -58,9 +58,13 @@ export default class WorkAndSkills extends React.Component {
           name = that.state.selectedValue
           break;
       }
+      var pStyle = {
+        marginTop: 5,
+        marginBottom: 5
+      }
       return <div>
-        <p><span><b>{headingType}</b></span>{": " + name}</p>
-        <p>{description}</p>
+        <p style={pStyle} ><span><b>{headingType}</b></span>{": " + name}</p>
+        <p style={pStyle} >{description}</p>
       </div>
     }
     var getSelectedText = function () {
@@ -76,7 +80,10 @@ export default class WorkAndSkills extends React.Component {
       </div>)
 
       return (
-        <div style={{ padding: 20 }}>
+        <div style={{
+          padding: 10,
+          marginLeft: 20
+        }}>
           {text}
         </div>
       )
@@ -286,7 +293,8 @@ class SkillLogos extends React.Component {
         padding: 2
       }}>
         <img
-          height={len} width={len}
+          //height={len} 
+          width={len}
           src={"/logos/skills/" + skillId + ".png"} alt={skillId}
           onClick={() => clickSelect(selectedTypes.Skill, skillId)}
         />

@@ -16,35 +16,34 @@ String.prototype.toSkillType = function (name, description, levelArg) {
 module.exports = {
 	async: "async".toSkillType(
 		"Asynchronous Programming",
-		"The practice of writing asynchronous code."
+		"Asynchronous programming is a means of parallel programming in which a unit of work runs separately from the main application thread and notifies the calling thread of its completion, failure or progress."
 	),
 	backend: "backend".toSkillType(
 		"Back End",
-		"'Back end' development concerns server side technologies like C#."),
+		"Back end Development refers to the server side of development which usually consists of three parts: a server, an application, and a database. Code written by back end developers is what communicates the database information to the browser."),
 	cloud: "cloud".toSkillType(
 		"Cloud Computing",
-		"cloud development skills, mostly AWS"
+		"Cloud computing is the delivery of computing services – servers, storage, databases, networking, software, analytics and more over the Internet."
 	),
 	devops: "devops".toSkillType(
 		"Devops",
-		"devops, automation and continuous delivery practices"
-
+		"DevOps is a software engineering culture and practice that aims at unifying software development and software operations"
 	),
 	frontend: "frontend".toSkillType(
 		"Front End",
-		"Front End development concerns client side technologies like javascript.",
+		"Front-end web development is the practice of converting data to graphical interface for user to view and interact with data through digital interaction using HTML, CSS and Javascript.",
 		"Competent"
 	),
 	functional: "functional".toSkillType(
 		"Functional Programming",
-		""
+		"Programming paradigm that treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data."
 	),
 	oop: "oop".toSkillType(
 		"Object Oriented Programming",
-		""
+		"Object oriented programming is a programming paradigm based on the concept of \"objects\", which may contain data and procedures."
 	),
 	tdd: "tdd".toSkillType(
 		"Test Driven Development",
-		"The practice of writing automated tests before writing code."
+		"Test Driven Development is a software development process that relies on the repetition of a very short development cycle: requirements are turned into very specific test cases, then the software is improved to pass the new tests, only."
 	),
 }

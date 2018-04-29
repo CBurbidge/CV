@@ -23,23 +23,23 @@ String.prototype.toSetting = function (name, description, dateRange) {
 module.exports = {
 	toplevel: "toplevel".toSetting(
 		"Toplevel Computing",
-		"Toplevel computing - Graduate Developer",
+		"Graduate Developer - Digital case management solutions that help Government and Public Sector meet the Digital by Default Service Standard quickly, securely and cost effectively.",
 		new DateRange(new Date(2013, 3), new Date(2014, 3))),
 
 	fundslibrary: "fundslibrary".toSetting(
 		"Fundslibrary",
-		"Fundslibrary - Junior Developer",
+		"Junior Developer - FundsLibrary is one of the investments industry's leading providers of fund data, related regulatory services and software solutions.",
 		new DateRange(new Date(2014, 3), new Date(2015, 2))),
 
 	abide: "abide".toSetting(
 		"Abide Financial",
-		"Regulatory reporting for financial markets",
+		"Abide Financial is a leading transaction reporting provider with proven solutions across multiple regulatory regimes.",
 		new DateRange(new Date(2015, 3), new Date(2017, 10))
 	),
 
 	scottlogic: "scottlogic".toSetting(
 		"Scott Logic",
-		"Software Consultency",
+		"UK-based software consultancy working in a variety of different sectors including capital markets; energy trading; e-trading; financial services; health care; oil & gas and the public sector.",
 		new DateRange(new Date(2017, 10), undefined)
 	)
 }
