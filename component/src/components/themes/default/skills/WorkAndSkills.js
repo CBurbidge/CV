@@ -293,7 +293,7 @@ class SkillLogos extends React.Component {
         padding: 2
       }}>
         <img
-          //height={len} 
+          height={len} 
           width={len}
           src={"/logos/skills/" + skillId + ".png"} alt={skillId}
           onClick={() => clickSelect(selectedTypes.Skill, skillId)}
