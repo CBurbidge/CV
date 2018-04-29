@@ -1,7 +1,7 @@
 import React from 'react';
-import { isMobile, getRightSideDivStyle, getLeftSideDivStyle, mixWithBorder2AndPadding, iconSize } from '../styles/common'
-import { selectedTypes, getSettingStyle, getSettingClass } from './selected'
-import Icons from '../icons'
+import { isMobile, getRightSideDivStyle, getLeftSideDivStyle, mixWithBorder2AndPadding, iconSize } from './styles/common'
+import { selectedTypes, getSettingStyle, getSettingClass } from './skills/selected'
+import Icons from './icons'
 
 export default class Experience extends React.Component {
 

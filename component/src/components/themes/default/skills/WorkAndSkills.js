@@ -1,7 +1,7 @@
 import React from 'react';
 import { iconSize, isMobile, getRightSideDivStyle, getLeftSideDivStyle, mixWithBorderAndPadding } from '../styles/common'
 import { isSelectedFunc, selected as selectedValues, selectedTypes, getSkillClass, getSettingClass, getSkillStyle } from './selected'
-import Experience from "./Experience"
+import Experience from "../Experience"
 import Icons from '../icons'
 import "./transitions.css"
 
@@ -30,11 +30,62 @@ export default class WorkAndSkills extends React.Component {
   }
 
   render() {
-    var showInstructions = this.state.selectedValue === ""
+    var that = this;
+    var getSelectedInfo = function () {
+      var headingType = "";
+      var type = that.state.selectedType
+      var name = "todo"
+      var description = "todo"
+      switch (type) {
+        case selectedTypes.Skill:
+          headingType = "Skill";
+          var skill = that.props.skillsObj.skills[that.state.selectedValue]
+          name = skill.name;
+          description = skill.description
+          break;
+        case selectedTypes.Setting:
+          var setting = Object.values(that.props.skillsObj.settings)
+            .filter(s => s.name === that.state.selectedValue)[0]
+          description = setting.description
+          headingType = "Work place";
+          name = that.state.selectedValue
+          break;
+        case selectedTypes.SkillType:
+          var skillType = Object.values(that.props.skillsObj.skillTypes)
+            .filter(s => s.name === that.state.selectedValue)[0]
+          description = skillType.description
+          headingType = "Skill type";
+          name = that.state.selectedValue
+          break;
+      }
+      return <div>
+        <p><span><b>{headingType}</b></span>{": " + name}</p>
+        <p>{description}</p>
+      </div>
+    }
+    var getSelectedText = function () {
+      var isInstructions = (that.state.selectedValue === "");
+      var text = isInstructions ? (<div>
+        <i>
+          <b>
+            <p>Click on a workplace, skill type or skill to start.</p>
+          </b>
+        </i>
+      </div>) : (<div>
+        {getSelectedInfo()}
+      </div>)
+
+      return (
+        <div style={{ padding: 20 }}>
+          {text}
+        </div>
+      )
+    }
+
     return (
       <div>
         <Experience work={this.props.work} cvWidth={this.props.cvWidth} />
-        <SkillTypes showInstructions={showInstructions} work={this.props.work} skills={this.props.skills} skillsObj={this.props.skillsObj} clickSelect={this.clickSelect} isSelected={this.isSelected} cvWidth={this.props.cvWidth} />
+        <SkillTypes getSelectedText={getSelectedText} work={this.props.work} skills={this.props.skills} skillsObj={this.props.skillsObj} clickSelect={this.clickSelect} isSelected={this.isSelected} cvWidth={this.props.cvWidth} />
       </div>
     );
   }
@@ -45,6 +96,7 @@ class SkillTypes extends React.Component {
     super(props);
     this.clickSelect = this.props.clickSelect.bind(this);
     this.isSelected = this.props.isSelected.bind(this);
+    this.getSelectedText = this.props.getSelectedText.bind(this);
   }
 
   render() {
@@ -57,22 +109,15 @@ class SkillTypes extends React.Component {
       display: "flex",
       flexWrap: "wrap",
       justifyContent: "space-between",
-      margin: 10
+      margin: 10,
+      border: "2px solid black",
+      padding: 10,
+      borderRadius: 10
     }
 
     var titlePadding = {
       margin: 10
     }
-
-    var instructions = this.props.showInstructions === false ? <div /> : (
-      <div style={{ padding: 20 }}>
-        <i>
-          <b>
-            <p>This is my skills chart, click on a workplace, skill type or skill to start.</p>
-          </b>
-        </i>
-      </div>
-    )
 
     return (
       <div>
@@ -86,23 +131,23 @@ class SkillTypes extends React.Component {
         }>
 
           <div>
-            {instructions}
+            {this.getSelectedText()}
           </div>
-          <h4 style={titlePadding} >Work place:</h4>
+          {/* <h4 style={titlePadding} >Work place:</h4> */}
           <div style={skillsPadding}>
             {this.props.work.map(x => <Setting key={x.name} work={x} skillsObj={this.props.skillsObj}
               clickSelect={this.props.clickSelect}
               isSelected={this.props.isSelected} />)}
           </div>
 
-          <h4 style={titlePadding} >Skill types:</h4>
+          {/* <h4 style={titlePadding} >Skill types:</h4> */}
           <div style={skillsPadding}>
             {this.props.skills.map(x => <SkillType key={x.name} skill={x} skillsObj={this.props.skillsObj}
               clickSelect={this.props.clickSelect}
               isSelected={this.props.isSelected} />)}
           </div>
 
-          <h4 style={titlePadding} >Skills:</h4>
+          {/* <h4 style={titlePadding} >Skills:</h4> */}
           <div style={skillsPadding}>
             {allSkills.map(x => <Skill key={x} skillId={x} skillsObj={this.props.skillsObj}
               clickSelect={this.props.clickSelect}

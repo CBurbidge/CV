@@ -1,6 +1,6 @@
 import React from 'react';
 import { iconSize, isMobile, getRightSideDivStyle, getLeftSideDivStyle, mixWithBorderAndPadding } from '../styles/common'
-import Experience from './Experience'
+import Experience from '../Experience'
 import Icons from '../icons'
 
 export default class WorkAndSkillsPrint extends React.Component {
@@ -9,7 +9,7 @@ export default class WorkAndSkillsPrint extends React.Component {
       <div>
         <Experience work={this.props.work} clickSelect={(t, v) => null} isSelected={(t, v) => null} selected={""} cvWidth={this.props.cvWidth} />
         <Skills skills={this.props.skills} skillsObj={this.props.skillsObj} cvWidth={this.props.cvWidth} />
-        <hr/>
+        <hr />
       </div>
     );
   }
@@ -26,7 +26,7 @@ class Skills extends React.Component {
           {leftSide}
         </div>
         <div style={getRightSideDivStyle(this.props.cvWidth)}>
-          <div style={mixWithBorderAndPadding({padding: 10})} >{
+          <div style={mixWithBorderAndPadding({ padding: 10 })} >{
             this.props.skills.map(x => <Skill key={x.name} skill={x} skillsObj={this.props.skillsObj} />)}
           </div>
         </div>
