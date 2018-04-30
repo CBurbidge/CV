@@ -14,3 +14,6 @@ if(test-path $buildIndexPath){
   
   mv $buildIndexPath $indexPath
 }
+
+write-host "running 'npm run-script build'"
+npm run-script build
