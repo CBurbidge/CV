@@ -1,6 +1,6 @@
 import React from 'react';
 import { iconSize, isMobile, getRightSideDivStyle, getLeftSideDivStyle, mixWithBorderAndPadding } from '../styles/common'
-import { isSelectedFunc, selected as selectedValues, selectedTypes, getSkillClass, getSettingClass, getSkillStyle } from './selected'
+import { isSelectedFunc, selected as selectedValues, selectedTypes, getSkillClass, getSettingClass } from './selected'
 import Experience from "../Experience"
 import Icons from '../icons'
 import "./transitions.css"
@@ -140,23 +140,21 @@ class SkillTypes extends React.Component {
           <div>
             {this.getSelectedText()}
           </div>
-          {/* <h4 style={titlePadding} >Work place:</h4> */}
+
           <div style={skillsPadding}>
-            {this.props.work.map(x => <Setting key={x.name} work={x} skillsObj={this.props.skillsObj}
+            {this.props.work.map(x => <Setting key={x.company} work={x} skillsObj={this.props.skillsObj} cvWidth={this.props.cvWidth}
               clickSelect={this.props.clickSelect}
               isSelected={this.props.isSelected} />)}
           </div>
 
-          {/* <h4 style={titlePadding} >Skill types:</h4> */}
           <div style={skillsPadding}>
-            {this.props.skills.map(x => <SkillType key={x.name} skill={x} skillsObj={this.props.skillsObj}
+            {this.props.skills.map(x => <SkillType key={x.name} skill={x} skillsObj={this.props.skillsObj} cvWidth={this.props.cvWidth}
               clickSelect={this.props.clickSelect}
               isSelected={this.props.isSelected} />)}
           </div>
 
-          {/* <h4 style={titlePadding} >Skills:</h4> */}
           <div style={skillsPadding}>
-            {allSkills.map(x => <Skill key={x} skillId={x} skillsObj={this.props.skillsObj}
+            {allSkills.map(x => <Skill key={x} skillId={x} skillsObj={this.props.skillsObj} cvWidth={this.props.cvWidth}
               clickSelect={this.props.clickSelect}
               isSelected={this.props.isSelected} />)}
           </div>
@@ -199,7 +197,7 @@ class SkillType extends React.Component {
         </span>
         <SkillLogos
           skillIds={this.props.skill.keywords} show={this.state.hover}
-          clickSelect={this.clickSelect}
+          clickSelect={this.clickSelect} cvWidth={this.props.cvWidth}
         />
       </div>
     );
@@ -273,7 +271,8 @@ class Setting extends React.Component {
           onClick={() => this.clickSelect(selectedTypes.Setting, company)} />
         <SkillLogos
           skillIds={this.props.work.skills} show={this.state.hover}
-          clickSelect={this.clickSelect} />
+          clickSelect={this.clickSelect} cvWidth={this.props.cvWidth}
+        />
       </div>
     );
   }
@@ -289,11 +288,11 @@ class SkillLogos extends React.Component {
   render() {
     var len = 40
     var toLogo = function (skillId, clickSelect) {
-      return (<div style={{
+      return (<div key={skillId} style={{
         padding: 2
       }}>
         <img
-          height={len} 
+          height={len}
           width={len}
           src={"/logos/skills/" + skillId + ".png"} alt={skillId}
           onClick={() => clickSelect(selectedTypes.Skill, skillId)}
@@ -301,6 +300,7 @@ class SkillLogos extends React.Component {
       </div>
       )
     }
+    var dontShowComponent = isMobile(this.props.cvWidth)
 
     const tooltipStyle = {
       display: this.props.show ? 'flex' : 'none',
@@ -313,11 +313,13 @@ class SkillLogos extends React.Component {
       maxWidth: 500,
       opacity: 1.0
     }
-    return (
-      <div style={tooltipStyle}>
-        {this.props.skillIds.map(s => toLogo(s, this.clickSelect))}
-      </div>
-    );
+
+    return dontShowComponent ? (<div />) :
+      (
+        <div style={tooltipStyle}>
+          {this.props.skillIds.map(s => toLogo(s, this.clickSelect))}
+        </div>
+      );
   }
 }
 
