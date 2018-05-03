@@ -635,7 +635,7 @@
     "css": {
       "id": "css",
       "name": "CSS",
-      "description": "Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML.[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript",
+      "description": "Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript",
       "skillTypesIds": [
         "frontend"
       ],
@@ -1170,7 +1170,7 @@
     "toplevel": {
       "id": "toplevel",
       "name": "Toplevel Computing",
-      "description": "Graduate Developer - Digital case management solutions that help Government and Public Sector meet the Digital by Default Service Standard quickly, securely and cost effectively.",
+      "description": "Digital case management solutions that help Government and Public Sector meet the Digital by Default Service Standard quickly, securely and cost effectively.",
       "dateRange": {
         "startDate": "2013-03-31T23:00:00.000Z",
         "endDate": "2014-03-31T23:00:00.000Z"
@@ -1179,7 +1179,7 @@
     "fundslibrary": {
       "id": "fundslibrary",
       "name": "Fundslibrary",
-      "description": "Junior Developer - FundsLibrary is one of the investments industry's leading providers of fund data, related regulatory services and software solutions.",
+      "description": "FundsLibrary is one of the investments industry's leading providers of fund data, related regulatory services and software solutions.",
       "dateRange": {
         "startDate": "2014-03-31T23:00:00.000Z",
         "endDate": "2015-03-01T00:00:00.000Z"

@@ -7,7 +7,7 @@ const puppeteer = require('puppeteer');
    slowMo: 250 // slow down by 250ms
   });
   const page = await browser.newPage();
-  await page.goto('http://localhost:5000');
+  await page.goto('http://localhost:3000');
   
   await page.pdf({path: 'cv.pdf', format: 'A4'});
 

@@ -1,24 +1,18 @@
-# serve and "https://www.npmjs.com/package/html-pdf" need to be installed
-
 $cvDir = "$PSScriptRoot"
 $jsonDir = "$cvDir/json"
-$reactDir = "$cvDir/react"
+$reactDir = "$cvDir/component"
 $buildDir = "$reactDir/build"
 
 cd $jsonDir
 
 npm start
 
-cd $reactDir
-
-npm run-script build
-
 cd $cvDir
 
-$serving = Start-Process -FilePath "serve" -WorkingDirectory $buildDir
+Start-Process powershell -argumentlist " -file RunDemo.ps1 " -WorkingDirectory "$reactDir"
 
+start-sleep -seconds 5
 
 node "$cvDir/pdf/createPdf.js"
 
-$serving | Stop-Process
-
+Start-Process powershell -argumentlist " -file RunDevelopMove.ps1 " -WorkingDirectory "$reactDir"
