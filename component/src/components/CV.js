@@ -13,7 +13,7 @@ class CV extends Component {
     this.handleResize = this.handleResize.bind(this);
     this.getCVWidth = this.getCVWidth.bind(this);
   }
-  
+
   getCVWidth() {
     var maxWidth = 1200;
     var width = document.getElementById(this.props.divId).offsetWidth;
@@ -33,16 +33,20 @@ class CV extends Component {
     this.state.print = false;
     // http://odinodin.no/2015-11-06-react-print/
     // Run a media query through the matchMedia API
-    const query = window.matchMedia('print')
-    const queryListener = function (m) {
-      var newState = Object.assign({}, this.state, {
-        print: m.matches,
-        cvWidth: 600 // force to be smaller layout
-      })
-      this.setState(newState);
-    }.bind(this)
 
-    query.addListener(queryListener);
+    // won't have window during gatsby build
+    if (typeof window !== `undefined`) {
+      const query = window.matchMedia('print')
+      const queryListener = function (m) {
+        var newState = Object.assign({}, this.state, {
+          print: m.matches,
+          cvWidth: 600 // force to be smaller layout
+        })
+        this.setState(newState);
+      }.bind(this)
+
+      query.addListener(queryListener);
+    }
   }
 
   handleResize() {
