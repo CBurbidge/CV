@@ -30,7 +30,7 @@ class CV extends Component {
   }
 
   componentWillMount() {
-    this.state.print = true;
+    this.state.print = false;
     // http://odinodin.no/2015-11-06-react-print/
     // Run a media query through the matchMedia API
     const query = window.matchMedia('print')
