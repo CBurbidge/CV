@@ -7,12 +7,13 @@ class CV extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      cvWidth: 100
+      cvWidth: 100,
+      print: false
     };
     this.handleResize = this.handleResize.bind(this);
     this.getCVWidth = this.getCVWidth.bind(this);
   }
-
+  
   getCVWidth() {
     var maxWidth = 1200;
     var width = document.getElementById(this.props.divId).offsetWidth;
@@ -28,6 +29,22 @@ class CV extends Component {
     window.removeEventListener("resize", this.handleResize);
   }
 
+  componentWillMount() {
+    this.state.print = true;
+    // http://odinodin.no/2015-11-06-react-print/
+    // Run a media query through the matchMedia API
+    const query = window.matchMedia('print')
+    const queryListener = function (m) {
+      var newState = Object.assign({}, this.state, {
+        print: m.matches,
+        cvWidth: 600 // force to be smaller layout
+      })
+      this.setState(newState);
+    }.bind(this)
+
+    query.addListener(queryListener);
+  }
+
   handleResize() {
     this.setState({ cvWidth: this.getCVWidth() })
   }
@@ -36,7 +53,7 @@ class CV extends Component {
 
     return (
       <div style={{ margin: 15 }}>
-        <Default jsonResume={this.props.jsonResume} skills={this.props.skills} print={this.props.print} cvWidth={this.state.cvWidth} />
+        <Default jsonResume={this.props.jsonResume} skills={this.props.skills} print={this.state.print} cvWidth={this.state.cvWidth} />
       </div>
     );
   }

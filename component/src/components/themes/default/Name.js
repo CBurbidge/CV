@@ -3,18 +3,18 @@ import { mixWithBorder } from './styles/common'
 
 export default function (props) {
   return (
-    <div style={{ maxWidth: props.cvWidth }}>
-      {props.print && <Name basics={props.basics} />}
+    <div>
+      {props.print && <Name basics={props.basics}  />}
     </div>
   );
 }
 
 var Name = function (props) {
   return (
-    <header style={{
+    <div style={{
       borderBottom: "1px solid black",
       display: "flex",
-      justifyContent: "space-between"
+      justifyContent: "space-between",
     }}>
       <div  >
         <h1 style={{ textAlign: "left" }} >{props.basics.name}</h1>
@@ -23,7 +23,7 @@ var Name = function (props) {
       <div >
         <Profiles profiles={props.basics.profiles} />
       </div>
-    </header>
+    </div>
   )
 }
 

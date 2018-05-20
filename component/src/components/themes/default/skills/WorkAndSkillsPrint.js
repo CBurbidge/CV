@@ -9,7 +9,6 @@ export default class WorkAndSkillsPrint extends React.Component {
       <div>
         <Experience work={this.props.work} clickSelect={(t, v) => null} isSelected={(t, v) => null} selected={""} cvWidth={this.props.cvWidth} />
         <Skills skills={this.props.skills} skillsObj={this.props.skillsObj} cvWidth={this.props.cvWidth} />
-        <hr />
       </div>
     );
   }
@@ -18,11 +17,13 @@ export default class WorkAndSkillsPrint extends React.Component {
 class Skills extends React.Component {
   render() {
     var isMob = isMobile(this.props.cvWidth)
-    //var initialLeftStyle = isMob ? { borderLeft: "3px solid black" } : {}
+    var initialLeftStyle = isMob ? { borderLeft: "3px solid black" } : {}
+    var leftStyle = Object.assign(initialLeftStyle, getLeftSideDivStyle(this.props.cvWidth))
+
     var leftSide = isMob ? <h4>Skills</h4> : <Icons.Tools size={iconSize} />
     return (
       <div>
-        <div style={getLeftSideDivStyle(this.props.cvWidth)}>
+        <div style={leftStyle}>
           {leftSide}
         </div>
         <div style={getRightSideDivStyle(this.props.cvWidth)}>
