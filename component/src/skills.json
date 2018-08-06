@@ -1,17 +1,6 @@
 {
   "jsonResumeSkills": [
     {
-      "name": "Asynchronous Programming",
-      "level": "Advanced",
-      "keywords": [
-        "akkaDotNet",
-        "apacheSpark",
-        "esSixPromises",
-        "javascript",
-        "typescript"
-      ]
-    },
-    {
       "name": "Back End",
       "level": "Advanced",
       "keywords": [
@@ -19,6 +8,7 @@
         "apacheSpark",
         "aspDotNetMvc",
         "aspDotNetWebforms",
+        "azureDataFactory",
         "azureSql",
         "azureSqlDw",
         "awsDynamoDB",
@@ -30,10 +20,12 @@
         "cSharp",
         "docker",
         "dotNetFramework",
+        "esSixPromises",
+        "fSharp",
+        "javascript",
         "linq",
         "nunit",
-        "octopusDeploy",
-        "resharper",
+        "python",
         "restfulWebservices",
         "sqlServerManagementStudio",
         "tSql",
@@ -65,6 +57,7 @@
         "awsS3",
         "docker",
         "powershell",
+        "python",
         "terraform"
       ]
     },
@@ -73,6 +66,8 @@
       "level": "Advanced",
       "keywords": [
         "azureResourceManager",
+        "awsCloudformation",
+        "awsEC2",
         "awsECR",
         "awsECS",
         "awsLambda",
@@ -87,6 +82,7 @@
         "octopusDeploy",
         "packer",
         "powershell",
+        "python",
         "terraform",
         "teamcity"
       ]
@@ -100,7 +96,9 @@
         "cordova",
         "css",
         "d3",
+        "dotNetFramework",
         "esSixPromises",
+        "fSharp",
         "grunt",
         "html",
         "ionicFramework",
@@ -110,36 +108,26 @@
         "knockoutJs",
         "less",
         "reactJs",
-        "resharper",
+        "restfulWebservices",
         "typescript",
         "visualStudio"
       ]
     },
     {
-      "name": "Functional Programming",
+      "name": "Other",
       "level": "Advanced",
       "keywords": [
-        "cSharp",
-        "fSharp",
-        "javascript",
-        "linq",
-        "typescript"
+        "cordova",
+        "jira",
+        "latex",
+        "resharper",
+        "rlanguage",
+        "sourceSafe",
+        "tfs"
       ]
     },
     {
-      "name": "Object Oriented Programming",
-      "level": "Advanced",
-      "keywords": [
-        "cPlusPlus",
-        "cSharp",
-        "javascript",
-        "python",
-        "typescript",
-        "vbDotNet"
-      ]
-    },
-    {
-      "name": "Test Driven Development",
+      "name": "Testing",
       "level": "Advanced",
       "keywords": [
         "cSharp",
@@ -149,8 +137,7 @@
         "moq",
         "nunit",
         "python",
-        "resharper",
-        "typescript"
+        "specflow"
       ]
     }
   ],
@@ -246,6 +233,7 @@
         "resharper",
         "restfulWebservices",
         "sqlServerManagementStudio",
+        "specflow",
         "teamcity",
         "tSql",
         "visualStudio",
@@ -279,8 +267,10 @@
         "linq",
         "nunit",
         "reactJs",
+        "resharper",
         "restfulWebservices",
         "sqlServerManagementStudio",
+        "specflow",
         "terraform",
         "tSql",
         "visualStudio"
@@ -304,8 +294,7 @@
       "name": "AKKA.NET",
       "description": ".NET actor system implementation framework, port of the popular scala framework.",
       "skillTypesIds": [
-        "backend",
-        "async"
+        "backend"
       ],
       "settingsIds": [
         "abide"
@@ -316,8 +305,7 @@
       "name": "Apache Spark",
       "description": "Apache Spark is an open-source cluster-computing framework. Spark provides an interface for programming entire clusters with implicit data parallelism and fault tolerance",
       "skillTypesIds": [
-        "backend",
-        "async"
+        "backend"
       ],
       "settingsIds": [
         "scottlogic"
@@ -351,6 +339,7 @@
       "name": "Azure Data Factory",
       "description": "Azure Data Factory is a cloud-based data integration service that allows you to create data-driven workflows in the cloud for orchestrating and automating data movement and data transformation",
       "skillTypesIds": [
+        "backend",
         "cloud"
       ],
       "settingsIds": [
@@ -409,7 +398,8 @@
       "name": "AWS Cloudformation",
       "description": "AWS CloudFormation provides a common language for you to describe and provision all the infrastructure resources in your cloud environment. CloudFormation allows you to use a simple text file to model and provision, in an automated and secure manner, all the resources needed for your applications across all regions and accounts. This file serves as the single source of truth for your cloud environment",
       "skillTypesIds": [
-        "cloud"
+        "cloud",
+        "devops"
       ],
       "settingsIds": [
         "abide"
@@ -432,7 +422,8 @@
       "name": "AWS EC2",
       "description": "Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. It is designed to make web-scale cloud computing easier for developers.",
       "skillTypesIds": [
-        "cloud"
+        "cloud",
+        "devops"
       ],
       "settingsIds": [
         "abide"
@@ -599,7 +590,8 @@
       "name": "Apache Cordova (Phone Gap)",
       "description": "Apache Cordova is an open-source mobile application development framework which enables software programmers to build applications for mobile devices using CSS3, HTML5, and JavaScript instead of relying on platform-specific APIs like those in Android, iOS, or Windows Phone.",
       "skillTypesIds": [
-        "frontend"
+        "frontend",
+        "other"
       ],
       "settingsIds": []
     },
@@ -608,7 +600,6 @@
       "name": "C++",
       "description": "A general-purpose programming language. It has imperative, object-oriented and generic programming features, while also providing facilities for low-level memory manipulation",
       "skillTypesIds": [
-        "oop",
         "backend"
       ],
       "settingsIds": [
@@ -621,9 +612,7 @@
       "description": "C# is a multi-paradigm programming language encompassing strong typing, imperative, declarative, functional, generic, object-oriented and component-oriented programming disciplines",
       "skillTypesIds": [
         "backend",
-        "functional",
-        "oop",
-        "tdd"
+        "testing"
       ],
       "settingsIds": [
         "toplevel",
@@ -673,7 +662,8 @@
       "name": ".NET Framework",
       "description": ".NET Framework is a software framework developed by Microsoft that runs primarily on Microsoft Windows",
       "skillTypesIds": [
-        "backend"
+        "backend",
+        "frontend"
       ],
       "settingsIds": [
         "toplevel",
@@ -687,8 +677,8 @@
       "name": "ES6 Promises",
       "description": "The Promise object represents the eventual completion (or failure) of an asynchronous operation, and its resulting value.",
       "skillTypesIds": [
-        "async",
-        "frontend"
+        "frontend",
+        "backend"
       ],
       "settingsIds": [
         "fundslibrary",
@@ -701,7 +691,8 @@
       "name": "F#",
       "description": "F# is a strongly typed, multi-paradigm programming language that encompasses functional, imperative, and object-oriented programming methods.",
       "skillTypesIds": [
-        "functional"
+        "backend",
+        "frontend"
       ],
       "settingsIds": [
         "abide",
@@ -762,7 +753,7 @@
       "description": "Jasmine is an open source testing framework for JavaScript. It aims to run on any JavaScript-enabled platform, to not intrude on the application nor the IDE, and to have easy-to-read syntax.",
       "skillTypesIds": [
         "frontend",
-        "tdd"
+        "testing"
       ],
       "settingsIds": [
         "fundslibrary"
@@ -773,11 +764,9 @@
       "name": "javascript",
       "description": "JavaScript is a high-level, interpreted programming language. It is a language which is also characterized as dynamic, weakly typed, prototype-based and multi-paradigm",
       "skillTypesIds": [
-        "async",
+        "backend",
         "frontend",
-        "functional",
-        "oop",
-        "tdd"
+        "testing"
       ],
       "settingsIds": [
         "fundslibrary",
@@ -789,7 +778,9 @@
       "id": "jira",
       "name": "JIRA",
       "description": "Jira is a proprietary issue tracking product, developed by Atlassian. It provides bug tracking, issue tracking, and project management functions",
-      "skillTypesIds": [],
+      "skillTypesIds": [
+        "other"
+      ],
       "settingsIds": [
         "fundslibrary",
         "abide",
@@ -812,7 +803,7 @@
       "name": "karma",
       "description": "Karma is a test runner for JavaScript that runs on Node.js. It is very well suited to testing AngularJS or any other JavaScript projects.",
       "skillTypesIds": [
-        "tdd"
+        "testing"
       ],
       "settingsIds": [
         "fundslibrary"
@@ -833,7 +824,9 @@
       "id": "latex",
       "name": "LaTeX",
       "description": "LaTeX is a document preparation system. When writing, the writer uses plain text as opposed to the formatted text found in WYSIWYG word processors like Microsoft Word.",
-      "skillTypesIds": [],
+      "skillTypesIds": [
+        "other"
+      ],
       "settingsIds": []
     },
     "less": {
@@ -852,8 +845,7 @@
       "name": "LINQ",
       "description": "General-purpose query facilities added to the .NET Framework apply to all sources of information, not just relational or XML data.",
       "skillTypesIds": [
-        "backend",
-        "functional"
+        "backend"
       ],
       "settingsIds": [
         "toplevel",
@@ -867,7 +859,7 @@
       "name": "MoQ",
       "description": "Moq is the one and only .NET mocking framework that allows specifying mock behavior via declarative specification queries.",
       "skillTypesIds": [
-        "tdd"
+        "testing"
       ],
       "settingsIds": [
         "toplevel",
@@ -880,7 +872,7 @@
       "description": "NUnit is an open-source unit testing framework for Microsoft .NET. It serves the same purpose as JUnit does in the Java world, and is one of many programs in the xUnit family.",
       "skillTypesIds": [
         "backend",
-        "tdd"
+        "testing"
       ],
       "settingsIds": [
         "toplevel",
@@ -893,7 +885,6 @@
       "name": "Octopus Deploy",
       "description": "Octopus Deploy is an automated release management tool for modern developers and DevOps teams.",
       "skillTypesIds": [
-        "backend",
         "devops"
       ],
       "settingsIds": [
@@ -928,8 +919,10 @@
       "name": "python",
       "description": "Python is an interpreted high-level programming language for general-purpose programming. Python has a design philosophy that emphasizes code readability, notably using significant whitespace.",
       "skillTypesIds": [
-        "oop",
-        "tdd"
+        "backend",
+        "cloud",
+        "devops",
+        "testing"
       ],
       "settingsIds": [
         "abide"
@@ -951,13 +944,12 @@
       "name": "Resharper",
       "description": "ReSharper is a popular developer productivity extension for Microsoft Visual Studio. It automates most of what can be automated in your coding routines. It finds compiler errors, runtime errors, redundancies, and code smells right as you type, suggesting intelligent corrections for them.",
       "skillTypesIds": [
-        "backend",
-        "frontend",
-        "tdd"
+        "other"
       ],
       "settingsIds": [
         "toplevel",
-        "abide"
+        "abide",
+        "scottlogic"
       ]
     },
     "restfulWebservices": {
@@ -965,7 +957,8 @@
       "name": "RESTFul webservices",
       "description": "REpresentational State Transfer (REST) is an architectural style that defines a set of constraints and properties based on HTTP.",
       "skillTypesIds": [
-        "backend"
+        "backend",
+        "frontend"
       ],
       "settingsIds": [
         "fundslibrary",
@@ -977,14 +970,18 @@
       "id": "rlanguage",
       "name": "R",
       "description": "R is a programming language and free software environment for statistical computing and graphics that is supported by the R Foundation for Statistical Computing. The R language is widely used among statisticians and data miners for developing statistical software",
-      "skillTypesIds": [],
+      "skillTypesIds": [
+        "other"
+      ],
       "settingsIds": []
     },
     "sourceSafe": {
       "id": "sourceSafe",
       "name": "Source safe",
       "description": "Microsoft Visual SourceSafe (VSS) is a discontinued source control program, oriented towards small software development projects.",
-      "skillTypesIds": [],
+      "skillTypesIds": [
+        "other"
+      ],
       "settingsIds": [
         "toplevel"
       ]
@@ -1003,11 +1000,25 @@
         "scottlogic"
       ]
     },
+    "specflow": {
+      "id": "specflow",
+      "name": "Specflow",
+      "description": "SpecFlow is an open source port of Cucumber for .Net.",
+      "skillTypesIds": [
+        "testing"
+      ],
+      "settingsIds": [
+        "abide",
+        "scottlogic"
+      ]
+    },
     "tfs": {
       "id": "tfs",
       "name": "TFS",
       "description": "Team Foundation Server (TFS) is a Microsoft product that provides source code management (either with Team Foundation Version Control or Git), reporting, requirements management, project management, automated builds, lab management, testing and release management capabilities",
-      "skillTypesIds": [],
+      "skillTypesIds": [
+        "other"
+      ],
       "settingsIds": [
         "toplevel"
       ]
@@ -1054,11 +1065,7 @@
       "name": "Typescript",
       "description": "TypeScript is an open-source programming language developed and maintained by Microsoft. It is a strict syntactical superset of JavaScript, and adds optional static typing to the language.",
       "skillTypesIds": [
-        "async",
-        "frontend",
-        "functional",
-        "oop",
-        "tdd"
+        "frontend"
       ],
       "settingsIds": [
         "fundslibrary"
@@ -1084,8 +1091,7 @@
       "name": "VB.NET",
       "description": "Visual Basic .NET (VB.NET) is a multi-paradigm, object-oriented programming language, implemented on the .NET Framework.",
       "skillTypesIds": [
-        "backend",
-        "oop"
+        "backend"
       ],
       "settingsIds": [
         "toplevel"
@@ -1117,12 +1123,6 @@
     }
   },
   "skillTypes": {
-    "async": {
-      "id": "async",
-      "name": "Asynchronous Programming",
-      "description": "Asynchronous programming is a means of parallel programming in which a unit of work runs separately from the main application thread and notifies the calling thread of its completion, failure or progress.",
-      "level": "Advanced"
-    },
     "backend": {
       "id": "backend",
       "name": "Back End",
@@ -1147,22 +1147,16 @@
       "description": "Front-end web development is the practice of converting data to graphical interface for user to view and interact with data through digital interaction using HTML, CSS and Javascript.",
       "level": "Competent"
     },
-    "functional": {
-      "id": "functional",
-      "name": "Functional Programming",
-      "description": "Programming paradigm that treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data.",
+    "other": {
+      "id": "other",
+      "name": "Other",
+      "description": "Technologies which don't fit into the other categories.",
       "level": "Advanced"
     },
-    "oop": {
-      "id": "oop",
-      "name": "Object Oriented Programming",
-      "description": "Object oriented programming is a programming paradigm based on the concept of \"objects\", which may contain data and procedures.",
-      "level": "Advanced"
-    },
-    "tdd": {
-      "id": "tdd",
-      "name": "Test Driven Development",
-      "description": "Test Driven Development is a software development process that relies on the repetition of a very short development cycle: requirements are turned into very specific test cases, then the software is improved to pass the new tests, only.",
+    "testing": {
+      "id": "testing",
+      "name": "Testing",
+      "description": "Software testing involves the execution of a software component or system component to evaluate one or more properties of interest. In general, these properties indicate the extent to which the component or system under test.",
       "level": "Advanced"
     }
   },

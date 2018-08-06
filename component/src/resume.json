@@ -67,8 +67,10 @@
         "linq",
         "nunit",
         "reactJs",
+        "resharper",
         "restfulWebservices",
         "sqlServerManagementStudio",
+        "specflow",
         "terraform",
         "tSql",
         "visualStudio"
@@ -124,6 +126,7 @@
         "resharper",
         "restfulWebservices",
         "sqlServerManagementStudio",
+        "specflow",
         "teamcity",
         "tSql",
         "visualStudio",
@@ -134,8 +137,8 @@
       "company": "Fundslibrary",
       "position": "Junior Developer",
       "website": "https://www.fundslibrary.co.uk",
-      "startDate": "2013-12-01",
-      "endDate": "2014-12-01",
+      "startDate": "2014-03-01",
+      "endDate": "2015-03-01",
       "summary": "Maintained the Fundslibrary website in an agile environment.\nPracticed modern software development practices including TDD, CI and SOLID practices.\nBackend developement involved C#, ASP.NET MVC and SQL Server to create web services and sites.\nClient side development used typescript, LESS and libraries such as KnockoutJs and jQuery.",
       "skills": [
         "aspDotNetMvc",
@@ -238,17 +241,6 @@
   "publications": [],
   "skills": [
     {
-      "name": "Asynchronous Programming",
-      "level": "Advanced",
-      "keywords": [
-        "akkaDotNet",
-        "apacheSpark",
-        "esSixPromises",
-        "javascript",
-        "typescript"
-      ]
-    },
-    {
       "name": "Back End",
       "level": "Advanced",
       "keywords": [
@@ -256,6 +248,7 @@
         "apacheSpark",
         "aspDotNetMvc",
         "aspDotNetWebforms",
+        "azureDataFactory",
         "azureSql",
         "azureSqlDw",
         "awsDynamoDB",
@@ -267,10 +260,12 @@
         "cSharp",
         "docker",
         "dotNetFramework",
+        "esSixPromises",
+        "fSharp",
+        "javascript",
         "linq",
         "nunit",
-        "octopusDeploy",
-        "resharper",
+        "python",
         "restfulWebservices",
         "sqlServerManagementStudio",
         "tSql",
@@ -302,6 +297,7 @@
         "awsS3",
         "docker",
         "powershell",
+        "python",
         "terraform"
       ]
     },
@@ -310,6 +306,8 @@
       "level": "Advanced",
       "keywords": [
         "azureResourceManager",
+        "awsCloudformation",
+        "awsEC2",
         "awsECR",
         "awsECS",
         "awsLambda",
@@ -324,6 +322,7 @@
         "octopusDeploy",
         "packer",
         "powershell",
+        "python",
         "terraform",
         "teamcity"
       ]
@@ -337,7 +336,9 @@
         "cordova",
         "css",
         "d3",
+        "dotNetFramework",
         "esSixPromises",
+        "fSharp",
         "grunt",
         "html",
         "ionicFramework",
@@ -347,36 +348,26 @@
         "knockoutJs",
         "less",
         "reactJs",
-        "resharper",
+        "restfulWebservices",
         "typescript",
         "visualStudio"
       ]
     },
     {
-      "name": "Functional Programming",
+      "name": "Other",
       "level": "Advanced",
       "keywords": [
-        "cSharp",
-        "fSharp",
-        "javascript",
-        "linq",
-        "typescript"
+        "cordova",
+        "jira",
+        "latex",
+        "resharper",
+        "rlanguage",
+        "sourceSafe",
+        "tfs"
       ]
     },
     {
-      "name": "Object Oriented Programming",
-      "level": "Advanced",
-      "keywords": [
-        "cPlusPlus",
-        "cSharp",
-        "javascript",
-        "python",
-        "typescript",
-        "vbDotNet"
-      ]
-    },
-    {
-      "name": "Test Driven Development",
+      "name": "Testing",
       "level": "Advanced",
       "keywords": [
         "cSharp",
@@ -386,8 +377,7 @@
         "moq",
         "nunit",
         "python",
-        "resharper",
-        "typescript"
+        "specflow"
       ]
     }
   ],
