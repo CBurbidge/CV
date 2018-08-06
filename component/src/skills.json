@@ -107,6 +107,7 @@
         "jquery",
         "knockoutJs",
         "less",
+        "puppeteer",
         "reactJs",
         "restfulWebservices",
         "typescript",
@@ -136,6 +137,7 @@
         "karma",
         "moq",
         "nunit",
+        "puppeteer",
         "python",
         "specflow"
       ]
@@ -913,6 +915,16 @@
       "settingsIds": [
         "abide"
       ]
+    },
+    "puppeteer": {
+      "id": "puppeteer",
+      "name": "Puppeteer",
+      "description": "Puppeteer is a Node library which provides a high-level API to control Chrome or Chromium over the DevTools Protocol. Puppeteer runs headless by default, but can be configured to run full (non-headless) Chrome or Chromium",
+      "skillTypesIds": [
+        "frontend",
+        "testing"
+      ],
+      "settingsIds": []
     },
     "python": {
       "id": "python",

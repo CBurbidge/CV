@@ -347,6 +347,7 @@
         "jquery",
         "knockoutJs",
         "less",
+        "puppeteer",
         "reactJs",
         "restfulWebservices",
         "typescript",
@@ -376,6 +377,7 @@
         "karma",
         "moq",
         "nunit",
+        "puppeteer",
         "python",
         "specflow"
       ]
