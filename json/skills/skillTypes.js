@@ -14,10 +14,6 @@ String.prototype.toSkillType = function (name, description, levelArg) {
 }
 
 module.exports = {
-	async: "async".toSkillType(
-		"Asynchronous Programming",
-		"Asynchronous programming is a means of parallel programming in which a unit of work runs separately from the main application thread and notifies the calling thread of its completion, failure or progress."
-	),
 	backend: "backend".toSkillType(
 		"Back End",
 		"Back end Development refers to the server side of development which usually consists of three parts: a server, an application, and a database. Code written by back end developers is what communicates the database information to the browser."),
@@ -34,16 +30,12 @@ module.exports = {
 		"Front-end web development is the practice of converting data to graphical interface for user to view and interact with data through digital interaction using HTML, CSS and Javascript.",
 		"Competent"
 	),
-	functional: "functional".toSkillType(
-		"Functional Programming",
-		"Programming paradigm that treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data."
+	other: "other".toSkillType(
+		"Other",
+		"Technologies which don't fit into the other categories."
 	),
-	oop: "oop".toSkillType(
-		"Object Oriented Programming",
-		"Object oriented programming is a programming paradigm based on the concept of \"objects\", which may contain data and procedures."
-	),
-	tdd: "tdd".toSkillType(
-		"Test Driven Development",
-		"Test Driven Development is a software development process that relies on the repetition of a very short development cycle: requirements are turned into very specific test cases, then the software is improved to pass the new tests, only."
+	testing: "testing".toSkillType(
+		"Testing",
+		"Software testing involves the execution of a software component or system component to evaluate one or more properties of interest. In general, these properties indicate the extent to which the component or system under test."
 	),
 }

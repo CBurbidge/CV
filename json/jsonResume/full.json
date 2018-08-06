@@ -61,8 +61,8 @@
             "company": "Fundslibrary",
             "position": "Junior Developer",
             "website": "https://www.fundslibrary.co.uk",
-            "startDate": "2013-12-01",
-            "endDate": "2014-12-01",
+            "startDate": "2014-03-01",
+            "endDate": "2015-03-01",
             "summary": "Maintained the Fundslibrary website in an agile environment.\nPracticed modern software development practices including TDD, CI and SOLID practices.\nBackend developement involved C#, ASP.NET MVC and SQL Server to create web services and sites.\nClient side development used typescript, LESS and libraries such as KnockoutJs and jQuery."
         },
         {

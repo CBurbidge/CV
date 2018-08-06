@@ -33,7 +33,6 @@ module.exports = {
 		".NET actor system implementation framework, port of the popular scala framework.",
 		[
 			skillTypes.backend,
-			skillTypes.async,
 		],
 		[
 			settings.abide
@@ -45,7 +44,6 @@ module.exports = {
 		"Apache Spark is an open-source cluster-computing framework. Spark provides an interface for programming entire clusters with implicit data parallelism and fault tolerance",
 		[
 			skillTypes.backend,
-			skillTypes.async,
 		],
 		[
 			settings.scottlogic
@@ -79,6 +77,7 @@ module.exports = {
 		"Azure Data Factory",
 		"Azure Data Factory is a cloud-based data integration service that allows you to create data-driven workflows in the cloud for orchestrating and automating data movement and data transformation",
 		[
+			skillTypes.backend,
 			skillTypes.cloud,
 		],
 		[
@@ -138,6 +137,7 @@ module.exports = {
 		"AWS CloudFormation provides a common language for you to describe and provision all the infrastructure resources in your cloud environment. CloudFormation allows you to use a simple text file to model and provision, in an automated and secure manner, all the resources needed for your applications across all regions and accounts. This file serves as the single source of truth for your cloud environment",
 		[
 			skillTypes.cloud,
+			skillTypes.devops,
 		],
 		[
 			settings.abide,
@@ -161,6 +161,7 @@ module.exports = {
 		"Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. It is designed to make web-scale cloud computing easier for developers.",
 		[
 			skillTypes.cloud,
+			skillTypes.devops,
 		],
 		[
 			settings.abide
@@ -327,7 +328,8 @@ module.exports = {
 		"Apache Cordova (Phone Gap)",
 		"Apache Cordova is an open-source mobile application development framework which enables software programmers to build applications for mobile devices using CSS3, HTML5, and JavaScript instead of relying on platform-specific APIs like those in Android, iOS, or Windows Phone.",
 		[
-			skillTypes.frontend
+			skillTypes.frontend,
+			skillTypes.other
 		],
 		[
 
@@ -338,7 +340,6 @@ module.exports = {
 		"C++",
 		"A general-purpose programming language. It has imperative, object-oriented and generic programming features, while also providing facilities for low-level memory manipulation",
 		[
-			skillTypes.oop,
 			skillTypes.backend
 		],
 		[
@@ -351,9 +352,7 @@ module.exports = {
 		"C# is a multi-paradigm programming language encompassing strong typing, imperative, declarative, functional, generic, object-oriented and component-oriented programming disciplines",
 		[
 			skillTypes.backend,
-			skillTypes.functional,
-			skillTypes.oop,
-			skillTypes.tdd,
+			skillTypes.testing,
 		],
 		[
 			settings.toplevel,
@@ -406,6 +405,7 @@ module.exports = {
 		".NET Framework is a software framework developed by Microsoft that runs primarily on Microsoft Windows",
 		[
 			skillTypes.backend,
+			skillTypes.frontend,
 		],
 		[
 			settings.toplevel,
@@ -419,8 +419,8 @@ module.exports = {
 		"ES6 Promises",
 		"The Promise object represents the eventual completion (or failure) of an asynchronous operation, and its resulting value.",
 		[
-			skillTypes.async,
 			skillTypes.frontend,
+			skillTypes.backend,
 		],
 		[
 			settings.fundslibrary,
@@ -433,7 +433,8 @@ module.exports = {
 		"F#",
 		"F# is a strongly typed, multi-paradigm programming language that encompasses functional, imperative, and object-oriented programming methods.",
 		[
-			skillTypes.functional,
+			skillTypes.backend,
+			skillTypes.frontend,
 		],
 		[
 			settings.abide,
@@ -496,7 +497,7 @@ module.exports = {
 		"Jasmine is an open source testing framework for JavaScript. It aims to run on any JavaScript-enabled platform, to not intrude on the application nor the IDE, and to have easy-to-read syntax.",
 		[
 			skillTypes.frontend,
-			skillTypes.tdd
+			skillTypes.testing
 		],
 		[
 			settings.fundslibrary,
@@ -507,11 +508,9 @@ module.exports = {
 		"javascript",
 		"JavaScript is a high-level, interpreted programming language. It is a language which is also characterized as dynamic, weakly typed, prototype-based and multi-paradigm",
 		[
-			skillTypes.async,
+			skillTypes.backend,
 			skillTypes.frontend,
-			skillTypes.functional,
-			skillTypes.oop,
-			skillTypes.tdd
+			skillTypes.testing
 		],
 		[
 			settings.fundslibrary,
@@ -524,7 +523,7 @@ module.exports = {
 		"JIRA",
 		"Jira is a proprietary issue tracking product, developed by Atlassian. It provides bug tracking, issue tracking, and project management functions",
 		[
-
+			skillTypes.other
 		],
 		[
 			settings.fundslibrary,
@@ -548,7 +547,7 @@ module.exports = {
 		"karma",
 		"Karma is a test runner for JavaScript that runs on Node.js. It is very well suited to testing AngularJS or any other JavaScript projects.",
 		[
-			skillTypes.tdd
+			skillTypes.testing
 		],
 		[
 			settings.fundslibrary,
@@ -570,7 +569,7 @@ module.exports = {
 		"LaTeX",
 		"LaTeX is a document preparation system. When writing, the writer uses plain text as opposed to the formatted text found in WYSIWYG word processors like Microsoft Word.",
 		[
-
+			skillTypes.other
 		],
 		[
 
@@ -593,7 +592,6 @@ module.exports = {
 		"General-purpose query facilities added to the .NET Framework apply to all sources of information, not just relational or XML data.",
 		[
 			skillTypes.backend,
-			skillTypes.functional,
 		],
 		[
 			settings.toplevel,
@@ -607,7 +605,7 @@ module.exports = {
 		"MoQ",
 		"Moq is the one and only .NET mocking framework that allows specifying mock behavior via declarative specification queries.",
 		[
-			skillTypes.tdd
+			skillTypes.testing
 		],
 		[
 			settings.toplevel,
@@ -620,7 +618,7 @@ module.exports = {
 		"NUnit is an open-source unit testing framework for Microsoft .NET. It serves the same purpose as JUnit does in the Java world, and is one of many programs in the xUnit family.",
 		[
 			skillTypes.backend,
-			skillTypes.tdd
+			skillTypes.testing
 		],
 		[
 			settings.toplevel,
@@ -633,7 +631,6 @@ module.exports = {
 		"Octopus Deploy",
 		"Octopus Deploy is an automated release management tool for modern developers and DevOps teams.",
 		[
-			skillTypes.backend,
 			skillTypes.devops,
 		],
 		[
@@ -668,8 +665,10 @@ module.exports = {
 		"python",
 		"Python is an interpreted high-level programming language for general-purpose programming. Python has a design philosophy that emphasizes code readability, notably using significant whitespace.",
 		[
-			skillTypes.oop,
-			skillTypes.tdd
+			skillTypes.backend,
+			skillTypes.cloud,
+			skillTypes.devops,
+			skillTypes.testing,
 		],
 		[
 			settings.abide,
@@ -691,13 +690,12 @@ module.exports = {
 		"Resharper",
 		"ReSharper is a popular developer productivity extension for Microsoft Visual Studio. It automates most of what can be automated in your coding routines. It finds compiler errors, runtime errors, redundancies, and code smells right as you type, suggesting intelligent corrections for them.",
 		[
-			skillTypes.backend,
-			skillTypes.frontend,
-			skillTypes.tdd
+			skillTypes.other,
 		],
 		[
 			settings.toplevel,
 			settings.abide,
+			settings.scottlogic,
 		]
 	),
 
@@ -706,6 +704,7 @@ module.exports = {
 		"REpresentational State Transfer (REST) is an architectural style that defines a set of constraints and properties based on HTTP.",
 		[
 			skillTypes.backend,
+			skillTypes.frontend,
 		],
 		[
 			settings.fundslibrary,
@@ -718,7 +717,7 @@ module.exports = {
 		"R",
 		"R is a programming language and free software environment for statistical computing and graphics that is supported by the R Foundation for Statistical Computing. The R language is widely used among statisticians and data miners for developing statistical software",
 		[
-
+			skillTypes.other
 		],
 		[
 
@@ -729,7 +728,7 @@ module.exports = {
 		"Source safe",
 		"Microsoft Visual SourceSafe (VSS) is a discontinued source control program, oriented towards small software development projects.",
 		[
-
+			skillTypes.other
 		],
 		[
 			settings.toplevel,
@@ -750,11 +749,23 @@ module.exports = {
 		]
 	),
 
+	specflow: "specflow".toSkill(
+		"Specflow",
+		"SpecFlow is an open source port of Cucumber for .Net.",
+		[
+			skillTypes.testing,
+		],
+		[
+			settings.abide,
+			settings.scottlogic,
+		]
+	),
+
 	tfs: "tfs".toSkill(
 		"TFS",
 		"Team Foundation Server (TFS) is a Microsoft product that provides source code management (either with Team Foundation Version Control or Git), reporting, requirements management, project management, automated builds, lab management, testing and release management capabilities",
 		[
-
+			skillTypes.other
 		],
 		[
 			settings.toplevel,
@@ -802,11 +813,7 @@ module.exports = {
 		"Typescript",
 		"TypeScript is an open-source programming language developed and maintained by Microsoft. It is a strict syntactical superset of JavaScript, and adds optional static typing to the language.",
 		[
-			skillTypes.async,
 			skillTypes.frontend,
-			skillTypes.functional,
-			skillTypes.oop,
-			skillTypes.tdd
 		],
 		[
 			settings.fundslibrary,
@@ -833,7 +840,6 @@ module.exports = {
 		"Visual Basic .NET (VB.NET) is a multi-paradigm, object-oriented programming language, implemented on the .NET Framework.",
 		[
 			skillTypes.backend,
-			skillTypes.oop,
 		],
 		[
 			settings.toplevel,
