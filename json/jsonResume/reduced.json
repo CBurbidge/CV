@@ -4,7 +4,7 @@
     "label": "Software Engineer",
     "website": "https://chester.codes",
     "picture": "",
-    "summary": "A software professional with a passion for the craft, constantly learning and improving. \n\nExperienced with various methodologies across the full software development lifecycle. I have written code for mobile, the desktop and the full web stack, using a variety of programing languages and paradigms. \n\nA regular attender, and occasional presenter, of technical talks on various topics. Interested in teaching through volunteering my time to the Code Club initiative.",
+    "summary": "A software professional who is constantly learning and improving. Experienced with designing, building and deploying IAAS, PAAS and serverless cloud solutions on AWS and Azure. I have experience running .NET services and websites in a Windows Server environment. Passionate about automation and everything as code. I have used technologies for infrastructure as code (terraform and cloud specific), configurement management (Chef mostly) and general scripting (Powershell, bash, python etc).",
     "location": {
       "address": "",
       "postalCode": "",
