@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "build": "nwb build-react-component",
-    "build-app": "react-scripts build",
+    "build-app": "react-scripts build && node ./moveBuildToDocs.js",
     "clean": "nwb clean-module && nwb clean-demo",
     "start2": "nwb serve-react-demo",
     "start": "react-scripts start",
