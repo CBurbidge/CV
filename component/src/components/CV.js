@@ -7,7 +7,7 @@ class CV extends Component {
   constructor(props) {
     super(props);
     var print = props.print;
-    console.log("CV constructor: " + print);
+    
     this.state = {
       cvWidth: 100,
       print
@@ -57,8 +57,6 @@ class CV extends Component {
   }
 
   render() {
-    console.log("CV print state: " + this.state.print);
-    console.log("CV print props: " + this.props.print);
     return (
       <CVStateless 
           jsonResume={this.props.jsonResume} 

@@ -7,7 +7,6 @@ export default class extends Component {
   render() {
     var theme = "default";
     var print = this.props.print === "true" || this.props.print === true;
-    console.log("CV print: " + print);
 
     return (
       <CV 
