@@ -8,7 +8,7 @@ class CV extends Component {
     super(props);
     this.state = {
       cvWidth: 100,
-      print: false
+      print: !!props.print
     };
     this.handleResize = this.handleResize.bind(this);
     this.getCVWidth = this.getCVWidth.bind(this);
@@ -30,7 +30,7 @@ class CV extends Component {
   }
 
   componentWillMount() {
-    this.state.print = false;
+    //this.state.print = false;
     // http://odinodin.no/2015-11-06-react-print/
     // Run a media query through the matchMedia API
 
