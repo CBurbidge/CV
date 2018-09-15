@@ -270,7 +270,7 @@ class Setting extends React.Component {
 
         <img src={png}
           style={imgStyle}
-          onerror={onError}
+          onError={onError}
           onClick={() => this.clickSelect(selectedTypes.Setting, company)} />
         <SkillLogos
           skillIds={this.props.work.skills} show={this.state.hover}
@@ -300,7 +300,7 @@ class SkillLogos extends React.Component {
           height={len}
           width={len}
           src={png}
-          onerror={onError}
+          onError={onError}
           alt={skillId}
           onClick={() => clickSelect(selectedTypes.Skill, skillId)}
         />
