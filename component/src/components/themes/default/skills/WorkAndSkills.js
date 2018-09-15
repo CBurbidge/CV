@@ -258,7 +258,6 @@ class Setting extends React.Component {
     }
     var slug = company.replace(" ", "")
     var png = "/logos/settings/" + slug + ".png"
-    var onError = "this.onerror=null;this.src='" + "/CV" + png + "';";
     var imgStyle = {
       width: 160
     }
@@ -270,7 +269,10 @@ class Setting extends React.Component {
 
         <img src={png}
           style={imgStyle}
-          onError={onError}
+          onError={ev => {
+            ev.target.src = "/CV" + png;
+            ev.target.onerror = null;
+          }}
           onClick={() => this.clickSelect(selectedTypes.Setting, company)} />
         <SkillLogos
           skillIds={this.props.work.skills} show={this.state.hover}
@@ -292,7 +294,6 @@ class SkillLogos extends React.Component {
     var len = 40;
     var toLogo = function (skillId, clickSelect) {
       var png = "/logos/skills/" + skillId + ".png";
-      var onError = "this.onerror=null;this.src='" + "/CV" + png + "';";
       return (<div key={skillId} style={{
         padding: 2
       }}>
@@ -300,7 +301,10 @@ class SkillLogos extends React.Component {
           height={len}
           width={len}
           src={png}
-          onError={onError}
+          onError={ev => {
+            ev.target.src = "/CV" + png;
+            ev.target.onerror = null;
+          }}
           alt={skillId}
           onClick={() => clickSelect(selectedTypes.Skill, skillId)}
         />
