@@ -22,7 +22,8 @@
   },
   "dependencies": {
     "mv": "^2.1.1",
-    "react-router-dom": "^4.3.1"
+    "react-router-dom": "^4.3.1",
+    "rimraf": "^2.6.2"
   },
   "peerDependencies": {
     "react": "16.x"
@@ -34,7 +35,7 @@
     "react-scripts": "1.1.1"
   },
   "author": "",
-  "homepage": "",
+  "homepage": "https://chestercodes.github.com/CV/",
   "license": "MIT",
   "repository": "",
   "keywords": [
