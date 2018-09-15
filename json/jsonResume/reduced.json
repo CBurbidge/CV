@@ -36,10 +36,13 @@
       "position": "Software Engineer",
       "website": "https://www.scottlogic.com/",
       "startDate": "2017-10-16",
+      "endDate": "2018-09-07",
       "summary": "",
       "highlights": [
         "Designed and implemented ETL pipeline on Azure using Data Factory V2. Implemented data warehouse reporting solution using SQL Datawarehouse and PowerBI.",
         "Wrote AWS infrastructure code for data engineering project using Terraform. Deployed a wide range of resources such as Kinesis, EC2 VMs and ECS containers.",
+        "Developed Api for automated download and analysis of github repositories using .Net Core running F# on ubuntu.",
+        "Introduced SpecFlow into project to easy the development and provide living documentation of automated tests.",
         "Ran internal study group for advancing company knowledge on cloud computing."
       ]
     },
