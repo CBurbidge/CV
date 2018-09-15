@@ -266,6 +266,7 @@ class Setting extends React.Component {
       return ev => {
         ev.target.onerror = null;
         ev.target.src = src;
+        return true;
       }
     }
 
@@ -301,6 +302,7 @@ class SkillLogos extends React.Component {
         return ev => {
           ev.target.onerror = null;
           ev.target.src = src;
+          return true;
         }
       }
       var png = "/logos/skills/" + skillId + ".png";
