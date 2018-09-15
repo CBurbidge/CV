@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import PropTypes from "prop-types"
 import { resumeType } from "./resumeType"
-import Default from './themes/default'
+import CVStateless from './CVStateless'
 
 class CV extends Component {
   constructor(props) {
     super(props);
+    var print = props.print;
+    console.log("CV constructor: " + print);
     this.state = {
       cvWidth: 100,
-      print: !!props.print
+      print
     };
     this.handleResize = this.handleResize.bind(this);
     this.getCVWidth = this.getCVWidth.bind(this);
@@ -30,7 +32,6 @@ class CV extends Component {
   }
 
   componentWillMount() {
-    //this.state.print = false;
     // http://odinodin.no/2015-11-06-react-print/
     // Run a media query through the matchMedia API
 
@@ -38,11 +39,11 @@ class CV extends Component {
     if (typeof window !== `undefined`) {
       const query = window.matchMedia('print')
       const queryListener = function (m) {
-        var newState = Object.assign({}, this.state, {
+        this.setState(
+          Object.assign({}, this.state, {
           print: m.matches,
           cvWidth: 600 // force to be smaller layout
-        })
-        this.setState(newState);
+        }));
       }.bind(this)
 
       query.addListener(queryListener);
@@ -50,15 +51,21 @@ class CV extends Component {
   }
 
   handleResize() {
-    this.setState({ cvWidth: this.getCVWidth() })
+    this.setState(Object.assign({}, this.state, {
+      cvWidth: this.getCVWidth()
+    }));
   }
 
   render() {
-
+    console.log("CV print state: " + this.state.print);
+    console.log("CV print props: " + this.props.print);
     return (
-      <div style={{ margin: 15 }}>
-        <Default jsonResume={this.props.jsonResume} skills={this.props.skills} print={this.state.print} cvWidth={this.state.cvWidth} />
-      </div>
+      <CVStateless 
+          jsonResume={this.props.jsonResume} 
+          skills={this.props.skills} 
+          print={this.state.print} 
+          cvWidth={this.state.cvWidth} 
+        />
     );
   }
 }

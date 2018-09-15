@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import CV from './index.nwb';
 import registerServiceWorker from './registerServiceWorker';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
+import CVWrapper from './index.nwb.wrapper';
 
 const RouterDiv = (
     <div>
         <Router>
             <div>
-                <Route exact path="/" component={() => <CV divId={"cvDiv"} />} />
-                <Route path="/print" component={() => <CV divId={"cvDiv"} print={true} /> } />
+                <Route exact path={`/`} component={CVWrapper} />
             </div>
         </Router>
         <div id="cvDiv" ></div>
