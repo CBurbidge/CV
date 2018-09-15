@@ -1,5 +1,5 @@
 import React from 'react';
-import { iconSize, getRightSideDivStyle, getLeftSideDivStyle, mixWithBorderAndPadding, isMobile } from './styles/common'
+import { iconSize, getRightSideDivStyle, getLeftSideDivStyle, mixWithBorder2AndPadding, isMobile } from './styles/common'
 import Icons from './icons'
 
 export default function (props) {
@@ -20,7 +20,7 @@ export default function (props) {
     return (<div key={key}>
       <div style={{
         padding: 10,
-        borderRight: "3px solid black",
+        borderLeft: "3px solid black",
         margin: 10
       }}
       >
@@ -46,7 +46,7 @@ export default function (props) {
     </div>);
   };
   var isMob = isMobile(props.cvWidth)
-  var initialLeftStyle = isMob ? {borderLeft: "3px solid black"} : {}
+  var initialLeftStyle = isMob ? {borderRight: "3px solid black"} : {}
   var leftSide = isMob ? <h4>Education</h4> : <Icons.Education size={iconSize} />
 
   return (
@@ -55,7 +55,7 @@ export default function (props) {
         Object.assign(getLeftSideDivStyle(props.cvWidth), initialLeftStyle)}>
         {leftSide}
       </div>
-      <div style={Object.assign(mixWithBorderAndPadding(getRightSideDivStyle(props.cvWidth)))}>
+      <div style={Object.assign(mixWithBorder2AndPadding(getRightSideDivStyle(props.cvWidth)))}>
         {props.education.map((x, i) => toEducation(x, i))}
       </div>
     </div>

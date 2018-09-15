@@ -1,5 +1,5 @@
 import React from 'react';
-import { iconSize, isMobile, getRightSideDivStyle, getLeftSideDivStyle, mixWithBorder2AndPadding } from './styles/common'
+import { iconSize, isMobile, getRightSideDivStyle, getLeftSideDivStyle, mixWithBorderAndPadding } from './styles/common'
 import Icons from './icons'
 
 export default function (props) {
@@ -12,7 +12,7 @@ export default function (props) {
     return (<div key={key}>
       <div style={{
         padding: 10,
-        borderLeft: "3px solid black",
+        borderRight: "3px solid black",
         margin: 10
       }}
       >
@@ -34,7 +34,7 @@ export default function (props) {
   };
 
   var isMob = isMobile(props.cvWidth)
-  var initialLeftStyle = isMob ? { borderRight: "3px solid black" } : {}
+  var initialLeftStyle = isMob ? { borderLeft: "3px solid black" } : {}
   var leftSide = isMob ? <h4>Volunteering</h4> : <Icons.TeamWork size={iconSize} />
 
   return (
@@ -43,7 +43,7 @@ export default function (props) {
         Object.assign(getLeftSideDivStyle(props.cvWidth), initialLeftStyle)}>
         {leftSide}
       </div>
-      <div style={Object.assign(mixWithBorder2AndPadding(getRightSideDivStyle(props.cvWidth)))}>
+      <div style={Object.assign(mixWithBorderAndPadding(getRightSideDivStyle(props.cvWidth)))}>
         {props.volunteer.map((x, i) => toVolunteer(x, i))}
       </div>
     </div>
