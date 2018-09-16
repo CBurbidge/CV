@@ -10,7 +10,7 @@ class CVWrapper extends Component {
     
     var cvType = values.type ? values.type : "default" ;
     
-    var logoPrefix = values.logoPrefix ? "/" + values.type : "" ;
+    var logoPrefix = values.logoPrefix ? "/" + values.logoPrefix : "" ;
     
     return (<IndexNwb divId={"cvDiv"} print={print} cvType={cvType} logoPrefix={logoPrefix} />)
   }
