@@ -16,6 +16,7 @@ export default class extends Component {
           print={print} 
           divId={this.props.divId}
           cvType={this.props.cvType}
+          logoPrefix={this.props.logoPrefix}
         />
     );
   }
