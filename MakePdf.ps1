@@ -3,12 +3,12 @@ $jsonDir = "$cvDir/json"
 $reactDir = "$cvDir/component"
 $buildDir = "$reactDir/build"
 
+# publish to use blank homepage 
 cd $reactDir
 
-npm run build-app
+./PublishToDocsLocal.ps1
 
 cd $cvDir
-
 
 Try
 {
@@ -23,4 +23,10 @@ Finally
     $proc | Stop-Process    
 }
 
-#Start-Process powershell -argumentlist " -file RunDevelopMove.ps1 " -WorkingDirectory "$reactDir"
+# clean up back to normal repo staus
+
+cd $reactDir
+
+./PublishToDocsLocal.ps1
+
+cd $cvDir
