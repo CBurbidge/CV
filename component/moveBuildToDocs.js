@@ -1,12 +1,18 @@
 console.log("Moving build to docs");
-var mv = require('mv');
+var fse = require('fs-extra');
 var rimraf = require('rimraf');
 
-rimraf (__dirname + '/../docs', function () { 
-  console.log('done'); 
-  mv(__dirname + '/build', __dirname + '/../docs', function(err) {
-    console.log(err);
-  });
-});
+var build = __dirname + '/build';
+var docs = __dirname + '/../docs';
+var logosSource = docs + "/logos";
+var logosDestination = docs + "/CV/logos";
+
+if(fse.pathExistsSync(docs)){
+  fse.removeSync (docs);
+}
+
+fse.moveSync(build, docs);
+
+fse.copySync(logosSource, logosDestination);
 
 

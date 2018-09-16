@@ -21,6 +21,7 @@
     "test:watch": "nwb test-react --server"
   },
   "dependencies": {
+    "fs-extra": "^7.0.0",
     "mv": "^2.1.1",
     "query-string": "^5.1.1",
     "react-router-dom": "^4.3.1",
