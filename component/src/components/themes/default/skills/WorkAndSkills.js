@@ -262,13 +262,13 @@ class Setting extends React.Component {
       width: 160
     }
     
-    var addDefaultSrc = function(src){
-      return ev => {
-        ev.target.onerror = null;
-        ev.target.src = src;
-        return true;
-      }
-    }
+    // var addDefaultSrc = function(src){
+    //   return ev => {
+    //     ev.target.onerror = null;
+    //     ev.target.src = src;
+    //     return true;
+    //   }
+    // }
 
     return (
       <div className={settingClass}
@@ -277,7 +277,7 @@ class Setting extends React.Component {
 
         <img src={png}
           style={imgStyle}
-          onError={addDefaultSrc("/CV" + png)}
+          //onError={addDefaultSrc("/CV" + png)}
           onClick={() => this.clickSelect(selectedTypes.Setting, company)} />
         <SkillLogos
           skillIds={this.props.work.skills} show={this.state.hover}
@@ -298,13 +298,13 @@ class SkillLogos extends React.Component {
   render() {
     var len = 40;
     var toLogo = function (skillId, clickSelect) {
-      var addDefaultSrc = function(src){
-        return ev => {
-          ev.target.onerror = null;
-          ev.target.src = src;
-          return true;
-        }
-      }
+      // var addDefaultSrc = function(src){
+      //   return ev => {
+      //     ev.target.onerror = null;
+      //     ev.target.src = src;
+      //     return true;
+      //   }
+      // }
       var png = "/logos/skills/" + skillId + ".png";
       return (<div key={skillId} style={{
         padding: 2
@@ -313,7 +313,7 @@ class SkillLogos extends React.Component {
           height={len}
           width={len}
           src={png}
-          onError={addDefaultSrc("/CV" + png)}
+          //onError={addDefaultSrc("/CV" + png)}
           alt={skillId}
           onClick={() => clickSelect(selectedTypes.Skill, skillId)}
         />
