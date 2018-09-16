@@ -92,7 +92,7 @@ export default class WorkAndSkills extends React.Component {
     return (
       <div>
         <Experience work={this.props.work} cvWidth={this.props.cvWidth} />
-        <SkillTypes getSelectedText={getSelectedText} work={this.props.work} skills={this.props.skills} skillsObj={this.props.skillsObj} clickSelect={this.clickSelect} isSelected={this.isSelected} cvWidth={this.props.cvWidth} />
+        <SkillTypes getSelectedText={getSelectedText} work={this.props.work} skills={this.props.skills} skillsObj={this.props.skillsObj} clickSelect={this.clickSelect} isSelected={this.isSelected} cvWidth={this.props.cvWidth} logoPrefix={this.props.logoPrefix} />
       </div>
     );
   }
@@ -125,6 +125,8 @@ class SkillTypes extends React.Component {
     var titlePadding = {
       margin: 10
     }
+    
+    var logoPrefix = this.props.logoPrefix || "";
 
     return (
       <div>
@@ -144,13 +146,15 @@ class SkillTypes extends React.Component {
           <div style={skillsPadding}>
             {this.props.work.map(x => <Setting key={x.company} work={x} skillsObj={this.props.skillsObj} cvWidth={this.props.cvWidth}
               clickSelect={this.props.clickSelect}
-              isSelected={this.props.isSelected} />)}
+              isSelected={this.props.isSelected} 
+              logoPrefix={logoPrefix} />)}
           </div>
 
           <div style={skillsPadding}>
             {this.props.skills.map(x => <SkillType key={x.name} skill={x} skillsObj={this.props.skillsObj} cvWidth={this.props.cvWidth}
               clickSelect={this.props.clickSelect}
-              isSelected={this.props.isSelected} />)}
+              isSelected={this.props.isSelected}
+              logoPrefix={logoPrefix} />)}
           </div>
 
           <div style={skillsPadding}>
@@ -198,6 +202,7 @@ class SkillType extends React.Component {
         <SkillLogos
           skillIds={this.props.skill.keywords} show={this.state.hover}
           clickSelect={this.clickSelect} cvWidth={this.props.cvWidth}
+          logoPrefix={this.props.logoPrefix}
         />
       </div>
     );
@@ -257,7 +262,7 @@ class Setting extends React.Component {
       settingClass = getSettingClass(selectedValues.HighlightedAndSelected)
     }
     var slug = company.replace(" ", "")
-    var png = "/logos/settings/" + slug + ".png"
+    var png = this.props.logoPrefix + "/logos/settings/" + slug + ".png"
     var imgStyle = {
       width: 160
     }
@@ -282,6 +287,7 @@ class Setting extends React.Component {
         <SkillLogos
           skillIds={this.props.work.skills} show={this.state.hover}
           clickSelect={this.clickSelect} cvWidth={this.props.cvWidth}
+          logoPrefix={this.props.logoPrefix}
         />
       </div>
     );
@@ -297,6 +303,7 @@ class SkillLogos extends React.Component {
 
   render() {
     var len = 40;
+    var that = this;
     var toLogo = function (skillId, clickSelect) {
       // var addDefaultSrc = function(src){
       //   return ev => {
@@ -305,7 +312,7 @@ class SkillLogos extends React.Component {
       //     return true;
       //   }
       // }
-      var png = "/logos/skills/" + skillId + ".png";
+      var png = that.props.logoPrefix + "/logos/skills/" + skillId + ".png";
       return (<div key={skillId} style={{
         padding: 2
       }}>

@@ -64,6 +64,7 @@ class CV extends Component {
           print={this.state.print} 
           cvWidth={this.state.cvWidth}
           cvType={this.props.cvType} 
+          logoPrefix={this.props.logoPrefix}
         />
     );
   }

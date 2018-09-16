@@ -10,6 +10,7 @@ export default function (props) {
           print={props.print} 
           cvWidth={props.cvWidth}
           cvType={props.cvType} 
+          logoPrefix={props.logoPrefix}
         />
       </div>
   );

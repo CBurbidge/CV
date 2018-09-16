@@ -13,6 +13,4 @@ if(fse.pathExistsSync(docs)){
 
 fse.moveSync(build, docs);
 
-fse.copySync(logosSource, logosDestination);
-
-
+//fse.copySync(logosSource, logosDestination);
