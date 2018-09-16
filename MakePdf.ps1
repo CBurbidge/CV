@@ -3,16 +3,24 @@ $jsonDir = "$cvDir/json"
 $reactDir = "$cvDir/component"
 $buildDir = "$reactDir/build"
 
-cd $jsonDir
+cd $reactDir
 
-npm start
+npm run build-app
 
 cd $cvDir
 
-Start-Process powershell -argumentlist " -file RunDemo.ps1 " -WorkingDirectory "$reactDir"
 
-start-sleep -seconds 5
+Try
+{
+    $proc = Start-Process serve -ArgumentList " -s ./docs "
 
-node "$cvDir/pdf/createPdf.js"
+    start-sleep -seconds 5
 
-Start-Process powershell -argumentlist " -file RunDevelopMove.ps1 " -WorkingDirectory "$reactDir"
+    node "$cvDir/pdf/createPdf.js"    
+}
+Finally
+{
+    $proc | Stop-Process    
+}
+
+#Start-Process powershell -argumentlist " -file RunDevelopMove.ps1 " -WorkingDirectory "$reactDir"
