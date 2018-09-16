@@ -27,7 +27,7 @@ module.exports = {
 		new DateRange(new Date(2013, 3), new Date(2014, 3))),
 
 	fundslibrary: "fundslibrary".toSetting(
-		"Fundslibrary",
+		"FundsLibrary",
 		"FundsLibrary is one of the investments industry's leading providers of fund data, related regulatory services and software solutions.",
 		new DateRange(new Date(2014, 3), new Date(2015, 2))),
 

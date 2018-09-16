@@ -6,8 +6,12 @@ cd $jsonDir
 
 npm start
 
+cd $reactDir
+
+Start-Process powershell -argumentlist " -file RunBuild.ps1 " -WorkingDirectory "$reactDir" -NoNewWindow
+
+start-sleep -seconds 1
+
+Start-Process powershell -argumentlist " -file RunDevelopMove.ps1 " -WorkingDirectory "$reactDir" -NoNewWindow
+
 cd $cvDir
-
-Start-Process powershell -argumentlist " -file RunBuild.ps1 " -WorkingDirectory "$reactDir"
-
-Start-Process powershell -argumentlist " -file RunDevelopMove.ps1 " -WorkingDirectory "$reactDir"
