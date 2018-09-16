@@ -8,7 +8,8 @@ export default function (props) {
           jsonResume={props.jsonResume} 
           skills={props.skills} 
           print={props.print} 
-          cvWidth={props.cvWidth} 
+          cvWidth={props.cvWidth}
+          cvType={props.cvType} 
         />
       </div>
   );

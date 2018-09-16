@@ -8,7 +8,9 @@ class CVWrapper extends Component {
     
     var print = values.print === "true" || values.print === "True" ;
     
-    return (<IndexNwb divId={"cvDiv"} print={print}  />)
+    var cvType = values.type ? values.type : "default" ;
+    
+    return (<IndexNwb divId={"cvDiv"} print={print} cvType={cvType} />)
   }
 }
 export default CVWrapper;

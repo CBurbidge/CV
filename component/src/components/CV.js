@@ -62,7 +62,8 @@ class CV extends Component {
           jsonResume={this.props.jsonResume} 
           skills={this.props.skills} 
           print={this.state.print} 
-          cvWidth={this.state.cvWidth} 
+          cvWidth={this.state.cvWidth}
+          cvType={this.props.cvType} 
         />
     );
   }

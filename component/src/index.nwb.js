@@ -15,7 +15,7 @@ export default class extends Component {
           theme={theme} 
           print={print} 
           divId={this.props.divId}
-          
+          cvType={this.props.cvType}
         />
     );
   }

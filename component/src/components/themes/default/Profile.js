@@ -4,7 +4,7 @@ import Icons from './icons'
 
 export default function (props) {
   return (
-    <Summary basics={props.basics} cvWidth={props.cvWidth} />
+    <Summary basics={props.basics} cvWidth={props.cvWidth} cvType={props.cvType} />
   );
 }
 
@@ -12,6 +12,11 @@ var Summary = function (props) {
   var isMob = isMobile(props.cvWidth)
   var leftSide = isMob ? <h4>Profile</h4> : <Icons.ExperienceIcon size={iconSize} />
   var initialLeftStyle = isMob ? { borderLeft: "3px solid black" } : {}
+  var summary = props.basics.summary;
+  var summaryOverride = props.basics["summary-"+props.cvType];
+  if(summaryOverride){
+    summary = summaryOverride;
+  }
 
   return (
     <div  >
@@ -23,7 +28,7 @@ var Summary = function (props) {
         <p style={{
           margin: 10,
           textAlign: "justify",
-        }} >{props.basics.summary}</p>
+        }} >{summary}</p>
       </div>
     </div>
   )
