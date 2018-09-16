@@ -9,7 +9,8 @@ const RouterDiv = (
     <div>
         <Router>
             <div>
-                <Route exact path={`/*`} component={CVWrapper} />
+                <Route exact path={`/`} component={CVWrapper} />
+                <Route path={`/CV`} component={CVWrapper} />
             </div>
         </Router>
         <div id="cvDiv" ></div>
