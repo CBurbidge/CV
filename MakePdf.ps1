@@ -24,9 +24,6 @@ Finally
 }
 
 # clean up back to normal repo staus
-
 cd $reactDir
-
 ./PublishToDocsLocal.ps1
-
 cd $cvDir
