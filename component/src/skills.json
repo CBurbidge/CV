@@ -7,6 +7,7 @@
         "akkaDotNet",
         "apacheSpark",
         "aspDotNetMvc",
+        "aspWebApi",
         "aspDotNetWebforms",
         "azureDataFactory",
         "azureSql",
@@ -19,11 +20,14 @@
         "cPlusPlus",
         "cSharp",
         "docker",
+        "dotNetCore",
         "dotNetFramework",
         "esSixPromises",
         "fSharp",
+        "graphQl",
         "javascript",
         "linq",
+        "nodeJs",
         "nunit",
         "python",
         "restfulWebservices",
@@ -96,12 +100,14 @@
         "cordova",
         "css",
         "d3",
+        "dotNetCore",
         "dotNetFramework",
         "esSixPromises",
         "fSharp",
+        "gatsbyJs",
+        "graphQl",
         "grunt",
         "html",
-        "ionicFramework",
         "jasmine",
         "javascript",
         "jquery",
@@ -119,6 +125,7 @@
       "level": "Advanced",
       "keywords": [
         "cordova",
+        "ionicFramework",
         "jira",
         "latex",
         "resharper",
@@ -136,10 +143,12 @@
         "javascript",
         "karma",
         "moq",
+        "mstest",
         "nunit",
         "puppeteer",
         "python",
-        "specflow"
+        "specflow",
+        "vstest"
       ]
     }
   ],
@@ -227,6 +236,8 @@
         "jira",
         "linq",
         "moq",
+        "mstest",
+        "nodeJs",
         "nunit",
         "octopusDeploy",
         "packer",
@@ -239,6 +250,7 @@
         "teamcity",
         "tSql",
         "visualStudio",
+        "vstest",
         "xml"
       ]
     },
@@ -246,6 +258,7 @@
       "company": "Scott Logic",
       "keywords": [
         "apacheSpark",
+        "aspWebApi",
         "azureDataFactory",
         "azureSql",
         "azureSqlDw",
@@ -259,6 +272,7 @@
         "cSharp",
         "css",
         "docker",
+        "dotNetCore",
         "dotNetFramework",
         "esSixPromises",
         "fSharp",
@@ -267,6 +281,8 @@
         "javascript",
         "jira",
         "linq",
+        "mstest",
+        "nodeJs",
         "nunit",
         "reactJs",
         "resharper",
@@ -275,7 +291,8 @@
         "specflow",
         "terraform",
         "tSql",
-        "visualStudio"
+        "visualStudio",
+        "vstest"
       ]
     }
   ],
@@ -323,6 +340,17 @@
       "settingsIds": [
         "fundslibrary",
         "abide"
+      ]
+    },
+    "aspWebApi": {
+      "id": "aspWebApi",
+      "name": "ASP.NET Web API is a framework that makes it easy to build HTTP services that reach a broad range of clients, including browsers and mobile devices.",
+      "description": "",
+      "skillTypesIds": [
+        "backend"
+      ],
+      "settingsIds": [
+        "scottlogic"
       ]
     },
     "aspDotNetWebforms": {
@@ -659,6 +687,18 @@
         "scottlogic"
       ]
     },
+    "dotNetCore": {
+      "id": "dotNetCore",
+      "name": ".NET Core",
+      "description": ".NET Core is a free and open-source managed computer software framework for the Microsoft Windows, Apple macOS and Linux operating systems.",
+      "skillTypesIds": [
+        "backend",
+        "frontend"
+      ],
+      "settingsIds": [
+        "scottlogic"
+      ]
+    },
     "dotNetFramework": {
       "id": "dotNetFramework",
       "name": ".NET Framework",
@@ -701,6 +741,15 @@
         "scottlogic"
       ]
     },
+    "gatsbyJs": {
+      "id": "gatsbyJs",
+      "name": "GatsbyJS",
+      "description": "Blazing fast modern site generator for React. Go beyond static sites: build blogs, ecommerce sites, full-blown apps, and more with Gatsby.",
+      "skillTypesIds": [
+        "frontend"
+      ],
+      "settingsIds": []
+    },
     "git": {
       "id": "git",
       "name": "git",
@@ -713,6 +762,16 @@
         "abide",
         "scottlogic"
       ]
+    },
+    "graphQl": {
+      "id": "graphQl",
+      "name": "GraphQL",
+      "description": "GraphQL is a query language for your API, and a server-side runtime for executing queries by using a type system you define for your data.",
+      "skillTypesIds": [
+        "frontend",
+        "backend"
+      ],
+      "settingsIds": []
     },
     "grunt": {
       "id": "grunt",
@@ -745,7 +804,7 @@
       "name": "Ionic framework",
       "description": "Ionic is a powerful HTML5 SDK that helps you build native-feeling mobile apps using web technologies like HTML, CSS, and Javascript.",
       "skillTypesIds": [
-        "frontend"
+        "other"
       ],
       "settingsIds": []
     },
@@ -866,6 +925,30 @@
       "settingsIds": [
         "toplevel",
         "abide"
+      ]
+    },
+    "mstest": {
+      "id": "mstest",
+      "name": "MSTest",
+      "description": "The Visual Studio Unit Testing Framework describes Microsoft's suite of unit testing tools as integrated into some[1] versions of Visual Studio 2005 and later",
+      "skillTypesIds": [
+        "testing"
+      ],
+      "settingsIds": [
+        "scottlogic",
+        "abide"
+      ]
+    },
+    "nodeJs": {
+      "id": "nodeJs",
+      "name": "node.js",
+      "description": "",
+      "skillTypesIds": [
+        "backend"
+      ],
+      "settingsIds": [
+        "abide",
+        "scottlogic"
       ]
     },
     "nunit": {
@@ -1014,7 +1097,7 @@
     },
     "specflow": {
       "id": "specflow",
-      "name": "Specflow",
+      "name": "SpecFlow",
       "description": "SpecFlow is an open source port of Cucumber for .Net.",
       "skillTypesIds": [
         "testing"
@@ -1037,7 +1120,7 @@
     },
     "terraform": {
       "id": "terraform",
-      "name": "Terraform",
+      "name": "terraform",
       "description": "Terraform is an infrastructure as code software by HashiCorp. It allows users to define a datacenter infrastructure in a high-level configuration language, from which it can create an execution plan to build the infrastructure.",
       "skillTypesIds": [
         "cloud",
@@ -1049,7 +1132,7 @@
     },
     "teamcity": {
       "id": "teamcity",
-      "name": "Teamcity",
+      "name": "TeamCity",
       "description": "TeamCity is a Java-based build management and continuous integration server from JetBrains.",
       "skillTypesIds": [
         "devops"
@@ -1096,6 +1179,18 @@
         "fundslibrary",
         "abide",
         "scottlogic"
+      ]
+    },
+    "vstest": {
+      "id": "vstest",
+      "name": "VSTest",
+      "description": "The Visual Studio Unit Testing Framework describes Microsoft's suite of unit testing tools as integrated into some[1] versions of Visual Studio 2005 and later",
+      "skillTypesIds": [
+        "testing"
+      ],
+      "settingsIds": [
+        "scottlogic",
+        "abide"
       ]
     },
     "vbDotNet": {

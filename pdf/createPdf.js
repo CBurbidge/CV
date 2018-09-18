@@ -18,5 +18,9 @@ var baseUrl = 'http://localhost:5000';
   await page.goto(baseUrl + "/?type=winops");
   await page.pdf({path: 'cv-winops.pdf', format: 'A4'});
 
+  // dotnet pdf
+  await page.goto(baseUrl + "/?type=dotnet");
+  await page.pdf({path: 'cv-dotnet.pdf', format: 'A4'});
+
   await browser.close();
 })();

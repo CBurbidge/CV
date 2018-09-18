@@ -5,7 +5,8 @@
     "website": "https://chester.codes",
     "picture": "",
     "summary": "A software professional with a passion for the craft, constantly learning and improving. \n\nExperienced with various methodologies across the full software development lifecycle. I have written code for mobile, the desktop and the full web stack, using a variety of programing languages and paradigms. \n\nA regular attender, and occasional presenter, of technical talks on various topics. Interested in teaching through volunteering my time to the Code Club initiative.",
-    "summary-winops": "A software professional who is constantly learning and improving. Experienced with designing, building and deploying IAAS, PAAS and serverless cloud solutions on AWS and Azure. I have experience running .NET services and websites in a Windows Server environment. Passionate about automation and everything as code. I have used technologies for infrastructure as code (terraform and cloud specific), configurement management (Chef mostly) and general scripting (Powershell, bash, python etc).",
+    "summary-winops": "A software professional who is constantly learning and improving. Experienced with designing, building and deploying IAAS, PAAS and serverless cloud solutions on AWS and Azure. I have experience running .NET services and websites in a Windows Server environment. Passionate about automation and everything as code. I have used technologies for infrastructure as code (terraform and cloud specific), configuration management (Chef mostly) and general scripting (Powershell, bash, python etc).",
+    "summary-dotnet": "A passionate and capable developer with experience of a wide range of the Microsoft and .NET technologies. I have written code for a variety of 'back end' environments, including web sites and services using C# .NET framework on Windows Server and F# .NET Core on linux. Client side experience includes writing JavaScript and typescript code using different paradigms and libraries including React JS, Angular JS and jQuery. I have worked with agile methodologies across the full software development lifecycle. A regular attender, and occasional presenter, of technical talks on various topics.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -42,12 +43,13 @@
       "highlights": [
         "Designed and implemented ETL pipeline on Azure using Data Factory V2. Implemented data warehouse reporting solution using SQL Datawarehouse and PowerBI.",
         "Wrote AWS infrastructure code for data engineering project using Terraform. Deployed a wide range of resources such as Kinesis, EC2 VMs and ECS containers.",
-        "Developed Api for automated download and analysis of github repositories using .Net Core running F# on ubuntu.",
-        "Introduced SpecFlow into project to easy the development and provide living documentation of automated tests.",
+        "Developed REST API for automated download and analysis of github repositories using .Net Core running F# on ubuntu.",
+        "Introduced SpecFlow into project to increase efficiency of test development and provide living documentation of automated tests.",
         "Ran internal study group for advancing company knowledge on cloud computing."
       ],
       "skills": [
         "apacheSpark",
+        "aspWebApi",
         "azureDataFactory",
         "azureSql",
         "azureSqlDw",
@@ -61,6 +63,7 @@
         "cSharp",
         "css",
         "docker",
+        "dotNetCore",
         "dotNetFramework",
         "esSixPromises",
         "fSharp",
@@ -69,6 +72,8 @@
         "javascript",
         "jira",
         "linq",
+        "mstest",
+        "nodeJs",
         "nunit",
         "reactJs",
         "resharper",
@@ -77,7 +82,8 @@
         "specflow",
         "terraform",
         "tSql",
-        "visualStudio"
+        "visualStudio",
+        "vstest"
       ]
     },
     {
@@ -88,10 +94,12 @@
       "endDate": "2017-10-15",
       "summary": "",
       "highlights": [
-        "Developed code to enrich and validate financial transaction data using C# and T-SQL.",
-        "Implemented CI and deployment solutions for AWS resources including EC2 and Lambda. This required extensive use of Teamcity and Octopus deploy. Created nuget packages to promote 'best practices' in build and deployment automation.",
+        "Developed code to enrich and validate financial transaction data using C# and T-SQL, using 'best practices' and TDD where possible.",
+        "Developed AWS lambda functions using python and node.js for environment automation. Tasks including database setup and automated resource spin up/down.",
+        "Implemented CI and deployment solutions for AWS resources including EC2 and Lambda. This required extensive use of Teamcity and Octopus deploy. ",
+        "Created NuGet packages to promote 'best practices' in build and deployment automation.",
         "Wrote Powershell scripts for file archival and other Windows Server administration tasks.  Automated configuration of log aggregation agents on production systems.",
-        "Spread best practices in methods and technologies through organising department wide, weekly workshops."
+        "Spread 'best practices' in methods and technologies through organising department wide, weekly workshops."
       ],
       "skills": [
         "angularJs",
@@ -122,6 +130,8 @@
         "jira",
         "linq",
         "moq",
+        "mstest",
+        "nodeJs",
         "nunit",
         "octopusDeploy",
         "packer",
@@ -134,6 +144,7 @@
         "teamcity",
         "tSql",
         "visualStudio",
+        "vstest",
         "xml"
       ]
     },
@@ -251,6 +262,7 @@
         "akkaDotNet",
         "apacheSpark",
         "aspDotNetMvc",
+        "aspWebApi",
         "aspDotNetWebforms",
         "azureDataFactory",
         "azureSql",
@@ -263,11 +275,14 @@
         "cPlusPlus",
         "cSharp",
         "docker",
+        "dotNetCore",
         "dotNetFramework",
         "esSixPromises",
         "fSharp",
+        "graphQl",
         "javascript",
         "linq",
+        "nodeJs",
         "nunit",
         "python",
         "restfulWebservices",
@@ -340,12 +355,14 @@
         "cordova",
         "css",
         "d3",
+        "dotNetCore",
         "dotNetFramework",
         "esSixPromises",
         "fSharp",
+        "gatsbyJs",
+        "graphQl",
         "grunt",
         "html",
-        "ionicFramework",
         "jasmine",
         "javascript",
         "jquery",
@@ -363,6 +380,7 @@
       "level": "Advanced",
       "keywords": [
         "cordova",
+        "ionicFramework",
         "jira",
         "latex",
         "resharper",
@@ -380,10 +398,12 @@
         "javascript",
         "karma",
         "moq",
+        "mstest",
         "nunit",
         "puppeteer",
         "python",
-        "specflow"
+        "specflow",
+        "vstest"
       ]
     }
   ],
