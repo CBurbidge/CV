@@ -3,6 +3,8 @@ $reactIndexPath = "$executingDir/src/index.react.js"
 $buildIndexPath = "$executingDir/src/index.nwb.js"
 $indexPath =      "$executingDir/src/index.js"
 
+Write-Host "Running the RunBuildMove script in $executingDir"
+
 if(test-path $buildIndexPath){
   try {
     mv $indexPath $reactIndexPath -ea Stop

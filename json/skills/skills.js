@@ -63,8 +63,8 @@ module.exports = {
 	),
 
 	aspWebApi: "aspWebApi".toSkill(
+		"ASP.NET Web API",
 		"ASP.NET Web API is a framework that makes it easy to build HTTP services that reach a broad range of clients, including browsers and mobile devices.",
-		"",
 		[
 			skillTypes.backend,
 		],

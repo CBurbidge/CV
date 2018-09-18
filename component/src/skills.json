@@ -344,8 +344,8 @@
     },
     "aspWebApi": {
       "id": "aspWebApi",
-      "name": "ASP.NET Web API is a framework that makes it easy to build HTTP services that reach a broad range of clients, including browsers and mobile devices.",
-      "description": "",
+      "name": "ASP.NET Web API",
+      "description": "ASP.NET Web API is a framework that makes it easy to build HTTP services that reach a broad range of clients, including browsers and mobile devices.",
       "skillTypesIds": [
         "backend"
       ],
