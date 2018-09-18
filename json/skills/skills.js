@@ -648,6 +648,18 @@ module.exports = {
 		]
 	),
 
+	nodeJs: "nodeJs".toSkill(
+		"node.js",
+		"",
+		[
+			skillTypes.backend
+		],
+		[
+			settings.abide,
+			settings.scottlogic,
+		]
+	),
+
 	nunit: "nunit".toSkill(
 		"NUnit",
 		"NUnit is an open-source unit testing framework for Microsoft .NET. It serves the same purpose as JUnit does in the Java world, and is one of many programs in the xUnit family.",
