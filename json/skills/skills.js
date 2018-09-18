@@ -465,6 +465,17 @@ module.exports = {
 		]
 	),
 
+	gatsbyJs: "gatsbyJs".toSkill(
+		"GatsbyJS",
+		"Blazing fast modern site generator for React. Go beyond static sites: build blogs, ecommerce sites, full-blown apps, and more with Gatsby.",
+		[
+			skillTypes.frontend,
+		],
+		[
+			
+		]
+	),
+
 	git: "git".toSkill(
 		"git",
 		"Git is a version control system for tracking changes in computer files and coordinating work on those files among multiple people",
@@ -475,6 +486,18 @@ module.exports = {
 			settings.fundslibrary,
 			settings.abide,
 			settings.scottlogic,
+		]
+	),
+
+	graphQl: "graphQl".toSkill(
+		"GraphQL",
+		"GraphQL is a query language for your API, and a server-side runtime for executing queries by using a type system you define for your data.",
+		[
+			skillTypes.frontend,
+			skillTypes.backend,
+		],
+		[
+			
 		]
 	),
 
@@ -808,7 +831,7 @@ module.exports = {
 	),
 
 	specflow: "specflow".toSkill(
-		"Specflow",
+		"SpecFlow",
 		"SpecFlow is an open source port of Cucumber for .Net.",
 		[
 			skillTypes.testing,
@@ -831,7 +854,7 @@ module.exports = {
 	),
 
 	terraform: "terraform".toSkill(
-		"Terraform",
+		"terraform",
 		"Terraform is an infrastructure as code software by HashiCorp. It allows users to define a datacenter infrastructure in a high-level configuration language, from which it can create an execution plan to build the infrastructure.",
 		[
 			skillTypes.cloud,
@@ -843,7 +866,7 @@ module.exports = {
 	),
 
 	teamcity: "teamcity".toSkill(
-		"Teamcity",
+		"TeamCity",
 		"TeamCity is a Java-based build management and continuous integration server from JetBrains.",
 		[
 			skillTypes.devops,
