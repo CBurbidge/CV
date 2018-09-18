@@ -62,6 +62,17 @@ module.exports = {
 		]
 	),
 
+	aspWebApi: "aspWebApi".toSkill(
+		"ASP.NET Web API is a framework that makes it easy to build HTTP services that reach a broad range of clients, including browsers and mobile devices.",
+		"",
+		[
+			skillTypes.backend,
+		],
+		[
+			settings.scottlogic
+		]
+	),
+
 	aspDotNetWebforms: "aspDotNetWebforms".toSkill(
 		"ASP.NET WebForms",
 		"ASP.NET is a server-side web application framework designed for web development to produce dynamic web pages",
@@ -400,6 +411,18 @@ module.exports = {
 		]
 	),
 
+	dotNetCore: "dotNetCore".toSkill(
+		".NET Core",
+		".NET Core is a free and open-source managed computer software framework for the Microsoft Windows, Apple macOS and Linux operating systems.",
+		[
+			skillTypes.backend,
+			skillTypes.frontend,
+		],
+		[
+			settings.scottlogic,
+		]
+	),
+
 	dotNetFramework: "dotNetFramework".toSkill(
 		".NET Framework",
 		".NET Framework is a software framework developed by Microsoft that runs primarily on Microsoft Windows",
@@ -485,7 +508,7 @@ module.exports = {
 		"Ionic framework",
 		"Ionic is a powerful HTML5 SDK that helps you build native-feeling mobile apps using web technologies like HTML, CSS, and Javascript.",
 		[
-			skillTypes.frontend
+			skillTypes.other
 		],
 		[
 
@@ -609,6 +632,18 @@ module.exports = {
 		],
 		[
 			settings.toplevel,
+			settings.abide,
+		]
+	),
+
+	mstest: "mstest".toSkill(
+		"MSTest",
+		"The Visual Studio Unit Testing Framework describes Microsoft's suite of unit testing tools as integrated into some[1] versions of Visual Studio 2005 and later",
+		[
+			skillTypes.testing
+		],
+		[
+			settings.scottlogic,
 			settings.abide,
 		]
 	),
@@ -846,6 +881,18 @@ module.exports = {
 		]
 	),
 
+	vstest: "vstest".toSkill(
+		"VSTest",
+		"The Visual Studio Unit Testing Framework describes Microsoft's suite of unit testing tools as integrated into some[1] versions of Visual Studio 2005 and later",
+		[
+			skillTypes.testing
+		],
+		[
+			settings.scottlogic,
+			settings.abide,
+		]
+	),
+	
 	vbDotNet: "vbDotNet".toSkill(
 		"VB.NET",
 		"Visual Basic .NET (VB.NET) is a multi-paradigm, object-oriented programming language, implemented on the .NET Framework.",

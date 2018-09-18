@@ -42,8 +42,8 @@
             "highlights": [
                 "Designed and implemented ETL pipeline on Azure using Data Factory V2. Implemented data warehouse reporting solution using SQL Datawarehouse and PowerBI.",
                 "Wrote AWS infrastructure code for data engineering project using Terraform. Deployed a wide range of resources such as Kinesis, EC2 VMs and ECS containers.",
-                "Developed Api for automated download and analysis of github repositories using .Net Core running F# on ubuntu.",
-                "Introduced SpecFlow into project to easy the development and provide living documentation of automated tests.",
+                "Developed REST API for automated download and analysis of github repositories using .Net Core running F# on ubuntu.",
+                "Introduced SpecFlow into project to increase efficiency of test development and provide living documentation of automated tests.",
                 "Ran internal study group for advancing company knowledge on cloud computing."
             ]
         },
@@ -55,10 +55,12 @@
             "endDate": "2017-10-15",
             "summary": "",
             "highlights": [
-                "Developed code to enrich and validate financial transaction data using C# and T-SQL.",
-                "Implemented CI and deployment solutions for AWS resources including EC2 and Lambda. This required extensive use of Teamcity and Octopus deploy. Created nuget packages to promote 'best practices' in build and deployment automation.",
+                "Developed code to enrich and validate financial transaction data using C# and T-SQL, using 'best practices' and TDD where possible.",
+                "Developed AWS lambda functions using python and node.js for environment automation. Tasks including database setup and automated resource spin up/down.",
+                "Implemented CI and deployment solutions for AWS resources including EC2 and Lambda. This required extensive use of Teamcity and Octopus deploy. ",
+                "Created NuGet packages to promote 'best practices' in build and deployment automation.",
                 "Wrote Powershell scripts for file archival and other Windows Server administration tasks.  Automated configuration of log aggregation agents on production systems.",
-                "Spread best practices in methods and technologies through organising department wide, weekly workshops."
+                "Spread 'best practices' in methods and technologies through organising department wide, weekly workshops."
             ]
         },
         {
