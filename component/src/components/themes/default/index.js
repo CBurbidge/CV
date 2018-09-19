@@ -7,6 +7,7 @@ import WorkAndSkills from "./skills/WorkAndSkills"
 import WorkAndSkillsPrint from "./skills/WorkAndSkillsPrint"
 import Volunteer from "./Volunteer"
 import Education from "./Education"
+import Experience from "./Experience"
 import Awards from "./Awards"
 
 class Default extends Component {
@@ -16,10 +17,11 @@ class Default extends Component {
         {this.props.jsonResume.basics && <Name basics={this.props.jsonResume.basics} print={this.props.print} cvWidth={this.props.cvWidth} />}
         {this.props.jsonResume.basics && this.props.jsonResume.basics.summary && <Profile basics={this.props.jsonResume.basics}  cvWidth={this.props.cvWidth} cvType={this.props.cvType} />}
         {this.props.jsonResume.work.length > 0 && this.props.print && <WorkAndSkillsPrint work={this.props.jsonResume.work} skills={this.props.jsonResume.skills} skillsObj={this.props.skills} cvWidth={this.props.cvWidth} />}
+        {this.props.jsonResume.work.length > 0 && this.props.print && <Experience work={this.props.jsonResume.work} clickSelect={(t, v) => null} isSelected={(t, v) => null} selected={""} cvWidth={this.props.cvWidth} />}
         {this.props.jsonResume.work.length > 0 && !this.props.print && <WorkAndSkills work={this.props.jsonResume.work} skills={this.props.jsonResume.skills} skillsObj={this.props.skills} cvWidth={this.props.cvWidth} logoPrefix={this.props.logoPrefix} />}
         {this.props.jsonResume.education.length > 0 && <Education education={this.props.jsonResume.education} cvWidth={this.props.cvWidth} />}
         {this.props.jsonResume.awards.length > 0 && <Awards awards={this.props.jsonResume.awards} cvWidth={this.props.cvWidth} />}
-        {this.props.jsonResume.volunteer.length > 0 && <Volunteer volunteer={this.props.jsonResume.volunteer} cvWidth={this.props.cvWidth} />}
+        {this.props.jsonResume.volunteer.length > 0 && !this.props.print && <Volunteer volunteer={this.props.jsonResume.volunteer} cvWidth={this.props.cvWidth} />}
         
       </div>
     );

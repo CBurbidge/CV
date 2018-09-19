@@ -91,8 +91,8 @@ export default class WorkAndSkills extends React.Component {
 
     return (
       <div>
-        <Experience work={this.props.work} cvWidth={this.props.cvWidth} />
         <SkillTypes getSelectedText={getSelectedText} work={this.props.work} skills={this.props.skills} skillsObj={this.props.skillsObj} clickSelect={this.clickSelect} isSelected={this.isSelected} cvWidth={this.props.cvWidth} logoPrefix={this.props.logoPrefix} />
+        <Experience work={this.props.work} cvWidth={this.props.cvWidth} />
       </div>
     );
   }

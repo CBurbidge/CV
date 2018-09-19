@@ -1,5 +1,5 @@
 import React from 'react';
-import { isMobile, getRightSideDivStyle, getLeftSideDivStyle, mixWithBorder2AndPadding, iconSize } from './styles/common'
+import { isMobile, getRightSideDivStyle, getLeftSideDivStyle, mixWithBorderAndPadding, iconSize } from './styles/common'
 import Icons from './icons'
 
 export default class Experience extends React.Component {
@@ -7,7 +7,7 @@ export default class Experience extends React.Component {
   render() {
     var rightStyle = getRightSideDivStyle(this.props.cvWidth)
     var isMob = isMobile(this.props.cvWidth)
-    var initialLeftStyle = isMob ? { borderRight: "3px solid black" } : {}
+    var initialLeftStyle = isMob ? { borderLeft: "3px solid black" } : {}
     var leftSide = isMob ? <h4>Experience</h4> : <Icons.BriefCase size={iconSize} />
 
     return (
@@ -18,7 +18,7 @@ export default class Experience extends React.Component {
           {leftSide}
         </div>
 
-        <div style={mixWithBorder2AndPadding(rightStyle)} >{
+        <div style={mixWithBorderAndPadding(rightStyle)} >{
           this.props.work.map(x => <WorkPlace key={x.company} work={x} />)}
 
         </div>
@@ -38,7 +38,7 @@ class WorkPlace extends React.Component {
         <div 
           style={{
             padding: 10,
-            borderLeft: "3px solid black",
+            borderRight: "3px solid black",
             margin: 10
           }}
         >
