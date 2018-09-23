@@ -750,7 +750,7 @@ module.exports = {
 		"RESTFul webservices",
 		"REpresentational State Transfer (REST) is an architectural style that defines a set of constraints and properties based on HTTP.",
 		[
-			skillTypes.backend,
+			skillTypes.other,
 		],
 		[
 			settings.fundslibrary,
@@ -785,7 +785,7 @@ module.exports = {
 		"SQL Server Management Studio",
 		"SQL Server Management Studio (SSMS) is a software application first launched with Microsoft SQL Server 2005 that is used for configuring, managing, and administering all components within Microsoft SQL Server.",
 		[
-			skillTypes.backend,
+			skillTypes.other,
 		],
 		[
 			settings.toplevel,

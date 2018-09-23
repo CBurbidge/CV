@@ -283,8 +283,6 @@
         "linq",
         "nodeJs",
         "python",
-        "restfulWebservices",
-        "sqlServerManagementStudio",
         "tSql",
         "vbDotNet"
       ]
@@ -341,8 +339,10 @@
         "jira",
         "latex",
         "resharper",
+        "restfulWebservices",
         "rlanguage",
         "sourceSafe",
+        "sqlServerManagementStudio",
         "tfs",
         "visualStudio",
         "xslt",
