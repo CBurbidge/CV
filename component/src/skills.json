@@ -12,57 +12,26 @@
         "azureDataFactory",
         "azureSql",
         "azureSqlDw",
+        "azureHdInsights",
         "awsDynamoDB",
+        "awsEC2",
+        "awsLambda",
         "awsKinesis",
         "awsRedshift",
         "awsSqs",
         "awsS3",
         "cPlusPlus",
         "cSharp",
-        "docker",
         "dotNetCore",
         "dotNetFramework",
-        "esSixPromises",
         "fSharp",
-        "graphQl",
-        "javascript",
         "linq",
         "nodeJs",
-        "nunit",
         "python",
         "restfulWebservices",
         "sqlServerManagementStudio",
         "tSql",
-        "visualStudio",
-        "vbDotNet",
-        "xslt",
-        "xml"
-      ]
-    },
-    {
-      "name": "Cloud Computing",
-      "level": "Advanced",
-      "keywords": [
-        "azureDataFactory",
-        "azureSql",
-        "azureSqlDw",
-        "azureResourceManager",
-        "azureHdInsights",
-        "awsCloudformation",
-        "awsDynamoDB",
-        "awsEC2",
-        "awsECR",
-        "awsECS",
-        "awsLambda",
-        "awsKinesis",
-        "awsOpsworks",
-        "awsRedshift",
-        "awsSqs",
-        "awsS3",
-        "docker",
-        "powershell",
-        "python",
-        "terraform"
+        "vbDotNet"
       ]
     },
     {
@@ -71,10 +40,8 @@
       "keywords": [
         "azureResourceManager",
         "awsCloudformation",
-        "awsEC2",
         "awsECR",
         "awsECS",
-        "awsLambda",
         "awsOpsworks",
         "bashScripting",
         "cake",
@@ -82,11 +49,9 @@
         "continuousIntegration",
         "docker",
         "git",
-        "grunt",
         "octopusDeploy",
         "packer",
         "powershell",
-        "python",
         "terraform",
         "teamcity"
       ]
@@ -97,27 +62,19 @@
       "keywords": [
         "angularJs",
         "bootstrap",
-        "cordova",
         "css",
         "d3",
-        "dotNetCore",
-        "dotNetFramework",
         "esSixPromises",
-        "fSharp",
         "gatsbyJs",
         "graphQl",
         "grunt",
         "html",
-        "jasmine",
         "javascript",
         "jquery",
         "knockoutJs",
         "less",
-        "puppeteer",
         "reactJs",
-        "restfulWebservices",
-        "typescript",
-        "visualStudio"
+        "typescript"
       ]
     },
     {
@@ -131,22 +88,22 @@
         "resharper",
         "rlanguage",
         "sourceSafe",
-        "tfs"
+        "tfs",
+        "visualStudio",
+        "xslt",
+        "xml"
       ]
     },
     {
       "name": "Testing",
       "level": "Advanced",
       "keywords": [
-        "cSharp",
         "jasmine",
-        "javascript",
         "karma",
         "moq",
         "mstest",
         "nunit",
         "puppeteer",
-        "python",
         "specflow",
         "vstest"
       ]
@@ -369,8 +326,7 @@
       "name": "Azure Data Factory",
       "description": "Azure Data Factory is a cloud-based data integration service that allows you to create data-driven workflows in the cloud for orchestrating and automating data movement and data transformation",
       "skillTypesIds": [
-        "backend",
-        "cloud"
+        "backend"
       ],
       "settingsIds": [
         "scottlogic"
@@ -381,8 +337,7 @@
       "name": "Azure SQL",
       "description": "Microsoft Azure SQL Database is a managed cloud database (SaaS) provided as part of Microsoft Azure",
       "skillTypesIds": [
-        "backend",
-        "cloud"
+        "backend"
       ],
       "settingsIds": [
         "scottlogic"
@@ -393,8 +348,7 @@
       "name": "Azure SQL Data Warehouse",
       "description": "SQL Data Warehouse is a cloud-based Enterprise Data Warehouse that leverages Massively Parallel Processing to quickly run complex queries across petabytes of data",
       "skillTypesIds": [
-        "backend",
-        "cloud"
+        "backend"
       ],
       "settingsIds": [
         "scottlogic"
@@ -405,8 +359,7 @@
       "name": "Azure Resource Manager",
       "description": "Azure Resource Manager is a technology used to provision resources within the Azure platform.",
       "skillTypesIds": [
-        "devops",
-        "cloud"
+        "devops"
       ],
       "settingsIds": [
         "scottlogic"
@@ -417,7 +370,7 @@
       "name": "Azure HdInsights",
       "description": "Azure HDInsight is a fully managed cloud service that makes it easy, fast and cost-effective to process massive amounts of data. Use popular open-source frameworks such as Hadoop, Spark, Hive, LLAP, Kafka, Storm, R and more.",
       "skillTypesIds": [
-        "cloud"
+        "backend"
       ],
       "settingsIds": [
         "scottlogic"
@@ -428,7 +381,6 @@
       "name": "AWS Cloudformation",
       "description": "AWS CloudFormation provides a common language for you to describe and provision all the infrastructure resources in your cloud environment. CloudFormation allows you to use a simple text file to model and provision, in an automated and secure manner, all the resources needed for your applications across all regions and accounts. This file serves as the single source of truth for your cloud environment",
       "skillTypesIds": [
-        "cloud",
         "devops"
       ],
       "settingsIds": [
@@ -440,7 +392,6 @@
       "name": "AWS DynamoDB",
       "description": "Amazon DynamoDB is a fast and flexible NoSQL database service for all applications that need consistent, single-digit millisecond latency at any scale. It is a fully managed cloud database and supports both document and key-value store models",
       "skillTypesIds": [
-        "cloud",
         "backend"
       ],
       "settingsIds": [
@@ -452,8 +403,7 @@
       "name": "AWS EC2",
       "description": "Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. It is designed to make web-scale cloud computing easier for developers.",
       "skillTypesIds": [
-        "cloud",
-        "devops"
+        "backend"
       ],
       "settingsIds": [
         "abide"
@@ -464,7 +414,6 @@
       "name": "AWS ECR",
       "description": "Amazon Elastic Container Registry is a fully-managed Docker container registry that makes it easy for developers to store, manage, and deploy Docker container images.",
       "skillTypesIds": [
-        "cloud",
         "devops"
       ],
       "settingsIds": [
@@ -476,7 +425,6 @@
       "name": "AWS ECS",
       "description": "Amazon Elastic Container Service (Amazon ECS) is a highly scalable, high-performance container orchestration service that supports Docker containers and allows you to easily run and scale containerized applications on AWS.",
       "skillTypesIds": [
-        "cloud",
         "devops"
       ],
       "settingsIds": [
@@ -488,8 +436,7 @@
       "name": "AWS Lambda",
       "description": "AWS Lambda lets you run code without provisioning or managing servers.",
       "skillTypesIds": [
-        "cloud",
-        "devops"
+        "backend"
       ],
       "settingsIds": [
         "abide"
@@ -500,7 +447,6 @@
       "name": "AWS Kinesis",
       "description": "Amazon Kinesis Data Streams enables you to build custom applications that process or analyze streaming data for specialized needs.",
       "skillTypesIds": [
-        "cloud",
         "backend"
       ],
       "settingsIds": [
@@ -512,7 +458,6 @@
       "name": "AWS Opsworks",
       "description": "AWS OpsWorks is a configuration management service that provides managed instances of Chef and Puppet.",
       "skillTypesIds": [
-        "cloud",
         "devops"
       ],
       "settingsIds": [
@@ -524,8 +469,7 @@
       "name": "AWS Redshift",
       "description": "Amazon Redshift is a fast, fully managed data warehouse that makes it simple and cost-effective to analyze all your data using standard SQL and your existing Business Intelligence tools",
       "skillTypesIds": [
-        "backend",
-        "cloud"
+        "backend"
       ],
       "settingsIds": [
         "abide"
@@ -536,8 +480,7 @@
       "name": "AWS SQS",
       "description": "Amazon Simple Queue Service is a fully managed message queuing service that makes it easy to decouple and scale microservices, distributed systems, and serverless applications.",
       "skillTypesIds": [
-        "backend",
-        "cloud"
+        "backend"
       ],
       "settingsIds": [
         "abide"
@@ -548,8 +491,7 @@
       "name": "AWS S3",
       "description": "Amazon S3 is object storage built to store and retrieve any amount of data from anywhere – web sites and mobile apps, corporate applications, and data from IoT sensors or devices.",
       "skillTypesIds": [
-        "backend",
-        "cloud"
+        "backend"
       ],
       "settingsIds": [
         "abide"
@@ -620,7 +562,6 @@
       "name": "Apache Cordova (Phone Gap)",
       "description": "Apache Cordova is an open-source mobile application development framework which enables software programmers to build applications for mobile devices using CSS3, HTML5, and JavaScript instead of relying on platform-specific APIs like those in Android, iOS, or Windows Phone.",
       "skillTypesIds": [
-        "frontend",
         "other"
       ],
       "settingsIds": []
@@ -641,8 +582,7 @@
       "name": "C#",
       "description": "C# is a multi-paradigm programming language encompassing strong typing, imperative, declarative, functional, generic, object-oriented and component-oriented programming disciplines",
       "skillTypesIds": [
-        "backend",
-        "testing"
+        "backend"
       ],
       "settingsIds": [
         "toplevel",
@@ -679,8 +619,6 @@
       "name": "Docker",
       "description": "Docker is a computer program that performs operating-system-level virtualization also known as containerization.",
       "skillTypesIds": [
-        "backend",
-        "cloud",
         "devops"
       ],
       "settingsIds": [
@@ -692,8 +630,7 @@
       "name": ".NET Core",
       "description": ".NET Core is a free and open-source managed computer software framework for the Microsoft Windows, Apple macOS and Linux operating systems.",
       "skillTypesIds": [
-        "backend",
-        "frontend"
+        "backend"
       ],
       "settingsIds": [
         "scottlogic"
@@ -704,8 +641,7 @@
       "name": ".NET Framework",
       "description": ".NET Framework is a software framework developed by Microsoft that runs primarily on Microsoft Windows",
       "skillTypesIds": [
-        "backend",
-        "frontend"
+        "backend"
       ],
       "settingsIds": [
         "toplevel",
@@ -719,8 +655,7 @@
       "name": "ES6 Promises",
       "description": "The Promise object represents the eventual completion (or failure) of an asynchronous operation, and its resulting value.",
       "skillTypesIds": [
-        "frontend",
-        "backend"
+        "frontend"
       ],
       "settingsIds": [
         "fundslibrary",
@@ -733,8 +668,7 @@
       "name": "F#",
       "description": "F# is a strongly typed, multi-paradigm programming language that encompasses functional, imperative, and object-oriented programming methods.",
       "skillTypesIds": [
-        "backend",
-        "frontend"
+        "backend"
       ],
       "settingsIds": [
         "abide",
@@ -768,8 +702,7 @@
       "name": "GraphQL",
       "description": "GraphQL is a query language for your API, and a server-side runtime for executing queries by using a type system you define for your data.",
       "skillTypesIds": [
-        "frontend",
-        "backend"
+        "frontend"
       ],
       "settingsIds": []
     },
@@ -778,7 +711,6 @@
       "name": "grunt",
       "description": "Grunt is a JavaScript task runner, a tool used to automatically perform frequent tasks such as minification, compilation, unit testing, and linting",
       "skillTypesIds": [
-        "devops",
         "frontend"
       ],
       "settingsIds": [
@@ -813,7 +745,6 @@
       "name": "jasmine",
       "description": "Jasmine is an open source testing framework for JavaScript. It aims to run on any JavaScript-enabled platform, to not intrude on the application nor the IDE, and to have easy-to-read syntax.",
       "skillTypesIds": [
-        "frontend",
         "testing"
       ],
       "settingsIds": [
@@ -825,9 +756,7 @@
       "name": "javascript",
       "description": "JavaScript is a high-level, interpreted programming language. It is a language which is also characterized as dynamic, weakly typed, prototype-based and multi-paradigm",
       "skillTypesIds": [
-        "backend",
-        "frontend",
-        "testing"
+        "frontend"
       ],
       "settingsIds": [
         "fundslibrary",
@@ -956,7 +885,6 @@
       "name": "NUnit",
       "description": "NUnit is an open-source unit testing framework for Microsoft .NET. It serves the same purpose as JUnit does in the Java world, and is one of many programs in the xUnit family.",
       "skillTypesIds": [
-        "backend",
         "testing"
       ],
       "settingsIds": [
@@ -992,7 +920,6 @@
       "name": "Powershell",
       "description": "PowerShell is a task automation and configuration management framework from Microsoft, consisting of a command-line shell and associated scripting language.",
       "skillTypesIds": [
-        "cloud",
         "devops"
       ],
       "settingsIds": [
@@ -1004,7 +931,6 @@
       "name": "Puppeteer",
       "description": "Puppeteer is a Node library which provides a high-level API to control Chrome or Chromium over the DevTools Protocol. Puppeteer runs headless by default, but can be configured to run full (non-headless) Chrome or Chromium",
       "skillTypesIds": [
-        "frontend",
         "testing"
       ],
       "settingsIds": []
@@ -1014,10 +940,7 @@
       "name": "python",
       "description": "Python is an interpreted high-level programming language for general-purpose programming. Python has a design philosophy that emphasizes code readability, notably using significant whitespace.",
       "skillTypesIds": [
-        "backend",
-        "cloud",
-        "devops",
-        "testing"
+        "backend"
       ],
       "settingsIds": [
         "abide"
@@ -1052,8 +975,7 @@
       "name": "RESTFul webservices",
       "description": "REpresentational State Transfer (REST) is an architectural style that defines a set of constraints and properties based on HTTP.",
       "skillTypesIds": [
-        "backend",
-        "frontend"
+        "backend"
       ],
       "settingsIds": [
         "fundslibrary",
@@ -1123,7 +1045,6 @@
       "name": "terraform",
       "description": "Terraform is an infrastructure as code software by HashiCorp. It allows users to define a datacenter infrastructure in a high-level configuration language, from which it can create an execution plan to build the infrastructure.",
       "skillTypesIds": [
-        "cloud",
         "devops"
       ],
       "settingsIds": [
@@ -1171,8 +1092,7 @@
       "name": "Visual studio",
       "description": "Microsoft Visual Studio is an integrated development environment (IDE) from Microsoft.",
       "skillTypesIds": [
-        "frontend",
-        "backend"
+        "other"
       ],
       "settingsIds": [
         "toplevel",
@@ -1209,7 +1129,7 @@
       "name": "XSLT",
       "description": "A language to transform XML into HTML",
       "skillTypesIds": [
-        "backend"
+        "other"
       ],
       "settingsIds": [
         "fundslibrary"
@@ -1220,7 +1140,7 @@
       "name": "XML",
       "description": "A heavily used markup language",
       "skillTypesIds": [
-        "backend"
+        "other"
       ],
       "settingsIds": [
         "toplevel",
@@ -1234,12 +1154,6 @@
       "id": "backend",
       "name": "Back End",
       "description": "Back end Development refers to the server side of development which usually consists of three parts: a server, an application, and a database. Code written by back end developers is what communicates the database information to the browser.",
-      "level": "Advanced"
-    },
-    "cloud": {
-      "id": "cloud",
-      "name": "Cloud Computing",
-      "description": "Cloud computing is the delivery of computing services – servers, storage, databases, networking, software, analytics and more over the Internet.",
       "level": "Advanced"
     },
     "devops": {

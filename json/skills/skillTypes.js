@@ -17,10 +17,6 @@ module.exports = {
 	backend: "backend".toSkillType(
 		"Back End",
 		"Back end Development refers to the server side of development which usually consists of three parts: a server, an application, and a database. Code written by back end developers is what communicates the database information to the browser."),
-	cloud: "cloud".toSkillType(
-		"Cloud Computing",
-		"Cloud computing is the delivery of computing services – servers, storage, databases, networking, software, analytics and more over the Internet."
-	),
 	devops: "devops".toSkillType(
 		"Devops",
 		"DevOps is a software engineering culture and practice that aims at unifying software development and software operations"

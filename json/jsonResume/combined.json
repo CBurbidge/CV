@@ -267,57 +267,26 @@
         "azureDataFactory",
         "azureSql",
         "azureSqlDw",
+        "azureHdInsights",
         "awsDynamoDB",
+        "awsEC2",
+        "awsLambda",
         "awsKinesis",
         "awsRedshift",
         "awsSqs",
         "awsS3",
         "cPlusPlus",
         "cSharp",
-        "docker",
         "dotNetCore",
         "dotNetFramework",
-        "esSixPromises",
         "fSharp",
-        "graphQl",
-        "javascript",
         "linq",
         "nodeJs",
-        "nunit",
         "python",
         "restfulWebservices",
         "sqlServerManagementStudio",
         "tSql",
-        "visualStudio",
-        "vbDotNet",
-        "xslt",
-        "xml"
-      ]
-    },
-    {
-      "name": "Cloud Computing",
-      "level": "Advanced",
-      "keywords": [
-        "azureDataFactory",
-        "azureSql",
-        "azureSqlDw",
-        "azureResourceManager",
-        "azureHdInsights",
-        "awsCloudformation",
-        "awsDynamoDB",
-        "awsEC2",
-        "awsECR",
-        "awsECS",
-        "awsLambda",
-        "awsKinesis",
-        "awsOpsworks",
-        "awsRedshift",
-        "awsSqs",
-        "awsS3",
-        "docker",
-        "powershell",
-        "python",
-        "terraform"
+        "vbDotNet"
       ]
     },
     {
@@ -326,10 +295,8 @@
       "keywords": [
         "azureResourceManager",
         "awsCloudformation",
-        "awsEC2",
         "awsECR",
         "awsECS",
-        "awsLambda",
         "awsOpsworks",
         "bashScripting",
         "cake",
@@ -337,11 +304,9 @@
         "continuousIntegration",
         "docker",
         "git",
-        "grunt",
         "octopusDeploy",
         "packer",
         "powershell",
-        "python",
         "terraform",
         "teamcity"
       ]
@@ -352,27 +317,19 @@
       "keywords": [
         "angularJs",
         "bootstrap",
-        "cordova",
         "css",
         "d3",
-        "dotNetCore",
-        "dotNetFramework",
         "esSixPromises",
-        "fSharp",
         "gatsbyJs",
         "graphQl",
         "grunt",
         "html",
-        "jasmine",
         "javascript",
         "jquery",
         "knockoutJs",
         "less",
-        "puppeteer",
         "reactJs",
-        "restfulWebservices",
-        "typescript",
-        "visualStudio"
+        "typescript"
       ]
     },
     {
@@ -386,22 +343,22 @@
         "resharper",
         "rlanguage",
         "sourceSafe",
-        "tfs"
+        "tfs",
+        "visualStudio",
+        "xslt",
+        "xml"
       ]
     },
     {
       "name": "Testing",
       "level": "Advanced",
       "keywords": [
-        "cSharp",
         "jasmine",
-        "javascript",
         "karma",
         "moq",
         "mstest",
         "nunit",
         "puppeteer",
-        "python",
         "specflow",
         "vstest"
       ]

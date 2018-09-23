@@ -89,7 +89,6 @@ module.exports = {
 		"Azure Data Factory is a cloud-based data integration service that allows you to create data-driven workflows in the cloud for orchestrating and automating data movement and data transformation",
 		[
 			skillTypes.backend,
-			skillTypes.cloud,
 		],
 		[
 			settings.scottlogic
@@ -101,7 +100,6 @@ module.exports = {
 		"Microsoft Azure SQL Database is a managed cloud database (SaaS) provided as part of Microsoft Azure",
 		[
 			skillTypes.backend,
-			skillTypes.cloud,
 		],
 		[
 			settings.scottlogic
@@ -113,7 +111,6 @@ module.exports = {
 		"SQL Data Warehouse is a cloud-based Enterprise Data Warehouse that leverages Massively Parallel Processing to quickly run complex queries across petabytes of data",
 		[
 			skillTypes.backend,
-			skillTypes.cloud,
 		],
 		[
 			settings.scottlogic
@@ -125,7 +122,6 @@ module.exports = {
 		"Azure Resource Manager is a technology used to provision resources within the Azure platform.",
 		[
 			skillTypes.devops,
-			skillTypes.cloud,
 		],
 		[
 			settings.scottlogic
@@ -136,7 +132,7 @@ module.exports = {
 		"Azure HdInsights",
 		"Azure HDInsight is a fully managed cloud service that makes it easy, fast and cost-effective to process massive amounts of data. Use popular open-source frameworks such as Hadoop, Spark, Hive, LLAP, Kafka, Storm, R and more.",
 		[
-			skillTypes.cloud,
+			skillTypes.backend,
 		],
 		[
 			settings.scottlogic
@@ -147,7 +143,6 @@ module.exports = {
 		"AWS Cloudformation",
 		"AWS CloudFormation provides a common language for you to describe and provision all the infrastructure resources in your cloud environment. CloudFormation allows you to use a simple text file to model and provision, in an automated and secure manner, all the resources needed for your applications across all regions and accounts. This file serves as the single source of truth for your cloud environment",
 		[
-			skillTypes.cloud,
 			skillTypes.devops,
 		],
 		[
@@ -159,7 +154,6 @@ module.exports = {
 		"AWS DynamoDB",
 		"Amazon DynamoDB is a fast and flexible NoSQL database service for all applications that need consistent, single-digit millisecond latency at any scale. It is a fully managed cloud database and supports both document and key-value store models",
 		[
-			skillTypes.cloud,
 			skillTypes.backend,
 		],
 		[
@@ -171,8 +165,7 @@ module.exports = {
 		"AWS EC2",
 		"Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. It is designed to make web-scale cloud computing easier for developers.",
 		[
-			skillTypes.cloud,
-			skillTypes.devops,
+			skillTypes.backend,
 		],
 		[
 			settings.abide
@@ -183,7 +176,6 @@ module.exports = {
 		"AWS ECR",
 		"Amazon Elastic Container Registry is a fully-managed Docker container registry that makes it easy for developers to store, manage, and deploy Docker container images.",
 		[
-			skillTypes.cloud,
 			skillTypes.devops,
 		],
 		[
@@ -195,7 +187,6 @@ module.exports = {
 		"AWS ECS",
 		"Amazon Elastic Container Service (Amazon ECS) is a highly scalable, high-performance container orchestration service that supports Docker containers and allows you to easily run and scale containerized applications on AWS.",
 		[
-			skillTypes.cloud,
 			skillTypes.devops,
 		],
 		[
@@ -207,8 +198,7 @@ module.exports = {
 		"AWS Lambda",
 		"AWS Lambda lets you run code without provisioning or managing servers.",
 		[
-			skillTypes.cloud,
-			skillTypes.devops,
+			skillTypes.backend,
 		],
 		[
 			settings.abide
@@ -219,7 +209,6 @@ module.exports = {
 		"AWS Kinesis",
 		"Amazon Kinesis Data Streams enables you to build custom applications that process or analyze streaming data for specialized needs.",
 		[
-			skillTypes.cloud,
 			skillTypes.backend,
 		],
 		[
@@ -231,7 +220,6 @@ module.exports = {
 		"AWS Opsworks",
 		"AWS OpsWorks is a configuration management service that provides managed instances of Chef and Puppet.",
 		[
-			skillTypes.cloud,
 			skillTypes.devops,
 		],
 		[
@@ -244,7 +232,6 @@ module.exports = {
 		"Amazon Redshift is a fast, fully managed data warehouse that makes it simple and cost-effective to analyze all your data using standard SQL and your existing Business Intelligence tools",
 		[
 			skillTypes.backend,
-			skillTypes.cloud,
 		],
 		[
 			settings.abide
@@ -256,7 +243,6 @@ module.exports = {
 		"Amazon Simple Queue Service is a fully managed message queuing service that makes it easy to decouple and scale microservices, distributed systems, and serverless applications.",
 		[
 			skillTypes.backend,
-			skillTypes.cloud,
 		],
 		[
 			settings.abide
@@ -268,7 +254,6 @@ module.exports = {
 		"Amazon S3 is object storage built to store and retrieve any amount of data from anywhere – web sites and mobile apps, corporate applications, and data from IoT sensors or devices.",
 		[
 			skillTypes.backend,
-			skillTypes.cloud,
 		],
 		[
 			settings.abide
@@ -339,7 +324,6 @@ module.exports = {
 		"Apache Cordova (Phone Gap)",
 		"Apache Cordova is an open-source mobile application development framework which enables software programmers to build applications for mobile devices using CSS3, HTML5, and JavaScript instead of relying on platform-specific APIs like those in Android, iOS, or Windows Phone.",
 		[
-			skillTypes.frontend,
 			skillTypes.other
 		],
 		[
@@ -363,7 +347,6 @@ module.exports = {
 		"C# is a multi-paradigm programming language encompassing strong typing, imperative, declarative, functional, generic, object-oriented and component-oriented programming disciplines",
 		[
 			skillTypes.backend,
-			skillTypes.testing,
 		],
 		[
 			settings.toplevel,
@@ -402,8 +385,6 @@ module.exports = {
 		"Docker",
 		"Docker is a computer program that performs operating-system-level virtualization also known as containerization.",
 		[
-			skillTypes.backend,
-			skillTypes.cloud,
 			skillTypes.devops,
 		],
 		[
@@ -416,7 +397,6 @@ module.exports = {
 		".NET Core is a free and open-source managed computer software framework for the Microsoft Windows, Apple macOS and Linux operating systems.",
 		[
 			skillTypes.backend,
-			skillTypes.frontend,
 		],
 		[
 			settings.scottlogic,
@@ -428,7 +408,6 @@ module.exports = {
 		".NET Framework is a software framework developed by Microsoft that runs primarily on Microsoft Windows",
 		[
 			skillTypes.backend,
-			skillTypes.frontend,
 		],
 		[
 			settings.toplevel,
@@ -443,7 +422,6 @@ module.exports = {
 		"The Promise object represents the eventual completion (or failure) of an asynchronous operation, and its resulting value.",
 		[
 			skillTypes.frontend,
-			skillTypes.backend,
 		],
 		[
 			settings.fundslibrary,
@@ -457,7 +435,6 @@ module.exports = {
 		"F# is a strongly typed, multi-paradigm programming language that encompasses functional, imperative, and object-oriented programming methods.",
 		[
 			skillTypes.backend,
-			skillTypes.frontend,
 		],
 		[
 			settings.abide,
@@ -494,7 +471,6 @@ module.exports = {
 		"GraphQL is a query language for your API, and a server-side runtime for executing queries by using a type system you define for your data.",
 		[
 			skillTypes.frontend,
-			skillTypes.backend,
 		],
 		[
 			
@@ -505,7 +481,6 @@ module.exports = {
 		"grunt",
 		"Grunt is a JavaScript task runner, a tool used to automatically perform frequent tasks such as minification, compilation, unit testing, and linting",
 		[
-			skillTypes.devops,
 			skillTypes.frontend,
 		],
 		[
@@ -542,7 +517,6 @@ module.exports = {
 		"jasmine",
 		"Jasmine is an open source testing framework for JavaScript. It aims to run on any JavaScript-enabled platform, to not intrude on the application nor the IDE, and to have easy-to-read syntax.",
 		[
-			skillTypes.frontend,
 			skillTypes.testing
 		],
 		[
@@ -554,9 +528,7 @@ module.exports = {
 		"javascript",
 		"JavaScript is a high-level, interpreted programming language. It is a language which is also characterized as dynamic, weakly typed, prototype-based and multi-paradigm",
 		[
-			skillTypes.backend,
 			skillTypes.frontend,
-			skillTypes.testing
 		],
 		[
 			settings.fundslibrary,
@@ -687,7 +659,6 @@ module.exports = {
 		"NUnit",
 		"NUnit is an open-source unit testing framework for Microsoft .NET. It serves the same purpose as JUnit does in the Java world, and is one of many programs in the xUnit family.",
 		[
-			skillTypes.backend,
 			skillTypes.testing
 		],
 		[
@@ -723,7 +694,6 @@ module.exports = {
 		"Powershell",
 		"PowerShell is a task automation and configuration management framework from Microsoft, consisting of a command-line shell and associated scripting language.",
 		[
-			skillTypes.cloud,
 			skillTypes.devops,
 		],
 		[
@@ -735,7 +705,6 @@ module.exports = {
 		"Puppeteer",
 		"Puppeteer is a Node library which provides a high-level API to control Chrome or Chromium over the DevTools Protocol. Puppeteer runs headless by default, but can be configured to run full (non-headless) Chrome or Chromium",
 		[
-			skillTypes.frontend,
 			skillTypes.testing,
 		],
 		[
@@ -747,9 +716,6 @@ module.exports = {
 		"Python is an interpreted high-level programming language for general-purpose programming. Python has a design philosophy that emphasizes code readability, notably using significant whitespace.",
 		[
 			skillTypes.backend,
-			skillTypes.cloud,
-			skillTypes.devops,
-			skillTypes.testing,
 		],
 		[
 			settings.abide,
@@ -785,7 +751,6 @@ module.exports = {
 		"REpresentational State Transfer (REST) is an architectural style that defines a set of constraints and properties based on HTTP.",
 		[
 			skillTypes.backend,
-			skillTypes.frontend,
 		],
 		[
 			settings.fundslibrary,
@@ -857,7 +822,6 @@ module.exports = {
 		"terraform",
 		"Terraform is an infrastructure as code software by HashiCorp. It allows users to define a datacenter infrastructure in a high-level configuration language, from which it can create an execution plan to build the infrastructure.",
 		[
-			skillTypes.cloud,
 			skillTypes.devops
 		],
 		[
@@ -905,8 +869,7 @@ module.exports = {
 		"Visual studio",
 		"Microsoft Visual Studio is an integrated development environment (IDE) from Microsoft.",
 		[
-			skillTypes.frontend,
-			skillTypes.backend,
+			skillTypes.other,
 		],
 		[
 			settings.toplevel,
@@ -943,7 +906,7 @@ module.exports = {
 		"XSLT",
 		"A language to transform XML into HTML",
 		[
-			skillTypes.backend,
+			skillTypes.other,
 		],
 		[
 			settings.fundslibrary,
@@ -954,7 +917,7 @@ module.exports = {
 		"XML",
 		"A heavily used markup language",
 		[
-			skillTypes.backend,
+			skillTypes.other,
 		],
 		[
 			settings.toplevel,
