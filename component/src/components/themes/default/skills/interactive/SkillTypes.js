@@ -1,5 +1,5 @@
 import React from 'react';
-import { iconSize, isMobile, getRightSideDivStyle, getLeftSideDivStyle, mixWithBorderAndPadding } from '../../styles/common'
+import { iconSize, isMobile, getRightSideDivStyle, getLeftSideDivStyle, mixWithBorder2AndPadding } from '../../styles/common'
 import Icons from '../../icons'
 import "./transitions.css"
 import SkillType from "./SkillType"
@@ -17,7 +17,7 @@ export default class SkillTypes extends React.Component {
   render() {
     var allSkills = Object.keys(this.props.skillsObj.skills)
     var isMob = isMobile(this.props.cvWidth)
-    var initialLeftStyle = isMob ? { borderLeft: "3px solid black" } : {}
+    var initialStyle = isMob ? { borderRight: "3px solid black" } : {}
     var leftSide = isMob ? <h4>Skills</h4> : <Icons.Tools size={iconSize} />
 
     var skillsPadding = {
@@ -33,14 +33,14 @@ export default class SkillTypes extends React.Component {
     var logoPrefix = this.props.logoPrefix || "";
 
     return (
-      <div>
+      <div style={initialStyle}>
         <div style={
-          Object.assign(initialLeftStyle, getLeftSideDivStyle(this.props.cvWidth))
+          Object.assign({}, getLeftSideDivStyle(this.props.cvWidth))
         }>
           {leftSide}
         </div>
         <div style={
-          Object.assign({}, mixWithBorderAndPadding(getRightSideDivStyle(this.props.cvWidth)))
+          Object.assign({}, mixWithBorder2AndPadding(getRightSideDivStyle(this.props.cvWidth)))
         }>
 
           <div>
