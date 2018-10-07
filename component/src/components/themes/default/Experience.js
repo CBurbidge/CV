@@ -1,6 +1,7 @@
 import React from 'react';
 import { isMobile, getRightSideDivStyle, getLeftSideDivStyle, mixWithBorderAndPadding, iconSize } from './styles/common'
 import Icons from './icons'
+import df from '../shared/dateFormat'
 
 export default class Experience extends React.Component {
 
@@ -54,45 +55,11 @@ class WorkPlace extends React.Component {
 
 class WorkPlaceTitle extends React.Component {
   render() {
-    function monthDiff(d1, d2) {
-      var months;
-      months = (d2.getFullYear() - d1.getFullYear()) * 12;
-      months -= d1.getMonth();
-      months += d2.getMonth();
-      return months <= 0 ? 0 : months;
-    }
-
-    var formatDate = function (date) {
-      var year = date.match(/20\d\d/)
-      return year;
-    }
-    var startDateFormatted = formatDate(this.props.work.startDate);
+    var startDateFormatted = df.formatDate(this.props.work.startDate);
     var endDateFormatted = this.props.work.endDate
-      ? formatDate(this.props.work.endDate)
+      ? df.formatDate(this.props.work.endDate)
       : "Present";
-
-    var diffInMonths = monthDiff(
-      new Date(this.props.work.startDate),
-      (this.props.work.endDate ? new Date(this.props.work.endDate) : new Date())
-    )
-
-    var diffInYears = 0;
-    if (diffInMonths > 11) {
-      diffInYears = Math.floor(diffInMonths / 12.0)
-      diffInMonths -= diffInYears * 12
-    }
-
-    var formatDiff = function () {
-      var years = diffInYears > 0 ? diffInYears + "y" : ""
-      var months = diffInMonths > 0 ? diffInMonths + "m" : ""
-      if (years !== "" && months !== "") {
-        return years + ", " + months
-      } else {
-        return years + months
-      }
-    }
-
-    var diff = formatDiff();
+    var diff = df.formatDiff(this.props.work.startDate, this.props.work.endDate);
     return (
       <div style={{
         display: "flex",
