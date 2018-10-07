@@ -1,6 +1,7 @@
 import React from 'react';
 import { iconSize, isMobile, getRightSideDivStyle, getLeftSideDivStyle, mixWithBorderAndPadding } from './styles/common'
 import Icons from './icons'
+import LeftRight from './LeftRight'
 
 export default function (props) {
   return (
@@ -9,27 +10,23 @@ export default function (props) {
 }
 
 var Summary = function (props) {
-  var isMob = isMobile(props.cvWidth)
-  var leftSide = isMob ? <h4>Profile</h4> : <Icons.ExperienceIcon size={iconSize} />
-  var initialLeftStyle = isMob ? { borderLeft: "3px solid black" } : {}
+  var leftSide = isMob => isMob ? <h4>Profile</h4> : <Icons.ExperienceIcon size={iconSize} />
   var summary = props.basics.summary;
-  var summaryOverride = props.basics["summary-"+props.cvType];
-  if(summaryOverride){
+  var summaryOverride = props.basics["summary-" + props.cvType];
+  if (summaryOverride) {
     summary = summaryOverride;
   }
 
-  return (
-    <div  >
-      <div style={
-        Object.assign(getLeftSideDivStyle(props.cvWidth), initialLeftStyle)}>
-        {leftSide}
-      </div>
-      <div style={Object.assign(getRightSideDivStyle(props.cvWidth), mixWithBorderAndPadding({}))}>
+  var childFactory = childStyle => {
+    return (
+      <div>
         <p style={{
           margin: 10,
           textAlign: "justify",
         }} >{summary}</p>
       </div>
-    </div>
-  )
+    )
+  }
+
+  return (<LeftRight isLeft={true} leftSide={leftSide} childFactory={childFactory} cvWidth={props.cvWidth} />)
 }

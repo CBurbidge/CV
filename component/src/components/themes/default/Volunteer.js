@@ -1,20 +1,18 @@
 import React from 'react';
 import { iconSize, isMobile, getRightSideDivStyle, getLeftSideDivStyle, mixWithBorderAndPadding } from './styles/common'
 import Icons from './icons'
+import LeftRight from './LeftRight'
+import df from '../shared/dateFormat'
 
 export default function (props) {
-  var toVolunteer = function (vol, i) {
+  var toVolunteer = function (vol, i, childStyle) {
     let key = vol.organization + i
-    var formatDate = function (date) {
-      var year = date.match(/20\d\d/)
-      return year;
-    }
+    
     return (<div key={key}>
-      <div style={{
+      <div style={Object.assign({}, childStyle, {
         padding: 10,
-        borderRight: "3px solid black",
         margin: 10
-      }}
+      })}
       >
         <div style={{
           display: "flex",
@@ -24,7 +22,7 @@ export default function (props) {
             <span><b>{vol.organization}</b></span>
           </div>
           <div>
-            <span>{formatDate(vol.startDate)}</span> - <span>{formatDate(vol.endDate)}</span>
+            <span>{df.formatDate(vol.startDate)}</span> - <span>{df.formatDate(vol.endDate)}</span>
           </div>
         </div>
         <p>{vol.summary}</p>
@@ -33,20 +31,16 @@ export default function (props) {
     </div>);
   };
 
-  var isMob = isMobile(props.cvWidth)
-  var initialLeftStyle = isMob ? { borderLeft: "3px solid black" } : {}
-  var leftSide = isMob ? <h4>Volunteering</h4> : <Icons.TeamWork size={iconSize} />
+  var leftSide = isMob => isMob ? <h4>Volunteering</h4> : <Icons.TeamWork size={iconSize} />
 
-  return (
-    <div>
-      <div style={
-        Object.assign(getLeftSideDivStyle(props.cvWidth), initialLeftStyle)}>
-        {leftSide}
+  var childFactory = childStyle => {
+    return (
+      <div>
+        {props.volunteer.map((x, i) => toVolunteer(x, i, childStyle))}
       </div>
-      <div style={Object.assign(mixWithBorderAndPadding(getRightSideDivStyle(props.cvWidth)))}>
-        {props.volunteer.map((x, i) => toVolunteer(x, i))}
-      </div>
-    </div>
-  );
+    );
+  }
+
+  return (<LeftRight isLeft={true} leftSide={leftSide} childFactory={childFactory} cvWidth={props.cvWidth} />)
 }
 

@@ -1,6 +1,6 @@
 import React from 'react';
-import { iconSize, isMobile, getRightSideDivStyle, getLeftSideDivStyle, mixWithBorder2AndPadding } from '../styles/common'
-import Experience from '../Experience'
+import { iconSize } from '../styles/common'
+import LeftRight from '../LeftRight'
 import Icons from '../icons'
 
 export default class WorkAndSkillsPrint extends React.Component {
@@ -15,23 +15,20 @@ export default class WorkAndSkillsPrint extends React.Component {
 
 class Skills extends React.Component {
   render() {
-    var isMob = isMobile(this.props.cvWidth)
-    var initialLeftStyle = isMob ? { borderRight: "3px solid black" } : {}
-    var leftStyle = Object.assign(initialLeftStyle, getLeftSideDivStyle(this.props.cvWidth))
+    var that = this;
+    var leftSide = function(isMob) {
+      return isMob ? <h4>Skills</h4> : <Icons.Tools size={iconSize} />
+    }
+    
+    var childFactory = function(childStyle){
+      return (
+        <div style={{margin: 10}} >{
+          that.props.skills.map(x => <div style={Object.assign({}, childStyle, {margin: 5, paddingLeft: 10})} ><Skill key={x.name} skill={x} skillsObj={that.props.skillsObj} /></div>)}
+        </div>
+      );
+    }
 
-    var leftSide = isMob ? <h4>Skills</h4> : <Icons.Tools size={iconSize} />
-    return (
-      <div>
-        <div style={leftStyle}>
-          {leftSide}
-        </div>
-        <div style={mixWithBorder2AndPadding(getRightSideDivStyle(this.props.cvWidth))}>
-          <div style={{margin: 10}} >{
-            this.props.skills.map(x => <div style={{margin: 5, paddingLeft: 10, borderLeft: "3px solid black"}} ><Skill key={x.name} skill={x} skillsObj={this.props.skillsObj} /></div>)}
-          </div>
-        </div>
-      </div>
-    );
+    return (<LeftRight isLeft={false} leftSide={leftSide} childFactory={childFactory} cvWidth={this.props.cvWidth} />)
   }
 }
 
