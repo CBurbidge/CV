@@ -1,29 +1,25 @@
 import React from 'react';
-import { iconSize, getRightSideDivStyle, getLeftSideDivStyle, mixWithBorder2AndPadding, isMobile } from './styles/common'
+import { iconSize } from './styles/common'
 import Icons from './icons'
+import df from '../shared/dateFormat'
+import LeftRight from './LeftRight'
 
 export default function (props) {
-  var toEducation = function (edu, i) {
+  var toEducation = function (edu, i, childStyle) {
     let key = edu.institution + i
-    var formatDate = function (date) {
-      var year = date.match(/20\d\d/)
-      return year;
-    }
-    var fStart = formatDate(edu.startDate);
-    var fEnd = formatDate(edu.endDate);
+    var fStart = df.formatDate(edu.startDate);
+    var fEnd = df.formatDate(edu.endDate);
 
-    var eduBottomStyle = { 
+    var eduBottomStyle = {
       maxWidth: "50%",
-      padding: 10, 
+      padding: 10,
     }
-
+    var containerStyle = Object.assign({}, childStyle, {
+      padding: 10,
+      margin: 10
+    })
     return (<div key={key}>
-      <div style={{
-        padding: 10,
-        borderLeft: "3px solid black",
-        margin: 10
-      }}
-      >
+      <div style={containerStyle} >
         <div style={{
           display: "flex",
           justifyContent: "space-between"
@@ -45,20 +41,16 @@ export default function (props) {
       </div>
     </div>);
   };
-  var isMob = isMobile(props.cvWidth)
-  var initialLeftStyle = isMob ? {borderRight: "3px solid black"} : {}
-  var leftSide = isMob ? <h4>Education</h4> : <Icons.Education size={iconSize} />
 
-  return (
-    <div>
-      <div style={
-        Object.assign(getLeftSideDivStyle(props.cvWidth), initialLeftStyle)}>
-        {leftSide}
-      </div>
-      <div style={Object.assign(mixWithBorder2AndPadding(getRightSideDivStyle(props.cvWidth)))}>
-        {props.education.map((x, i) => toEducation(x, i))}
-      </div>
-    </div>
-  );
+  var getEducation = function (childStyle) {
+    return (<div>
+      {props.education.map((x, i) => toEducation(x, i, childStyle))}
+    </div>)
+  }
+  var leftFunc = function (isMob) {
+    return isMob ? <h4>Education</h4> : <Icons.Education size={iconSize} />
+  }
+  return (<LeftRight isLeft={false} leftSide={leftFunc} childFactory={getEducation} cvWidth={props.cvWidth} />)
+
 }
 

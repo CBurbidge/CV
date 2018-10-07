@@ -2,29 +2,25 @@ import React from 'react';
 import { isMobile, getRightSideDivStyle, getLeftSideDivStyle, mixWithBorderAndPadding, iconSize } from './styles/common'
 import Icons from './icons'
 import df from '../shared/dateFormat'
+import LeftRight from './LeftRight'
 
 export default class Experience extends React.Component {
 
   render() {
-    var rightStyle = getRightSideDivStyle(this.props.cvWidth)
-    var isMob = isMobile(this.props.cvWidth)
-    var initialLeftStyle = isMob ? { borderLeft: "3px solid black" } : {}
-    var leftSide = isMob ? <h4>Experience</h4> : <Icons.BriefCase size={iconSize} />
+    var that = this;
 
-    return (
-      <div>
-        <div style={
-          Object.assign(initialLeftStyle, getLeftSideDivStyle(this.props.cvWidth))
-        }>
-          {leftSide}
-        </div>
+    var leftSide = function (isMob){ 
+      return isMob ? <h4>Experience</h4> : <Icons.BriefCase size={iconSize} />
+    }
+    
+    var childFactory = function(childStyle){
+      return (<div>{
+        that.props.work.map(x => <WorkPlace key={x.company} work={x} childStyle={childStyle} />)}
+      </div>)
+    }
 
-        <div style={mixWithBorderAndPadding(rightStyle)} >{
-          this.props.work.map(x => <WorkPlace key={x.company} work={x} />)}
+    return (<LeftRight isLeft={true} leftSide={leftSide} childFactory={childFactory} cvWidth={this.props.cvWidth} />)
 
-        </div>
-      </div>
-    );
   }
 }
 
@@ -34,14 +30,14 @@ class WorkPlace extends React.Component {
   }
 
   render() {
+    var containerStyle = Object.assign({}, this.props.childStyle, {
+      padding: 10,
+      margin: 10
+    })
     return (
       <div >
         <div 
-          style={{
-            padding: 10,
-            borderRight: "3px solid black",
-            margin: 10
-          }}
+          style={containerStyle}
         >
           <WorkPlaceTitle work={this.props.work} />
           {this.props.work.summary !== "" && <WorkPlaceDescription work={this.props.work} />}

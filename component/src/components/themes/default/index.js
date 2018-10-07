@@ -9,9 +9,14 @@ import Volunteer from "./Volunteer"
 import Education from "./Education"
 import Experience from "./Experience"
 import Awards from "./Awards"
+import LeftRight from "./LeftRight"
+import { iconSize } from './styles/common'
+import Icons from './icons'
+
 
 class Default extends Component {
   render() {
+
     return (
       <div>
         {this.props.jsonResume.basics && <Name basics={this.props.jsonResume.basics} print={this.props.print} cvWidth={this.props.cvWidth} />}
