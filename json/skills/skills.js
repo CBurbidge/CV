@@ -58,7 +58,8 @@ module.exports = {
 		],
 		[
 			settings.fundslibrary,
-			settings.abide
+			settings.abide,
+			settings.technicalunderstanding
 		]
 	),
 
@@ -69,7 +70,8 @@ module.exports = {
 			skillTypes.backend,
 		],
 		[
-			settings.scottlogic
+			settings.scottlogic,
+			settings.technicalunderstanding
 		]
 	),
 
@@ -80,7 +82,8 @@ module.exports = {
 			skillTypes.backend,
 		],
 		[
-			settings.fundslibrary
+			settings.fundslibrary,
+			settings.technicalunderstanding
 		]
 	),
 
@@ -92,6 +95,17 @@ module.exports = {
 		],
 		[
 			settings.scottlogic
+		]
+	),
+
+	azureDevops: "azureDevops".toSkill(
+		"Azure Devops",
+		"Azure DevOps is everything you need to build your software product from beginning to end. Azure DevOps helps you plan your project with Agile tools, manages your code using Git, and deploys your code through the best CI/CD system on the planet.",
+		[
+			skillTypes.other,
+		],
+		[
+			settings.technicalunderstanding
 		]
 	),
 
@@ -292,7 +306,8 @@ module.exports = {
 			skillTypes.devops,
 		],
 		[
-			settings.abide
+			settings.abide,
+			settings.technicalunderstanding
 		]
 	),
 
@@ -316,7 +331,8 @@ module.exports = {
 		[
 			settings.abide,
 			settings.fundslibrary,
-			settings.scottlogic
+			settings.scottlogic,
+			settings.technicalunderstanding
 		]
 	),
 
@@ -352,7 +368,8 @@ module.exports = {
 			settings.toplevel,
 			settings.fundslibrary,
 			settings.abide,
-			settings.scottlogic
+			settings.scottlogic,
+			settings.technicalunderstanding
 		]
 	),
 
@@ -400,6 +417,7 @@ module.exports = {
 		],
 		[
 			settings.scottlogic,
+			settings.technicalunderstanding
 		]
 	),
 
@@ -414,6 +432,7 @@ module.exports = {
 			settings.fundslibrary,
 			settings.abide,
 			settings.scottlogic,
+			settings.technicalunderstanding
 		]
 	),
 
@@ -427,6 +446,17 @@ module.exports = {
 			settings.fundslibrary,
 			settings.abide,
 			settings.scottlogic,
+		]
+	),
+
+	entityFramework: "entityFramework".toSkill(
+		"Entity Framework",
+		"Entity Framework is an object-relational mapper (O/RM) that enables .NET developers to work with a database using .NET objects.",
+		[
+			skillTypes.backend,
+		],
+		[
+			settings.technicalunderstanding,
 		]
 	),
 
@@ -463,6 +493,7 @@ module.exports = {
 			settings.fundslibrary,
 			settings.abide,
 			settings.scottlogic,
+			settings.technicalunderstanding
 		]
 	),
 
@@ -499,6 +530,7 @@ module.exports = {
 			settings.fundslibrary,
 			settings.abide,
 			settings.scottlogic,
+			settings.technicalunderstanding
 		]
 	),
 
@@ -534,6 +566,7 @@ module.exports = {
 			settings.fundslibrary,
 			settings.abide,
 			settings.scottlogic,
+			settings.technicalunderstanding
 		]
 	),
 
@@ -616,6 +649,7 @@ module.exports = {
 			settings.fundslibrary,
 			settings.abide,
 			settings.scottlogic,
+			settings.technicalunderstanding
 		]
 	),
 
@@ -698,6 +732,7 @@ module.exports = {
 		],
 		[
 			settings.abide,
+			settings.technicalunderstanding
 		]
 	),
 	
@@ -708,6 +743,7 @@ module.exports = {
 			skillTypes.testing,
 		],
 		[
+			settings.technicalunderstanding
 		]
 	),
 
@@ -730,6 +766,7 @@ module.exports = {
 		],
 		[
 			settings.scottlogic,
+			settings.technicalunderstanding
 		]
 	),
 
@@ -743,6 +780,7 @@ module.exports = {
 			settings.toplevel,
 			settings.abide,
 			settings.scottlogic,
+			settings.technicalunderstanding
 		]
 	),
 
@@ -756,6 +794,7 @@ module.exports = {
 			settings.fundslibrary,
 			settings.abide,
 			settings.scottlogic,
+			settings.technicalunderstanding
 		]
 	),
 
@@ -792,6 +831,7 @@ module.exports = {
 			settings.fundslibrary,
 			settings.abide,
 			settings.scottlogic,
+			settings.technicalunderstanding
 		]
 	),
 
@@ -851,6 +891,7 @@ module.exports = {
 			settings.fundslibrary,
 			settings.abide,
 			settings.scottlogic,
+			settings.technicalunderstanding
 		]
 	),
 
@@ -876,6 +917,7 @@ module.exports = {
 			settings.fundslibrary,
 			settings.abide,
 			settings.scottlogic,
+			settings.technicalunderstanding
 		]
 	),
 
@@ -899,6 +941,7 @@ module.exports = {
 		],
 		[
 			settings.toplevel,
+			settings.technicalunderstanding
 		]
 	),
 
@@ -923,6 +966,17 @@ module.exports = {
 			settings.toplevel,
 			settings.fundslibrary,
 			settings.abide,
+		]
+	),
+
+	xUnit: "xUnit".toSkill(
+		"xUnit",
+		"Unit testing framework.",
+		[
+			skillTypes.testing,
+		],
+		[
+			settings.technicalunderstanding,
 		]
 	),
 }

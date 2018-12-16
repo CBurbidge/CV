@@ -40,6 +40,12 @@ module.exports = {
 	scottlogic: "scottlogic".toSetting(
 		"Scott Logic",
 		"UK-based software consultancy working in a variety of different sectors including capital markets; energy trading; e-trading; financial services; health care; oil & gas and the public sector.",
-		new DateRange(new Date(2017, 10), undefined)
+		new DateRange(new Date(2017, 10), new Date(2018, 9))
+	),
+
+	technicalunderstanding: "technicalunderstanding".toSetting(
+		"Technical Understanding",
+		"",
+		new DateRange(new Date(2018, 10), undefined)
 	)
 }
