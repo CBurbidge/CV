@@ -8,6 +8,7 @@
         "apacheSpark",
         "aspDotNetMvc",
         "aspWebApi",
+        "aspDotNetCore",
         "aspDotNetWebforms",
         "azureDataFactory",
         "azureSql",
@@ -24,10 +25,14 @@
         "cSharp",
         "dotNetCore",
         "dotNetFramework",
+        "entityFramework",
+        "entityFrameworkCore",
         "fSharp",
         "linq",
+        "neo4j",
         "nodeJs",
         "python",
+        "safeStack",
         "tSql",
         "vbDotNet"
       ]
@@ -36,6 +41,7 @@
       "name": "Devops",
       "level": "Advanced",
       "keywords": [
+        "azureContainerRegistry",
         "azureResourceManager",
         "awsCloudformation",
         "awsECR",
@@ -51,7 +57,8 @@
         "packer",
         "powershell",
         "terraform",
-        "teamcity"
+        "teamcity",
+        "windowsContainers"
       ]
     },
     {
@@ -63,6 +70,8 @@
         "css",
         "d3",
         "esSixPromises",
+        "elmish",
+        "fable",
         "gatsbyJs",
         "graphQl",
         "grunt",
@@ -72,6 +81,7 @@
         "knockoutJs",
         "less",
         "reactJs",
+        "safeStack",
         "typescript"
       ]
     },
@@ -79,6 +89,7 @@
       "name": "Other",
       "level": "Advanced",
       "keywords": [
+        "azureDevops",
         "cordova",
         "ionicFramework",
         "jira",
@@ -105,7 +116,8 @@
         "nunit",
         "puppeteer",
         "specflow",
-        "vstest"
+        "vstest",
+        "xUnit"
       ]
     }
   ],
@@ -251,6 +263,64 @@
         "visualStudio",
         "vstest"
       ]
+    },
+    {
+      "company": "Parmenion (contract, 3 extensions)",
+      "keywords": [
+        "aspDotNetMvc",
+        "aspWebApi",
+        "aspDotNetCore",
+        "aspDotNetWebforms",
+        "azureContainerRegistry",
+        "azureDevops",
+        "bashScripting",
+        "cake",
+        "continuousIntegration",
+        "cSharp",
+        "css",
+        "docker",
+        "dotNetCore",
+        "dotNetFramework",
+        "esSixPromises",
+        "entityFramework",
+        "entityFrameworkCore",
+        "fSharp",
+        "gatsbyJs",
+        "git",
+        "grunt",
+        "html",
+        "javascript",
+        "knockoutJs",
+        "linq",
+        "moq",
+        "mstest",
+        "neo4j",
+        "nodeJs",
+        "nunit",
+        "powershell",
+        "puppeteer",
+        "reactJs",
+        "resharper",
+        "restfulWebservices",
+        "sqlServerManagementStudio",
+        "specflow",
+        "tSql",
+        "typescript",
+        "visualStudio",
+        "vstest",
+        "vbDotNet",
+        "windowsContainers",
+        "xml",
+        "xUnit"
+      ]
+    },
+    {
+      "company": "Technical Understanding",
+      "keywords": [
+        "elmish",
+        "fable",
+        "safeStack"
+      ]
     }
   ],
   "skills": {
@@ -296,7 +366,8 @@
       ],
       "settingsIds": [
         "fundslibrary",
-        "abide"
+        "abide",
+        "parmenion"
       ]
     },
     "aspWebApi": {
@@ -307,7 +378,19 @@
         "backend"
       ],
       "settingsIds": [
-        "scottlogic"
+        "scottlogic",
+        "parmenion"
+      ]
+    },
+    "aspDotNetCore": {
+      "id": "aspDotNetCore",
+      "name": "ASP.NET Core",
+      "description": "ASP.NET Core is the open-source version of ASP.NET, that runs on Windows, Linux, macOS, and Docker.",
+      "skillTypesIds": [
+        "backend"
+      ],
+      "settingsIds": [
+        "parmenion"
       ]
     },
     "aspDotNetWebforms": {
@@ -318,7 +401,19 @@
         "backend"
       ],
       "settingsIds": [
-        "fundslibrary"
+        "fundslibrary",
+        "parmenion"
+      ]
+    },
+    "azureContainerRegistry": {
+      "id": "azureContainerRegistry",
+      "name": "Azure Container Registry",
+      "description": "Azure Container Registry allows you to build, store, and manage container images and artifacts in a private registry for all types of container deployments",
+      "skillTypesIds": [
+        "devops"
+      ],
+      "settingsIds": [
+        "parmenion"
       ]
     },
     "azureDataFactory": {
@@ -330,6 +425,17 @@
       ],
       "settingsIds": [
         "scottlogic"
+      ]
+    },
+    "azureDevops": {
+      "id": "azureDevops",
+      "name": "Azure Devops",
+      "description": "Azure DevOps is everything you need to build your software product from beginning to end. Azure DevOps helps you plan your project with Agile tools, manages your code using Git, and deploys your code through the best CI/CD system on the planet.",
+      "skillTypesIds": [
+        "other"
+      ],
+      "settingsIds": [
+        "parmenion"
       ]
     },
     "azureSql": {
@@ -506,7 +612,8 @@
       ],
       "settingsIds": [
         "abide",
-        "scottlogic"
+        "scottlogic",
+        "parmenion"
       ]
     },
     "bootstrap": {
@@ -530,7 +637,8 @@
         "devops"
       ],
       "settingsIds": [
-        "abide"
+        "abide",
+        "parmenion"
       ]
     },
     "chef": {
@@ -554,7 +662,8 @@
       "settingsIds": [
         "abide",
         "fundslibrary",
-        "scottlogic"
+        "scottlogic",
+        "parmenion"
       ]
     },
     "cordova": {
@@ -588,7 +697,8 @@
         "toplevel",
         "fundslibrary",
         "abide",
-        "scottlogic"
+        "scottlogic",
+        "parmenion"
       ]
     },
     "css": {
@@ -602,7 +712,8 @@
         "toplevel",
         "fundslibrary",
         "abide",
-        "scottlogic"
+        "scottlogic",
+        "parmenion"
       ]
     },
     "d3": {
@@ -622,7 +733,8 @@
         "devops"
       ],
       "settingsIds": [
-        "scottlogic"
+        "scottlogic",
+        "parmenion"
       ]
     },
     "dotNetCore": {
@@ -633,7 +745,8 @@
         "backend"
       ],
       "settingsIds": [
-        "scottlogic"
+        "scottlogic",
+        "parmenion"
       ]
     },
     "dotNetFramework": {
@@ -647,7 +760,8 @@
         "toplevel",
         "fundslibrary",
         "abide",
-        "scottlogic"
+        "scottlogic",
+        "parmenion"
       ]
     },
     "esSixPromises": {
@@ -660,7 +774,52 @@
       "settingsIds": [
         "fundslibrary",
         "abide",
-        "scottlogic"
+        "scottlogic",
+        "parmenion"
+      ]
+    },
+    "entityFramework": {
+      "id": "entityFramework",
+      "name": "Entity Framework",
+      "description": "Entity Framework is an object-relational mapper (O/RM) that enables .NET developers to work with a database using .NET objects.",
+      "skillTypesIds": [
+        "backend"
+      ],
+      "settingsIds": [
+        "parmenion"
+      ]
+    },
+    "entityFrameworkCore": {
+      "id": "entityFrameworkCore",
+      "name": "EF Core",
+      "description": "Entity Framework Core is an object-relational mapper (O/RM) that enables .NET developers to work with a database using .NET objects.",
+      "skillTypesIds": [
+        "backend"
+      ],
+      "settingsIds": [
+        "parmenion"
+      ]
+    },
+    "elmish": {
+      "id": "elmish",
+      "name": "Elmish",
+      "description": "Elmish is a set of simple abstractions for writing user interfaces in F# applications in a functional style following the model-view-update architecture made famous by Elm.",
+      "skillTypesIds": [
+        "frontend"
+      ],
+      "settingsIds": [
+        "technicalunderstanding"
+      ]
+    },
+    "fable": {
+      "id": "fable",
+      "name": "Fable",
+      "description": "Fable is a compiler powered by Babel designed to make F# a first-class citizen of the JavaScript ecosystem.",
+      "skillTypesIds": [
+        "frontend"
+      ],
+      "settingsIds": [
+        "technicalunderstanding"
       ]
     },
     "fSharp": {
@@ -672,7 +831,8 @@
       ],
       "settingsIds": [
         "abide",
-        "scottlogic"
+        "scottlogic",
+        "parmenion"
       ]
     },
     "gatsbyJs": {
@@ -682,7 +842,9 @@
       "skillTypesIds": [
         "frontend"
       ],
-      "settingsIds": []
+      "settingsIds": [
+        "parmenion"
+      ]
     },
     "git": {
       "id": "git",
@@ -694,7 +856,8 @@
       "settingsIds": [
         "fundslibrary",
         "abide",
-        "scottlogic"
+        "scottlogic",
+        "parmenion"
       ]
     },
     "graphQl": {
@@ -714,7 +877,8 @@
         "frontend"
       ],
       "settingsIds": [
-        "fundslibrary"
+        "fundslibrary",
+        "parmenion"
       ]
     },
     "html": {
@@ -728,7 +892,8 @@
         "toplevel",
         "fundslibrary",
         "abide",
-        "scottlogic"
+        "scottlogic",
+        "parmenion"
       ]
     },
     "ionicFramework": {
@@ -761,7 +926,8 @@
       "settingsIds": [
         "fundslibrary",
         "abide",
-        "scottlogic"
+        "scottlogic",
+        "parmenion"
       ]
     },
     "jira": {
@@ -807,7 +973,8 @@
         "frontend"
       ],
       "settingsIds": [
-        "fundslibrary"
+        "fundslibrary",
+        "parmenion"
       ]
     },
     "latex": {
@@ -841,7 +1008,8 @@
         "toplevel",
         "fundslibrary",
         "abide",
-        "scottlogic"
+        "scottlogic",
+        "parmenion"
       ]
     },
     "moq": {
@@ -853,7 +1021,8 @@
       ],
       "settingsIds": [
         "toplevel",
-        "abide"
+        "abide",
+        "parmenion"
       ]
     },
     "mstest": {
@@ -865,19 +1034,32 @@
       ],
       "settingsIds": [
         "scottlogic",
-        "abide"
+        "abide",
+        "parmenion"
+      ]
+    },
+    "neo4j": {
+      "id": "neo4j",
+      "name": "neo4j",
+      "description": "Neo4j is a graph database management system, described by its developers as an ACID-compliant transactional database with native graph storage and processing",
+      "skillTypesIds": [
+        "backend"
+      ],
+      "settingsIds": [
+        "parmenion"
       ]
     },
     "nodeJs": {
       "id": "nodeJs",
       "name": "node.js",
-      "description": "",
+      "description": "Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside of a web browser",
       "skillTypesIds": [
         "backend"
       ],
       "settingsIds": [
         "abide",
-        "scottlogic"
+        "scottlogic",
+        "parmenion"
       ]
     },
     "nunit": {
@@ -890,7 +1072,8 @@
       "settingsIds": [
         "toplevel",
         "abide",
-        "scottlogic"
+        "scottlogic",
+        "parmenion"
       ]
     },
     "octopusDeploy": {
@@ -923,7 +1106,8 @@
         "devops"
       ],
       "settingsIds": [
-        "abide"
+        "abide",
+        "parmenion"
       ]
     },
     "puppeteer": {
@@ -933,7 +1117,9 @@
       "skillTypesIds": [
         "testing"
       ],
-      "settingsIds": []
+      "settingsIds": [
+        "parmenion"
+      ]
     },
     "python": {
       "id": "python",
@@ -954,7 +1140,8 @@
         "frontend"
       ],
       "settingsIds": [
-        "scottlogic"
+        "scottlogic",
+        "parmenion"
       ]
     },
     "resharper": {
@@ -967,7 +1154,8 @@
       "settingsIds": [
         "toplevel",
         "abide",
-        "scottlogic"
+        "scottlogic",
+        "parmenion"
       ]
     },
     "restfulWebservices": {
@@ -980,7 +1168,8 @@
       "settingsIds": [
         "fundslibrary",
         "abide",
-        "scottlogic"
+        "scottlogic",
+        "parmenion"
       ]
     },
     "rlanguage": {
@@ -991,6 +1180,18 @@
         "other"
       ],
       "settingsIds": []
+    },
+    "safeStack": {
+      "id": "safeStack",
+      "name": "SAFE Stack",
+      "description": "An end-to-end, functional-first stack for cloud-ready web development that emphasizes type-safe programming",
+      "skillTypesIds": [
+        "backend",
+        "frontend"
+      ],
+      "settingsIds": [
+        "technicalunderstanding"
+      ]
     },
     "sourceSafe": {
       "id": "sourceSafe",
@@ -1014,7 +1215,8 @@
         "toplevel",
         "fundslibrary",
         "abide",
-        "scottlogic"
+        "scottlogic",
+        "parmenion"
       ]
     },
     "specflow": {
@@ -1026,7 +1228,8 @@
       ],
       "settingsIds": [
         "abide",
-        "scottlogic"
+        "scottlogic",
+        "parmenion"
       ]
     },
     "tfs": {
@@ -1073,7 +1276,8 @@
         "toplevel",
         "fundslibrary",
         "abide",
-        "scottlogic"
+        "scottlogic",
+        "parmenion"
       ]
     },
     "typescript": {
@@ -1084,7 +1288,8 @@
         "frontend"
       ],
       "settingsIds": [
-        "fundslibrary"
+        "fundslibrary",
+        "parmenion"
       ]
     },
     "visualStudio": {
@@ -1098,7 +1303,8 @@
         "toplevel",
         "fundslibrary",
         "abide",
-        "scottlogic"
+        "scottlogic",
+        "parmenion"
       ]
     },
     "vstest": {
@@ -1110,7 +1316,8 @@
       ],
       "settingsIds": [
         "scottlogic",
-        "abide"
+        "abide",
+        "parmenion"
       ]
     },
     "vbDotNet": {
@@ -1121,7 +1328,19 @@
         "backend"
       ],
       "settingsIds": [
-        "toplevel"
+        "toplevel",
+        "parmenion"
+      ]
+    },
+    "windowsContainers": {
+      "id": "windowsContainers",
+      "name": "Windows Containers",
+      "description": "Windows containers allow users to package applications with their dependencies and leverage operating system-level virtualization to provide fast, fully isolated environments on a single system.",
+      "skillTypesIds": [
+        "devops"
+      ],
+      "settingsIds": [
+        "parmenion"
       ]
     },
     "xslt": {
@@ -1145,7 +1364,19 @@
       "settingsIds": [
         "toplevel",
         "fundslibrary",
-        "abide"
+        "abide",
+        "parmenion"
+      ]
+    },
+    "xUnit": {
+      "id": "xUnit",
+      "name": "xUnit",
+      "description": "Unit testing framework.",
+      "skillTypesIds": [
+        "testing"
+      ],
+      "settingsIds": [
+        "parmenion"
       ]
     }
   },
@@ -1214,7 +1445,25 @@
       "name": "Scott Logic",
       "description": "UK-based software consultancy working in a variety of different sectors including capital markets; energy trading; e-trading; financial services; health care; oil & gas and the public sector.",
       "dateRange": {
-        "startDate": "2017-11-01T00:00:00.000Z"
+        "startDate": "2017-11-01T00:00:00.000Z",
+        "endDate": "2018-09-30T23:00:00.000Z"
+      }
+    },
+    "parmenion": {
+      "id": "parmenion",
+      "name": "Parmenion (contract, 3 extensions)",
+      "description": "Parmenion is a rapidly growing, award winning technology and investment solutions business.",
+      "dateRange": {
+        "startDate": "2018-11-01T00:00:00.000Z",
+        "endDate": "2020-05-31T23:00:00.000Z"
+      }
+    },
+    "technicalunderstanding": {
+      "id": "technicalunderstanding",
+      "name": "Technical Understanding",
+      "description": "",
+      "dateRange": {
+        "startDate": "2018-11-01T00:00:00.000Z"
       }
     }
   }

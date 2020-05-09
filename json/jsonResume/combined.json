@@ -4,9 +4,10 @@
     "label": "Software Engineer",
     "website": "https://chester.codes",
     "picture": "",
-    "summary": "A software professional with a passion for the craft, constantly learning and improving. \n\nExperienced with various methodologies across the full software development lifecycle. I have written code for mobile, the desktop and the full web stack, using a variety of programing languages and paradigms. \n\nA regular attender, and occasional presenter, of technical talks on various topics. Interested in teaching through volunteering my time to the Code Club initiative.",
+    "summary": "A software professional with a passion for the craft, constantly learning and improving. \n\nExperienced with various methodologies across the full software development lifecycle. I have written code for mobile, the desktop and the full web stack, using a variety of programming languages and paradigms. \n\nA regular attender, and occasional presenter, of technical talks on various topics. Interested in teaching through volunteering my time to the Code Club initiative.",
     "summary-winops": "A software professional who is constantly learning and improving. Experienced with designing, building and deploying IAAS, PAAS and serverless cloud solutions on AWS and Azure. I have experience running .NET services and websites in a Windows Server environment. Passionate about automation and everything as code. I have used technologies for infrastructure as code (terraform and cloud specific), configuration management (Chef mostly) and general scripting (Powershell, bash, python etc).",
     "summary-dotnet": "A passionate and capable developer with experience of a wide range of the Microsoft and .NET technologies. I have written code for a variety of 'back end' environments, including web sites and services using C# .NET framework on Windows Server and F# .NET Core on linux. Client side experience includes writing JavaScript and typescript code using different paradigms and libraries including React JS, Angular JS and jQuery. I have worked with agile methodologies across the full software development lifecycle. A regular attender, and occasional presenter, of technical talks on various topics.",
+    "summary-fsharp": "A passionate and capable developer with experience of a wide range of programming styles and technologies. \n\nI have written code for mobile, the desktop and the full web stack, across the full software development lifecycle.\n\nI am especially interested in functional programming using F#, having learnt the power and simplicity of the concepts, and have written sizable internal projects with the language.\n\nClient side experience includes writing JavaScript and typescript code using React JS, as well as F# using Fable and the SAFE stack.\n\nA regular attender, and occasional presenter, of technical talks on various topics.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -33,6 +34,35 @@
     ]
   },
   "work": [
+    {
+      "company": "Technical Understanding",
+      "position": "Director",
+      "website": "https://technicalunderstanding.co.uk/",
+      "startDate": "2018-10-15",
+      "endDate": "",
+      "summary": "",
+      "highlights": [
+        "Maintaining ASP.Webforms website"
+      ],
+      "skills": [
+        "elmish",
+        "fable",
+        "safeStack"
+      ]
+    },
+    {
+      "company": "Parmenion",
+      "position": "Software Developer (contract, 3 extensions)",
+      "website": "https://www.parmenion.co.uk/",
+      "startDate": "2018-10-15",
+      "endDate": "2020-05-29",
+      "summary": "",
+      "highlights": [
+        "Extension of D2C services of investment platform and maintenence of existing legacy systems, including most Microsoft technologies of the last 10 years.",
+        "Part of small group that led the migration of ~70 .Net framework and core services to windows containers.  ",
+        "Developed internal tools, mostly in own time, for speeding up local development processes and project dependency analysis. "
+      ]
+    },
     {
       "company": "Scott Logic",
       "position": "Software Engineer",
@@ -263,6 +293,7 @@
         "apacheSpark",
         "aspDotNetMvc",
         "aspWebApi",
+        "aspDotNetCore",
         "aspDotNetWebforms",
         "azureDataFactory",
         "azureSql",
@@ -279,10 +310,14 @@
         "cSharp",
         "dotNetCore",
         "dotNetFramework",
+        "entityFramework",
+        "entityFrameworkCore",
         "fSharp",
         "linq",
+        "neo4j",
         "nodeJs",
         "python",
+        "safeStack",
         "tSql",
         "vbDotNet"
       ]
@@ -291,6 +326,7 @@
       "name": "Devops",
       "level": "Advanced",
       "keywords": [
+        "azureContainerRegistry",
         "azureResourceManager",
         "awsCloudformation",
         "awsECR",
@@ -306,7 +342,8 @@
         "packer",
         "powershell",
         "terraform",
-        "teamcity"
+        "teamcity",
+        "windowsContainers"
       ]
     },
     {
@@ -318,6 +355,8 @@
         "css",
         "d3",
         "esSixPromises",
+        "elmish",
+        "fable",
         "gatsbyJs",
         "graphQl",
         "grunt",
@@ -327,6 +366,7 @@
         "knockoutJs",
         "less",
         "reactJs",
+        "safeStack",
         "typescript"
       ]
     },
@@ -334,6 +374,7 @@
       "name": "Other",
       "level": "Advanced",
       "keywords": [
+        "azureDevops",
         "cordova",
         "ionicFramework",
         "jira",
@@ -360,7 +401,8 @@
         "nunit",
         "puppeteer",
         "specflow",
-        "vstest"
+        "vstest",
+        "xUnit"
       ]
     }
   ],
