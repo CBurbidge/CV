@@ -1,7 +1,8 @@
 var companiesToRemove = [
     "University of Exeter", 
     "Scats Country Store", 
-    "Burbidge's Bakery"
+    "Burbidge's Bakery",
+    "Technical Understanding"
 ]
 
 var educationInstitutionsToRemove = [

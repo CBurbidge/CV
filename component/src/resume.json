@@ -35,22 +35,6 @@
   },
   "work": [
     {
-      "company": "Technical Understanding",
-      "position": "Director",
-      "website": "https://technicalunderstanding.co.uk/",
-      "startDate": "2018-10-15",
-      "endDate": "",
-      "summary": "",
-      "highlights": [
-        "Maintaining ASP.Webforms website"
-      ],
-      "skills": [
-        "elmish",
-        "fable",
-        "safeStack"
-      ]
-    },
-    {
       "company": "Parmenion",
       "position": "Software Developer (contract, 3 extensions)",
       "website": "https://www.parmenion.co.uk/",
@@ -61,6 +45,53 @@
         "Extension of D2C services of investment platform and maintenence of existing legacy systems, including most Microsoft technologies of the last 10 years.",
         "Part of small group that led the migration of ~70 .Net framework and core services to windows containers.  ",
         "Developed internal tools, mostly in own time, for speeding up local development processes and project dependency analysis. "
+      ],
+      "skills": [
+        "aspDotNetMvc",
+        "aspWebApi",
+        "aspDotNetCore",
+        "aspDotNetWebforms",
+        "azureContainerRegistry",
+        "azureDevops",
+        "bashScripting",
+        "cake",
+        "continuousIntegration",
+        "cSharp",
+        "css",
+        "docker",
+        "dotNetCore",
+        "dotNetFramework",
+        "esSixPromises",
+        "entityFramework",
+        "entityFrameworkCore",
+        "fSharp",
+        "gatsbyJs",
+        "git",
+        "grunt",
+        "html",
+        "javascript",
+        "knockoutJs",
+        "linq",
+        "moq",
+        "mstest",
+        "neo4j",
+        "nodeJs",
+        "nunit",
+        "powershell",
+        "puppeteer",
+        "reactJs",
+        "resharper",
+        "restfulWebservices",
+        "sqlServerManagementStudio",
+        "specflow",
+        "tSql",
+        "typescript",
+        "visualStudio",
+        "vstest",
+        "vbDotNet",
+        "windowsContainers",
+        "xml",
+        "xUnit"
       ]
     },
     {

@@ -265,7 +265,7 @@
       ]
     },
     {
-      "company": "Parmenion (contract, 3 extensions)",
+      "company": "Parmenion",
       "keywords": [
         "aspDotNetMvc",
         "aspWebApi",
@@ -1451,8 +1451,8 @@
     },
     "parmenion": {
       "id": "parmenion",
-      "name": "Parmenion (contract, 3 extensions)",
-      "description": "Parmenion is a rapidly growing, award winning technology and investment solutions business.",
+      "name": "Parmenion",
+      "description": "(contract, 3 extensions) Parmenion is a rapidly growing, award winning technology and investment solutions business.",
       "dateRange": {
         "startDate": "2018-11-01T00:00:00.000Z",
         "endDate": "2020-05-31T23:00:00.000Z"
