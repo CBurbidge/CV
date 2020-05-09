@@ -59,7 +59,7 @@ module.exports = {
 		[
 			settings.fundslibrary,
 			settings.abide,
-			settings.technicalunderstanding
+			settings.parmenion
 		]
 	),
 
@@ -71,10 +71,21 @@ module.exports = {
 		],
 		[
 			settings.scottlogic,
-			settings.technicalunderstanding
+			settings.parmenion
 		]
 	),
 
+	aspDotNetCore: "aspDotNetCore".toSkill(
+		"ASP.NET Core",
+		"ASP.NET Core is the open-source version of ASP.NET, that runs on Windows, Linux, macOS, and Docker.",
+		[
+			skillTypes.backend,
+		],
+		[
+			settings.parmenion
+		]
+	),
+	
 	aspDotNetWebforms: "aspDotNetWebforms".toSkill(
 		"ASP.NET WebForms",
 		"ASP.NET is a server-side web application framework designed for web development to produce dynamic web pages",
@@ -83,7 +94,18 @@ module.exports = {
 		],
 		[
 			settings.fundslibrary,
-			settings.technicalunderstanding
+			settings.parmenion
+		]
+	),
+
+	azureContainerRegistry: "azureContainerRegistry".toSkill(
+		"Azure Container Registry",
+		"Azure Container Registry allows you to build, store, and manage container images and artifacts in a private registry for all types of container deployments",
+		[
+			skillTypes.devops,
+		],
+		[
+			settings.parmenion
 		]
 	),
 
@@ -105,7 +127,7 @@ module.exports = {
 			skillTypes.other,
 		],
 		[
-			settings.technicalunderstanding
+			settings.parmenion
 		]
 	),
 
@@ -282,7 +304,8 @@ module.exports = {
 		],
 		[
 			settings.abide,
-			settings.scottlogic
+			settings.scottlogic,
+			settings.parmenion
 		]
 	),
 
@@ -307,7 +330,7 @@ module.exports = {
 		],
 		[
 			settings.abide,
-			settings.technicalunderstanding
+			settings.parmenion
 		]
 	),
 
@@ -332,7 +355,7 @@ module.exports = {
 			settings.abide,
 			settings.fundslibrary,
 			settings.scottlogic,
-			settings.technicalunderstanding
+			settings.parmenion
 		]
 	),
 
@@ -369,7 +392,7 @@ module.exports = {
 			settings.fundslibrary,
 			settings.abide,
 			settings.scottlogic,
-			settings.technicalunderstanding
+			settings.parmenion
 		]
 	),
 
@@ -383,7 +406,8 @@ module.exports = {
 			settings.toplevel,
 			settings.fundslibrary,
 			settings.abide,
-			settings.scottlogic
+			settings.scottlogic,
+			settings.parmenion
 		]
 	),
 
@@ -406,6 +430,7 @@ module.exports = {
 		],
 		[
 			settings.scottlogic,
+			settings.parmenion
 		]
 	),
 
@@ -417,7 +442,7 @@ module.exports = {
 		],
 		[
 			settings.scottlogic,
-			settings.technicalunderstanding
+			settings.parmenion
 		]
 	),
 
@@ -432,7 +457,7 @@ module.exports = {
 			settings.fundslibrary,
 			settings.abide,
 			settings.scottlogic,
-			settings.technicalunderstanding
+			settings.parmenion
 		]
 	),
 
@@ -446,6 +471,7 @@ module.exports = {
 			settings.fundslibrary,
 			settings.abide,
 			settings.scottlogic,
+			settings.parmenion
 		]
 	),
 
@@ -456,7 +482,40 @@ module.exports = {
 			skillTypes.backend,
 		],
 		[
-			settings.technicalunderstanding,
+			settings.parmenion,
+		]
+	),
+
+	entityFrameworkCore: "entityFrameworkCore".toSkill(
+		"EF Core",
+		"Entity Framework Core is an object-relational mapper (O/RM) that enables .NET developers to work with a database using .NET objects.",
+		[
+			skillTypes.backend,
+		],
+		[
+			settings.parmenion,
+		]
+	),
+
+	elmish: "elmish".toSkill(
+		"Elmish",
+		"Elmish is a set of simple abstractions for writing user interfaces in F# applications in a functional style following the model-view-update architecture made famous by Elm.",
+		[
+			skillTypes.frontend,
+		],
+		[
+			settings.technicalunderstanding
+		]
+	),
+
+	fable: "fable".toSkill(
+		"Fable",
+		"Fable is a compiler powered by Babel designed to make F# a first-class citizen of the JavaScript ecosystem.",
+		[
+			skillTypes.frontend,
+		],
+		[
+			settings.technicalunderstanding
 		]
 	),
 
@@ -469,6 +528,7 @@ module.exports = {
 		[
 			settings.abide,
 			settings.scottlogic,
+			settings.parmenion
 		]
 	),
 
@@ -479,7 +539,7 @@ module.exports = {
 			skillTypes.frontend,
 		],
 		[
-			
+			settings.parmenion
 		]
 	),
 
@@ -493,7 +553,7 @@ module.exports = {
 			settings.fundslibrary,
 			settings.abide,
 			settings.scottlogic,
-			settings.technicalunderstanding
+			settings.parmenion
 		]
 	),
 
@@ -516,6 +576,7 @@ module.exports = {
 		],
 		[
 			settings.fundslibrary,
+			settings.parmenion
 		]
 	),
 
@@ -530,7 +591,7 @@ module.exports = {
 			settings.fundslibrary,
 			settings.abide,
 			settings.scottlogic,
-			settings.technicalunderstanding
+			settings.parmenion
 		]
 	),
 
@@ -566,7 +627,7 @@ module.exports = {
 			settings.fundslibrary,
 			settings.abide,
 			settings.scottlogic,
-			settings.technicalunderstanding
+			settings.parmenion
 		]
 	),
 
@@ -613,6 +674,7 @@ module.exports = {
 		],
 		[
 			settings.fundslibrary,
+			settings.parmenion
 		]
 	),
 
@@ -649,7 +711,7 @@ module.exports = {
 			settings.fundslibrary,
 			settings.abide,
 			settings.scottlogic,
-			settings.technicalunderstanding
+			settings.parmenion
 		]
 	),
 
@@ -662,6 +724,7 @@ module.exports = {
 		[
 			settings.toplevel,
 			settings.abide,
+			settings.parmenion
 		]
 	),
 
@@ -674,18 +737,31 @@ module.exports = {
 		[
 			settings.scottlogic,
 			settings.abide,
+			settings.parmenion
+		]
+	),
+
+	neo4j: "neo4j".toSkill(
+		"neo4j",
+		"Neo4j is a graph database management system, described by its developers as an ACID-compliant transactional database with native graph storage and processing",
+		[
+			skillTypes.backend
+		],
+		[
+			settings.parmenion,
 		]
 	),
 
 	nodeJs: "nodeJs".toSkill(
 		"node.js",
-		"",
+		"Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside of a web browser",
 		[
 			skillTypes.backend
 		],
 		[
 			settings.abide,
 			settings.scottlogic,
+			settings.parmenion
 		]
 	),
 
@@ -699,6 +775,7 @@ module.exports = {
 			settings.toplevel,
 			settings.abide,
 			settings.scottlogic,
+			settings.parmenion
 		]
 	),
 
@@ -732,7 +809,7 @@ module.exports = {
 		],
 		[
 			settings.abide,
-			settings.technicalunderstanding
+			settings.parmenion
 		]
 	),
 	
@@ -743,7 +820,7 @@ module.exports = {
 			skillTypes.testing,
 		],
 		[
-			settings.technicalunderstanding
+			settings.parmenion
 		]
 	),
 
@@ -766,7 +843,7 @@ module.exports = {
 		],
 		[
 			settings.scottlogic,
-			settings.technicalunderstanding
+			settings.parmenion
 		]
 	),
 
@@ -780,7 +857,7 @@ module.exports = {
 			settings.toplevel,
 			settings.abide,
 			settings.scottlogic,
-			settings.technicalunderstanding
+			settings.parmenion
 		]
 	),
 
@@ -794,7 +871,7 @@ module.exports = {
 			settings.fundslibrary,
 			settings.abide,
 			settings.scottlogic,
-			settings.technicalunderstanding
+			settings.parmenion
 		]
 	),
 
@@ -806,6 +883,18 @@ module.exports = {
 		],
 		[
 
+		]
+	),
+
+	safeStack: "safeStack".toSkill(
+		"SAFE Stack",
+		"An end-to-end, functional-first stack for cloud-ready web development that emphasizes type-safe programming",
+		[
+			skillTypes.backend,
+			skillTypes.frontend
+		],
+		[
+			settings.technicalunderstanding,
 		]
 	),
 
@@ -831,7 +920,7 @@ module.exports = {
 			settings.fundslibrary,
 			settings.abide,
 			settings.scottlogic,
-			settings.technicalunderstanding
+			settings.parmenion
 		]
 	),
 
@@ -844,6 +933,7 @@ module.exports = {
 		[
 			settings.abide,
 			settings.scottlogic,
+			settings.parmenion
 		]
 	),
 
@@ -891,7 +981,7 @@ module.exports = {
 			settings.fundslibrary,
 			settings.abide,
 			settings.scottlogic,
-			settings.technicalunderstanding
+			settings.parmenion
 		]
 	),
 
@@ -903,6 +993,7 @@ module.exports = {
 		],
 		[
 			settings.fundslibrary,
+			settings.parmenion
 		]
 	),
 
@@ -917,7 +1008,7 @@ module.exports = {
 			settings.fundslibrary,
 			settings.abide,
 			settings.scottlogic,
-			settings.technicalunderstanding
+			settings.parmenion
 		]
 	),
 
@@ -930,6 +1021,7 @@ module.exports = {
 		[
 			settings.scottlogic,
 			settings.abide,
+			settings.parmenion
 		]
 	),
 	
@@ -941,7 +1033,18 @@ module.exports = {
 		],
 		[
 			settings.toplevel,
-			settings.technicalunderstanding
+			settings.parmenion
+		]
+	),
+
+	windowsContainers: "windowsContainers".toSkill(
+		"Windows Containers",
+		"Windows containers allow users to package applications with their dependencies and leverage operating system-level virtualization to provide fast, fully isolated environments on a single system.",
+		[
+			skillTypes.devops,
+		],
+		[
+			settings.parmenion,
 		]
 	),
 
@@ -966,6 +1069,7 @@ module.exports = {
 			settings.toplevel,
 			settings.fundslibrary,
 			settings.abide,
+			settings.parmenion
 		]
 	),
 
@@ -976,7 +1080,7 @@ module.exports = {
 			skillTypes.testing,
 		],
 		[
-			settings.technicalunderstanding,
+			settings.parmenion,
 		]
 	),
 }

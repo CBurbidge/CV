@@ -43,6 +43,12 @@ module.exports = {
 		new DateRange(new Date(2017, 10), new Date(2018, 9))
 	),
 
+	parmenion: "parmenion".toSetting(
+		"Parmenion (contract, 3 extensions)",
+		"Parmenion is a rapidly growing, award winning technology and investment solutions business.",
+		new DateRange(new Date(2018, 10), new Date(2020, 5))
+	),
+
 	technicalunderstanding: "technicalunderstanding".toSetting(
 		"Technical Understanding",
 		"",

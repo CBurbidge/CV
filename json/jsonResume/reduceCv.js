@@ -12,7 +12,15 @@ var removeWorkPlaces = function (jsonResume, companyNamesToRemove) {
     var workPlacesToKeep = jsonResume.work.filter(x => {
         return companyNamesToRemove.includes(x.company) === false;
     })
-    return Object.assign({}, jsonResume, { work: workPlacesToKeep })
+    var minusCommentedHighlights = workPlacesToKeep.map(x => {
+        if(x.highlights){
+            var filteredHighlights = x.highlights.filter(y => y.startsWith("//") === false)
+            x.highlights = filteredHighlights;
+        }
+        
+        return x;
+    })
+    return Object.assign({}, jsonResume, { work: minusCommentedHighlights })
 };
 
 var removeEducation = function (jsonResume, institutionNamesToRemove) {
